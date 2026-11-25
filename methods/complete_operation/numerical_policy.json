@@ -1,0 +1,91 @@
+{
+  "schema": "sgc-fr40-numerical-policy-v0.8",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "status": "APPROVED_EMPIRICAL_ONLY_NOT_ACTUALLY_QUALIFIED",
+  "main": "same float64 transplanted eval function for responses and fixed input AD",
+  "required_finite": [
+    "all used input coordinates",
+    "used fusion parameters and affine coefficients",
+    "native and derived required outputs",
+    "native and derived AD coordinates",
+    "direction/norm when evaluated",
+    "A,r,epsilon,I_src",
+    "E,B,E_perm,Skill,Skill_perm",
+    "required algebra residuals and allowances"
+  ],
+  "nonnegative_metrics": [
+    "E",
+    "B",
+    "E_perm"
+  ],
+  "negative_metric_handling": "invalid implementation/numerical result, STOP; do not clamp",
+  "parameters": {
+    "eta": 0.0009765625,
+    "eta_exact": "2^-10",
+    "atol_replay": 0.00001,
+    "rtol_replay": 0.00001,
+    "atol_FD": 0.000001,
+    "rtol_FD": 0.00001,
+    "atol_chain_AD": 0.000001,
+    "rtol_chain_AD": 0.00001,
+    "atol_algebra": 1e-12,
+    "rtol_algebra": 1e-12,
+    "atol_R": 0.00001,
+    "rtol_R": 0.000001,
+    "tau_B": 0.000001
+  },
+  "families": {
+    "replay": {
+      "scale": "max absolute of both sides",
+      "rule": "abs(residual)<=atol+rtol*scale; record32-v-saved,64-v32,64-v-saved separately"
+    },
+    "FD": {
+      "scale": "max(abs(FD),abs(AD_dot_v))",
+      "eligibility": "computed finite,whole-vector representable,same computed nonzero ternary regions; empirical only",
+      "rule": "eligible residual tolerance; no rounding-envelope eligibility"
+    },
+    "chain_AD": {
+      "scale": "per-coordinate max(abs(g_chain),abs(g_AD))",
+      "rule": "all1024 coordinates of each of40 groups pass fixed tolerance"
+    },
+    "algebra": {
+      "scale": "sum of absolute terms on both sides",
+      "equality": "abs(residual)<=atol+rtol*scale",
+      "lower_bound": "signed_lower_bound_residual = U_src - (E_D + E_P + E_DP); require residual <= atol + rtol*scale; scale=sum of absolute terms on both sides; no clipping; link analogue = abs(I_src)-(abs(eps_D)+abs(eps_P)+abs(eps_DP))"
+    },
+    "R_identity": {
+      "scale": "sum absolute terms on both sides",
+      "rule": "only when all required raw ratios defined; otherwise SKIPPED_RATIO_UNDEFINED with reason"
+    }
+  },
+  "R_eligibility": {
+    "priority": [
+      "mandatory E/B/E_perm finite and nonnegative or STOP",
+      "B<=tau_B => UNDEFINED_LOW_RESPONSE,null",
+      "B>tau_B: attempt binary64 E/B or E_perm/B independently",
+      "finite ratio => DEFINED_COMPUTED_EMPIRICAL",
+      "ratio-only overflow/nonfinite => UNDEFINED_RATIO_NONFINITE,null; do not STOP otherwise valid absolute primary endpoint"
+    ],
+    "raw_ratio_states": [
+      "DEFINED_COMPUTED_EMPIRICAL",
+      "UNDEFINED_LOW_RESPONSE",
+      "UNDEFINED_RATIO_NONFINITE"
+    ],
+    "zero_denominator": "covered by low-B; no division attempted",
+    "R_perm": "same B, independent numerator and ratio state; do not inherit R status",
+    "aggregate": "all required raw ratios defined before same fixed-weight average; any missing => aggregate null, AGGREGATE_INCOMPLETE_RAW_R; retain expected/defined counts and reasons, no subset or renormalization",
+    "missing_not_zero": true,
+    "absolute_primary_unaffected_by_optional_ratio_null": true,
+    "zero_control": "derived R_zero=1 when B>tau_B,not inherited frommain optional ratio status"
+  },
+  "paired_direction": {
+    "finite_difference": "delta<0 OBSERVED_LOWER; delta>0 OBSERVED_HIGHER; exact computed +/-0 EXACT_COMPUTED_ZERO",
+    "missing_ratio": "DeltaR null,NOT_EVALUABLE with exact missing raw-slot reasons; DeltaE independently retained",
+    "no_magnitude_or_sign_based_omission": true,
+    "no_effect_or_equivalence_guarantee": true
+  },
+  "finite_JSON": "no NaN/Infinity; optional undefined ratio uses null with status; required nonfinite is terminal stopped-prefix evidence",
+  "certified_roundoff_claim": false,
+  "practical_margin": null
+}
+

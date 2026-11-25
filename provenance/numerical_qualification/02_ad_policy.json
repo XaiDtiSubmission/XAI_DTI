@@ -1,0 +1,29 @@
+{
+  "schema": "sgc-fr40-ad-policy-v0.8",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "rule_id": "AD_F64_RELU_ZERO0_ALL_SOURCES",
+  "scope": "all2242 source records x10 cases x2 native heads;44,840 input backward events",
+  "relu_local_rule": {
+    "x_positive": 1,
+    "x_negative": 0,
+    "x_exact_zero_including_signed_zero": 0
+  },
+  "no_epsilon_shift_or_straight_through": true,
+  "no_parameter_gradient_or_update": true,
+  "native_heads": [
+    "h0",
+    "h1"
+  ],
+  "derived": {
+    "h_aff": "a_e*g_AD(h0)",
+    "q": "g_AD(h1)-a_e*g_AD(h0)"
+  },
+  "interpretation": "fixed-AD-rule linear approximation; outside qualified smooth points no claim that a classical derivative exists; never claim selected AD vector is a uniquely identified biological mechanism",
+  "all_main_sources_kink_scan": false,
+  "activation_value_access": "only existing fixed qualification source/plus/minus points; no additional main-source activation projection",
+  "retain_all_sources_including_zero_displacement_or_kink": true,
+  "all_source_receipt_groups": 40,
+  "each_group": "case x native head x endpoint; record exact source count and derivative coordinate count, rule_id, actual input backward count and no-full-kink-scan status",
+  "approved": true
+}
+

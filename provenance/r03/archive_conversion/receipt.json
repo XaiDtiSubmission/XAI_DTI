@@ -1,0 +1,98 @@
+{
+  "schema": "DTI_R03_ARCHIVED_CONVERSION_RECEIPT_v0_1",
+  "status": "ARCHIVED_CONVERSION_EXACT_MATCH",
+  "protocol_sha256": "2589d75587c07469bd1f580b97c97507dd2add484411021206864a9e89a07cc4",
+  "sources": {
+    "formal_contributions": {
+      "path": "DTI_R01_R03_execution_v0_1/R03/full_900_batched/record_contributions.jsonl",
+      "bytes": 763126,
+      "sha256": "62a9d61f7b15c2e5ebc3f109a473c01a4bd62eca32f4ce902210565c0018680b"
+    },
+    "target_scope": {
+      "path": "DTI_R01_R03_execution_v0_1/R03/target_scope_v0_2.json",
+      "bytes": 1025830,
+      "sha256": "c88988a6bbed2e404ba80c3d9d3d9d942cfba10f1a2d3356a12b06d0f4eb267a"
+    },
+    "registered_locators": {
+      "path": "DTI_R01_R03_local_recovery_v0_1/derived/R03目标归档定位.jsonl",
+      "bytes": 215865,
+      "sha256": "a00c36b6e510f856b9d52b95c2cc31546466ccfb537a863eb2178ae906ac3658"
+    },
+    "reused_q06": {
+      "path": "DTI_R01_R03_execution_v0_1/R02/q06/q06逐条来源审定.jsonl",
+      "bytes": 725014,
+      "sha256": "f8b3d3dccfd9ae553d3bd0d5313c50c731886ea202c03fde9d96eedabc6c8719"
+    },
+    "reused_q01": {
+      "path": "DTI_R01_R03_execution_v0_1/R02/q01/q01_record_adjudication.json",
+      "bytes": 292233,
+      "sha256": "c16225118b6669d0a356c77a46df519dba3592d22aef728a24f99b6ac0ef94ee"
+    },
+    "articles": {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI/data/raw/BindingDB/202608/BindingDB_BindingDB_Articles_202608_tsv.zip",
+      "bytes": 18271972,
+      "sha256": "2529b1c572aa7b298e57355e251c9a9572b82dd35f97259d5e3866ee69bfada5"
+    },
+    "patents": {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI/data/raw/BindingDB/202608/BindingDB_Patents_202608_tsv.zip",
+      "bytes": 172105433,
+      "sha256": "88d0e6664ac063489d2c161c80b6a83fd347eb87e924e47a44d01ee3de93ce13"
+    }
+  },
+  "records_checked": 991,
+  "status_counts": {
+    "MATCH_EXACT_FLOAT64": 991
+  },
+  "endpoints": {
+    "Ki": 863,
+    "Kd": 128
+  },
+  "roles": {
+    "MODEL_GATE": 342,
+    "MODEL_FIT": 595,
+    "MODEL_SELECT": 54
+  },
+  "groups": 900,
+  "reused_record_counts": {
+    "q06": 650,
+    "q01": 78
+  },
+  "new_archive_records_projected": 263,
+  "new_archive_physical_rows_decoded": {
+    "BindingDB_BindingDB_Articles_202608_tsv.zip": 55,
+    "BindingDB_Patents_202608_tsv.zip": 208
+  },
+  "unselected_archive_rows_text_decoded": 0,
+  "new_archive_data_fields_decoded": [
+    "BindingDB Reactant_set_id",
+    "Selected endpoint Ki/Kd (nM) only"
+  ],
+  "script": {
+    "path": "scripts/execute_r03_archive_conversion_v0_1.py",
+    "sha256": "87be017df461ef3b5cbf4af531f588212bf3a311cb6c8bd29b9fdaea416bf90c"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "executable": "historical_sources/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "numpy": "1.26.4"
+  },
+  "historical_actual_producer_identity": "UNKNOWN",
+  "old_research_scripts_executed": false,
+  "scientific_measurement_validity_or_target_association_adjudicated": false,
+  "interpretation": "Exact archived numeric-cell transport/conversion only; does not resolve R02 assay/target conflicts or certify measurement science.",
+  "started_utc": "2026-11-25T08:08:31.442596+00:00",
+  "completed_utc": "2026-11-25T08:08:37.271542+00:00",
+  "elapsed_seconds": 5.8289477825164795,
+  "outputs": [
+    {
+      "path": "archive_conversion/coverage_lock.json",
+      "bytes": 2280,
+      "sha256": "9c5b49f2813471ecbe2fe8bfb4aac1e3889fbae40a99ed82700b323dbf8f2510"
+    },
+    {
+      "path": "archive_conversion/measurements.jsonl",
+      "bytes": 1115393,
+      "sha256": "7eaa39711911f58f62837e2f2cbcd1a51e69272f1d5e4374fcad08ac2c65c654"
+    }
+  ]
+}

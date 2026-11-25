@@ -1,0 +1,402 @@
+{
+  "schema": "sgc-fr20-output-field-binding-v0.4",
+  "contract_id": "SGC-FR20-v0.4-O-SRC-SAVED-SCORE-FOUR-POINT",
+  "status": "SCHEMA_ONLY_NO_OUTPUT_DATA_CREATED",
+  "foreign_keys": {
+    "source_id": "Exact original gate_row_index0, never eligibility list position or input-identity deduplication. Joins L0 panel_manifest record with full(label_group_id,pair_group_id,endpoint),source_D_hash,source_P_hash and reference/alias maps.",
+    "case_code": [
+      {
+        "code": 0,
+        "case_id": "formal_017_S",
+        "arm": "S",
+        "seed": 17
+      },
+      {
+        "code": 1,
+        "case_id": "formal_029_S",
+        "arm": "S",
+        "seed": 29
+      },
+      {
+        "code": 2,
+        "case_id": "formal_043_S",
+        "arm": "S",
+        "seed": 43
+      },
+      {
+        "code": 3,
+        "case_id": "formal_071_S",
+        "arm": "S",
+        "seed": 71
+      },
+      {
+        "code": 4,
+        "case_id": "formal_101_S",
+        "arm": "S",
+        "seed": 101
+      },
+      {
+        "code": 5,
+        "case_id": "formal_017_G",
+        "arm": "G",
+        "seed": 17
+      },
+      {
+        "code": 6,
+        "case_id": "formal_029_G",
+        "arm": "G",
+        "seed": 29
+      },
+      {
+        "code": 7,
+        "case_id": "formal_043_G",
+        "arm": "G",
+        "seed": 43
+      },
+      {
+        "code": 8,
+        "case_id": "formal_071_G",
+        "arm": "G",
+        "seed": 71
+      },
+      {
+        "code": 9,
+        "case_id": "formal_101_G",
+        "arm": "G",
+        "seed": 101
+      }
+    ],
+    "target_code": [
+      {
+        "code": 0,
+        "id": "q",
+        "formula": "h1-h_aff"
+      },
+      {
+        "code": 1,
+        "id": "q_bg",
+        "formula": "h1-h0"
+      },
+      {
+        "code": 2,
+        "id": "q_nl",
+        "formula": "h1-h_1d"
+      }
+    ],
+    "function_code": [
+      {
+        "code": 0,
+        "id": "h0"
+      },
+      {
+        "code": 1,
+        "id": "h_aff"
+      },
+      {
+        "code": 2,
+        "id": "h_1d"
+      },
+      {
+        "code": 3,
+        "id": "h1"
+      }
+    ],
+    "scheme_code": [
+      {
+        "code": 0,
+        "id": "FIT_ROW_UNIFORM",
+        "weight": "1/n_i"
+      },
+      {
+        "code": 1,
+        "id": "FIT_PROTEIN_INPUT_UNIFORM",
+        "weight": "1/(K_i*n_i,p_j)"
+      }
+    ],
+    "quantity_code": [
+      {
+        "code": 0,
+        "id": "q0"
+      },
+      {
+        "code": 1,
+        "id": "qD"
+      },
+      {
+        "code": 2,
+        "id": "qP"
+      },
+      {
+        "code": 3,
+        "id": "qI"
+      },
+      {
+        "code": 4,
+        "id": "rD_obs"
+      },
+      {
+        "code": 5,
+        "id": "rP_obs"
+      }
+    ],
+    "key_rule": "All identities are audit/link fields only, never model inputs. Record-row multiplicity retained even identical input hashes; exact foreign-key match required, no nearest/proxy representative."
+  },
+  "field_types": {
+    "case_code": "integer0..9",
+    "source_id": "integer0..5696 restricted to exact2242 accepted source rows",
+    "target_code": "integer0..2",
+    "function_code": "integer0..3",
+    "scheme_code": "integer0..1",
+    "quantity_code": "integer0..5",
+    "FIT_row_index0": "integer0..46139",
+    "sign": "integer -1/0/1 from computed float64, signed zero equal",
+    "numeric_value": "finite float64, round-trip serialization, no decimal rounding/clip",
+    "weight_denominator": "exact positive integer, never float approximation for identity",
+    "weight": "float64 from exact denominator, no renormalization"
+  },
+  "serialization": {
+    "format": "Compact JSONL arrays for large numeric tables; fixed column orders below, JSON objects for small receipts and summaries.",
+    "implementation": "Python stdlib JSON with allow_nan=False and compact separators; shortest round-trip binary64 values. Numeric schemas recover integer/float types; identities stored once in sealed metadata tables.",
+    "schema_binding": "Every numeric output binds this exact schema digest plus L0 metadata seal, dictionaries and source-row ordering; output_layout_receipt records physical columns and logical joins.",
+    "no_lossy_projection": true,
+    "no_unapproved_payload_access": true,
+    "source_records_are_not_input_keys": true,
+    "byte_count": "All actual bytes/files, including metadata/dictionaries/receipts/resources, count against joint80files/536870912bytes before write. Buffer8192 remains engineering only. No assurance of actual output size until allowed L0 closure; stop rather than truncate or widen caps."
+  },
+  "source_components": {
+    "physical_columns": [
+      "case_code",
+      "source_id",
+      "target_code",
+      "scheme_code",
+      "q_source",
+      "bar_q0",
+      "bar_qD",
+      "bar_qP",
+      "bar_qI",
+      "bar_rD_obs",
+      "bar_rP_obs",
+      "mean_abs_q0",
+      "mean_abs_qD",
+      "mean_abs_qP",
+      "mean_abs_qI",
+      "mean_abs_rD_obs",
+      "mean_abs_rP_obs"
+    ],
+    "primary_key": [
+      "case_code",
+      "source_id",
+      "target_code",
+      "scheme_code"
+    ],
+    "rows_max": 134520,
+    "logical_identity_fields": "case_id/arm/seed via case_code; gate_row_index0 and label_group_id/pair_group_id/endpoint and D/P hashes via source_id; reference_scheme,target_id via dictionaries; n_reference_rows/n_donor_proteins/corner_alias_map_id via L0; numeric_status via all10 accepted qualification receipt.",
+    "no_double_storage_required": true,
+    "logical_derived_values": {
+      "reference_mean_absolute_components": "Dictionary of six physical mean_abs_q0/qD/qP/qI/rD_obs/rP_obs values; lossless logical view."
+    }
+  },
+  "basic_four_point": {
+    "physical_columns": [
+      "case_code",
+      "source_id",
+      "scheme_code",
+      "function_code",
+      "bar_I_f",
+      "reference_mean_abs_I_f"
+    ],
+    "primary_key": [
+      "case_code",
+      "source_id",
+      "scheme_code",
+      "function_code"
+    ],
+    "rows_max": 179360,
+    "logical_identity_fields": "Same sealed source/case/policy/function joins; preserve all prior basic-function fields."
+  },
+  "reference_pairs": {
+    "physical_columns": [
+      "case_code",
+      "source_id",
+      "target_code",
+      "quantity_code",
+      "main_value",
+      "sensitive_value",
+      "paired_delta",
+      "paired_abs_delta",
+      "main_sign",
+      "sensitive_sign",
+      "strict_sign_flip",
+      "identical_weights"
+    ],
+    "primary_key": [
+      "case_code",
+      "source_id",
+      "target_code",
+      "quantity_code"
+    ],
+    "rows_max": 403560,
+    "delta_direction": "sensitive-main",
+    "d_ref_view": "quantity_code=3(qI): d_ref=paired_abs_delta;67260 rows are included in403560, no second evaluation or separate duplicated payload.",
+    "sign_transition": "Complete main_sign->sensitive_sign transition recoverable from pair; strict_sign_flip only -1↔+1; zero transitions remain distinct.",
+    "scheme_pair": [
+      0,
+      1
+    ],
+    "identical_weights": "Boolean derived solely from exact L0 weight equivalence; no source exclusion."
+  },
+  "summary_keys": {
+    "functional_q": [
+      "target_id",
+      "quantity_id",
+      "arm",
+      "reference_scheme",
+      "seed_layer",
+      "endpoint_layer"
+    ],
+    "basic_amplitude": [
+      "function_id",
+      "arm",
+      "reference_scheme",
+      "seed_layer",
+      "endpoint_layer"
+    ],
+    "fixed_amplitude_comparison": [
+      "reference_function_id",
+      "arm",
+      "reference_scheme",
+      "seed_layer",
+      "endpoint_layer"
+    ],
+    "reference_pair": [
+      "target_id",
+      "quantity_id",
+      "arm",
+      "seed_layer",
+      "endpoint_layer"
+    ],
+    "enums": {
+      "seed_layers": [
+        "seed_017",
+        "seed_029",
+        "seed_043",
+        "seed_071",
+        "seed_101",
+        "MEAN5"
+      ],
+      "endpoint_layers": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "endpoint_source_denominators": {
+        "Kd": 206,
+        "Ki": 2036
+      },
+      "single_slot": "For a single seed and endpoint, all source records equally weighted after within-source reference synthesis; source abs precedes source/seed/endpoint aggregation.",
+      "MEAN5": "Arithmetic mean of the5 complete seed-specific scalar summaries, never mean predictions before nonlinear summaries.",
+      "KD_KI_EQUAL": "0.5*Kd_summary+0.5*Ki_summary, never pool2242 rows or weight by endpoint row counts.",
+      "aggregate_counts": "Retain206/2036 as source-row denominator map. Seed/model/reference reuse never expands the number of independent biological observations.",
+      "missing": "Missing any required case/endpoint/source/reference stops whole design; aggregate slots stay absent/null with reason, never0 or renormalized."
+    },
+    "source_denominator_map": {
+      "Kd": 206,
+      "Ki": 2036
+    },
+    "primary_slot": {
+      "table": "functional_q",
+      "target_id": "q",
+      "quantity_id": "qI",
+      "arm": "G",
+      "reference_scheme": "FIT_ROW_UNIFORM",
+      "seed_layer": "MEAN5",
+      "endpoint_layer": "KD_KI_EQUAL",
+      "metric": "M_I"
+    },
+    "secondary_only": [
+      "M_f",
+      "U_f",
+      "delta_M",
+      "delta_U",
+      "D_ref",
+      "C_U_MINUS_M",
+      "all paired reference descriptions"
+    ]
+  },
+  "summary_values": {
+    "functional_q": "signed_mean,mean_abs_source_composite(M),mean_reference_absolute(U),full source denominator map; qI slots additionally raw C=U-M and cancellation_numeric_status.",
+    "basic_amplitude": "M_f,U_f,raw C_f=U_f-M_f,cancellation_numeric_status",
+    "fixed_amplitude_comparison": "delta_M,delta_U,reference_function_id and matched full denominators",
+    "reference_pair": "mean_delta,mean_abs_delta,3x3transition fractions,strict_sign_flip_fraction; single seed plus Kd/Ki slots also9 integer counts. MEAN5 or KD_KI_EQUAL slots counts=null with NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE, fractions follow equal-weight hierarchy.",
+    "D_ref": "For qI slots only D_ref=mean_abs_delta;108 slots included in648, no separate computation.",
+    "descriptive_status": "No new practical margin or PASS/absence/robustness status; negative raw cancellation difference retained and flagged without clipping. Missing qualification leaves no scientific numeric output."
+  },
+  "expected_slots": {
+    "basic_amplitude": 288,
+    "fixed_amplitude_comparison": 216,
+    "reference_pair": 648,
+    "D_ref_qI_subset": 108,
+    "descriptive_U_minus_M": 504
+  },
+  "L0_logical_fields": {
+    "panel_manifest": [
+      "source_id=gate_row_index0",
+      "label_group_id",
+      "pair_group_id",
+      "endpoint",
+      "source_D_hash",
+      "source_P_hash",
+      "case_ids",
+      "n_reference_rows",
+      "n_donor_proteins",
+      "identical_weights",
+      "corner_alias_map_id"
+    ],
+    "reference_weights": [
+      "source_id",
+      "FIT_row_index0",
+      "donor_protein_input_key",
+      "main_exact_denominator",
+      "sensitive_exact_denominator",
+      "main_weight",
+      "sensitive_weight"
+    ],
+    "corner_map": [
+      "source_id",
+      "FIT_row_index0",
+      "A_key_id",
+      "B_key_id",
+      "C_key_id",
+      "D_key_id"
+    ],
+    "needed_alias_manifest": [
+      "key_id",
+      "smiles_sha256",
+      "target_sequence_key",
+      "endpoint",
+      "all FIT/GATE role/row/record aliases"
+    ]
+  },
+  "receipt_fields": {
+    "output_layout_receipt": [
+      "schema_path_and_sha256",
+      "L0_seal_path_and_sha256",
+      "case_target_function_policy_quantity_dictionaries",
+      "physical_columns",
+      "logical_foreign_key_rules",
+      "actual_record_counts",
+      "actual_output_files_and_bytes",
+      "no_lossy_values",
+      "qualification_state"
+    ],
+    "affine_scale_identity_receipt": "Keep original two check counts and max reference/composite residuals per case/endpoint, tolerance and status; unchanged budgets3226590/44840."
+  },
+  "forbidden_fields_and_derivations": [
+    "labels/truth/raw inputs/tensor values",
+    "unregistered risk or loss",
+    "FR30 predictions or benefit fractions",
+    "new reference/seed/fit/model output",
+    "post-result source selection",
+    "zero-imputed missing result"
+  ]
+}

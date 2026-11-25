@@ -1,0 +1,314 @@
+{
+  "schema": "bmc-saved-data-traceability-notes/0.20",
+  "scope": "Selected saved method and control metadata; not a new scientific evaluation or validation of registered external target bytes.",
+  "source_bindings": {
+    "E06": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/provenance/DTI_XAI_数据集完整说明与来源映射_20261031.md",
+      "lines": [
+        77,
+        89,
+        165,
+        231,
+        268,
+        346,
+        358
+      ]
+    },
+    "E07": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/provenance/audit/dataset_documentation/2026_10_31/v0_2/run_001/summary.json",
+      "fields": [
+        "known_risk_role_overlap",
+        "same_flagged_reference_overlap_not_error_adjudication",
+        "duplicate_source_role_impact",
+        "missing_assay_role_impact"
+      ],
+      "field_start_lines": [
+        300,
+        314,
+        496,
+        558
+      ]
+    },
+    "E08": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/provenance/audit/dataset_documentation/2026_10_31/v0_2/run_001/data_dictionary.json",
+      "lines": [
+        100,
+        103,
+        164,
+        181
+      ],
+      "fields": [
+        "labels.representation_count",
+        "compounds.compound_key",
+        "compounds.smiles_sha256",
+        "compounds.standardized_smiles",
+        "compounds.full_inchikey"
+      ]
+    },
+    "E09": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/provenance/audit/dataset_documentation/2026_10_31/v0_2/run_001/source_bindings.json",
+      "lines": [
+        2581,
+        2592,
+        2744,
+        2753
+      ],
+      "status": "Descriptors of original targets, not target bytes reopened in this review."
+    },
+    "E11": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/pre_submission_v0_3/history/pre_submission_v0_2/history/pre_submission_v0_1/history/revision_gap_v0_2/methods/static_method_dossier_v0_2.md",
+      "lines": [
+        9,
+        15,
+        60
+      ],
+      "status": "Downstream seven-column historical training projection and label-group join; does not establish upstream representative-input selection."
+    },
+    "E12": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/bottleneck/protocol/smiles_gine_bottleneck_fr00_fr10_v0_2/metadata_and_calibration_spec.json",
+      "lines": [
+        4,
+        49
+      ],
+      "fields": [
+        "FR00.identity",
+        "FR00.O_rule",
+        "FR00.no_selection_by",
+        "FR00.duplicates",
+        "FR00.census.weights"
+      ]
+    },
+    "E13": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/pre_submission_v0_3/sources/ST10.html",
+      "locator_type": "source HTML anchors, not physical HTML line numbers",
+      "anchors": [
+        "L13",
+        "L163",
+        "L164",
+        "L201",
+        "L202",
+        "L203",
+        "L205",
+        "L206",
+        "L208",
+        "L210",
+        "L212",
+        "L213",
+        "L214",
+        "L220",
+        "L223",
+        "L224",
+        "L225",
+        "L227",
+        "L229",
+        "L234"
+      ],
+      "status": "Static code text only; no import or execution."
+    },
+    "E14": {
+      "path": "DTI_submission_handoff_v0_1/workspace/drafts/full_manuscript_v0_12/external_evidence_receipt_v0_12.json",
+      "lines": [
+        89,
+        148
+      ],
+      "fields": [
+        "calibration",
+        "cohort",
+        "sealing"
+      ]
+    },
+    "E15": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/experiment_comparison_report_v0_1/sources/S24.md",
+      "lines": [
+        18,
+        28,
+        34,
+        49,
+        278,
+        280,
+        304,
+        306
+      ],
+      "status": "Later retraining report containing shared upstream dataset construction and a retrospective account of the earlier frozen evaluation; original external policy/contract targets were not opened."
+    }
+  },
+  "source_review": {
+    "status": "ROLE_EXPOSURE_KNOWN_CURRENT_SUPPORT_JOIN_AND_EFFECT_UNKNOWN",
+    "role_exposure": {
+      "kind": "Saved provenance exposure, not error or model-effect estimates",
+      "original_risk_ids": {
+        "source_endpoint_records": 85,
+        "label_groups": 80,
+        "role": "XAI_METHOD_DEV; direct same-ID overlap with training and MODEL_GATE was absent"
+      },
+      "same_flagged_reference_candidates": {
+        "MODEL_FIT": {
+          "source_endpoint_records": 595,
+          "label_groups": 548
+        },
+        "MODEL_SELECT": {
+          "source_endpoint_records": 54,
+          "label_groups": 53
+        },
+        "MODEL_GATE": {
+          "source_endpoint_records": 79,
+          "label_groups": 77
+        }
+      },
+      "identities": [
+        "DOI 10.1021/jm061414r",
+        "patent US9745328"
+      ],
+      "caveats": [
+        "Role aliases represent the same memberships and must not be added twice.",
+        "The original source-text/target conflict is not a field-level adjudication.",
+        "Missing assay bridges, multiple archive rows and same-reference candidates are distinct uncertainty types."
+      ]
+    },
+    "current_support_join": "Not established; source, donor and corner exposure remains unevaluated."
+  },
+  "input_traceability": {
+    "status": "DOWNSTREAM_INPUT_IDENTITY_CLOSED_UPSTREAM_REPRESENTATIVE_RULE_UNRESOLVED",
+    "upstream_registered_references": {
+      "original_producer_descriptors": [
+        {
+          "registered_path": "scripts/wp1_build_standardized_cohorts.py",
+          "registered_bytes": 47262,
+          "registered_sha256": "374b04875183931da9b5bf159c531cb19695be87491a5cbd1fcc704ff747b9bd",
+          "binding_lines": [
+            2744,
+            2747
+          ],
+          "kind": "code_or_scope_reference_not_executed"
+        },
+        {
+          "registered_path": "scripts/wp1_v1_4_freeze_labels_and_tasks.py",
+          "registered_bytes": 26948,
+          "registered_sha256": "a399fc275f7db48351fae1c9b74dba8f07a5a0e051e30a578a97b95a44c13d77",
+          "binding_lines": [
+            2750,
+            2753
+          ],
+          "kind": "code_or_scope_reference_not_executed"
+        }
+      ],
+      "documentary_bindings": [
+        {
+          "registered_path": "audit/wp1/v1_4/run_manifest.json",
+          "registered_bytes": 2709,
+          "registered_sha256": "23ac260127767be71b8b28a47f7394158f2710ebaa8505525546f2afe1199ca0",
+          "binding_lines": [
+            2581,
+            2585
+          ]
+        },
+        {
+          "registered_path": "audit/wp1/v1_4/frozen_label_task_config.json",
+          "registered_bytes": 897,
+          "registered_sha256": "5997e4ebdf0a5b7dfde19d66a6fae1fc952408d769ba8114b15f59f1f9639954",
+          "binding_lines": [
+            2588,
+            2592
+          ]
+        }
+      ],
+      "target_byte_status": "Package filenames and delivery-manifest package paths do not contain these upstream producer code files or their documentary target files. The source binding records were read; their original targets were not followed.",
+      "historical_ST05": "The historical static review names GROUP_KEYS (77–82), make_evidence_units (201–226) and make_group_labels (229–291) for grouping/deduplication/label QC. It does not supply an auditable source excerpt establishing standardized_smiles representative selection.",
+      "downstream_projection": "The static method dossier describes a label_group_id join and sorted seven-column training projection including standardized_smiles. It establishes downstream column use, not how that column was chosen upstream."
+    },
+    "downstream": {
+      "identity": "Frozen actual UTF-8 SMILES SHA256 and sequence SHA256, with endpoint, form the input edge; label_group_id/pair_group_id/endpoint identify rows.",
+      "retained": "Original source/reference rows, all aliases and row multiplicities are retained. Boolean incidence lookup does not select representative structures.",
+      "support": "FIT union GATE at the same endpoint; SELECT excluded. Four distinct observed input edges, different source and donor drug/protein text hashes, and original row provenance are required.",
+      "limitations": "Different text hashes do not prove different tokenizations, chemical structures or biological independence.",
+      "exact_ST10_source_anchors": {
+        "L163–L164": "rowkey versus inputkey definitions",
+        "L201–L208": "identity-only column projection and stable reference ordering",
+        "L212–L214": "input-key aliases retain all matching role/index/row identities",
+        "L220": "row-uniform and protein-input-uniform donor denominators",
+        "L223–L227": "actual source/donor hashes, four observed distinct corners and retained provenance"
+      }
+    },
+    "unknown": [
+      "The original rule that materialized standardized_smiles for a connectivity-level label group.",
+      "Whether an evaluated label group actually had multiple retained input SMILES, and the multiplicity in the evaluated population.",
+      "Whether any representation ambiguity affected a current label/input/support mapping or result."
+    ]
+  },
+  "external": {
+    "status": "READY_FOR_BOUNDED_METHOD_CONSOLIDATION_WITH_SOURCE_LIMITS",
+    "shared_saved_construction": {
+      "dataset_version": "packages_v1_61; delivery interface v1.62",
+      "source": "Papyrus++ 2024.2, Zenodo record 13987985; native ChEMBL activity linkage. The saved source filename is 05.7++_combined_set_without_stereochemistry.tsv.xz.",
+      "high_evidence": "The 116 previously reviewed high-evidence input groups were already in Pack 01, not an additional cohort and not all Papyrus-derived. One of the 116 group labels also includes a batch-source contribution.",
+      "admission": "Exact positive finite equality Kd/Ki, accepted concentration units; no IC50/EC50/KIBA or inferred Ki. Papyrus high quality; unique native ChEMBL linkage; no flagged data_validity_comment or potential_duplicate; single protein, confidence_score=9 and relationship_type=D, checked species/sequence/UniProt; annotated variants, complexes and known identity/value conflicts excluded. The high-evidence component retains its original review rules.",
+      "structure": "RDKit 2025.03.5 Cleanup/FragmentParent/Uncharger and canonical isomeric comparison-parent SMILES after native structure linkage. The source filename does not establish two-dimensional model input; 2D SMILES was used only in conservative dependency grouping.",
+      "labels": "modeling_summary_p is the deterministic median of retained source pAffinity within full-stereo comparison-parent/canonical-UniProt/endpoint; ChEMBL activity_id deduplicates native measurements including multiple Papyrus positions. Kd/Ki stay separate and the delivered p scale was not logarithmized again.",
+      "pack_assignment": "Fixed study round-robin, then target round-robin within study, then SHA256 order; pack identities are delivery units rather than independent experimental replications.",
+      "source_limit": "These are saved report statements. The underlying external handoff_contract.json and admission_policy_v1_60_3.json target bytes were not opened in this task."
+    },
+    "original_frozen_control": {
+      "basis": "DTI_submission_handoff_v0_1/workspace/drafts/full_manuscript_v0_12/external_evidence_receipt_v0_12.json",
+      "common_input_rejections": 0,
+      "N": 5000,
+      "Kd": 1000,
+      "Ki": 4000,
+      "package_archive_sha256_registered": "5293d4f8f4e58611fea8947bbffabd6e23cde08d4c1603d4014f6c54b61e92c4",
+      "package_manifest_sha256_registered": "2fea8514eeb17a1c55e27abd49c9a0d6728c1a36f9dc6e902cf25288b7bc25bd",
+      "row_digest_from_v0_through_saved_v2": "8a66deafb47bf716c355f1eda4ff839182763cae2f8a504a3cff5b0b678fe994",
+      "no_truth_in_v1_prediction_seal": true,
+      "raw_streams_sealed_in_v1": 20,
+      "v1_prediction_seal_sha256": "09483334156ffb46cc55c29beff0571bd02a709eaf3cbf7ce74477a9bdfde38a",
+      "events": [
+        {
+          "event": "Observed V1 worker completion/wait",
+          "utc": "2026-11-01T02:23:41.753131+00:00",
+          "receipt_field": "sealing.v1_worker_wait_observed_utc",
+          "interpretation": "Saved receipt's observed completion time, not a new per-stream timestamp extraction."
+        },
+        {
+          "event": "B05 label-binding receipt",
+          "utc": "2026-11-01T02:26:37.214222+00:00",
+          "receipt_field": "sealing.b05_binding_utc"
+        },
+        {
+          "event": "V2 scoring phase start",
+          "utc": "2026-11-01T02:26:37.338072+00:00",
+          "receipt_field": "sealing.v2_phase_start_utc"
+        }
+      ],
+      "calibration": {
+        "parameter_file_sha256_registered": "64ea9752ae65b86158940b581a0ebc97dabc7e30c6c594aa4f0e06c6ba8457bd",
+        "slots_matched": 40,
+        "key": "case_id / endpoint / family",
+        "slot_hashes_match_inventory_in_v2": true,
+        "fits_in_historical_v2": 0
+      },
+      "note": "These are saved receipt fields; source artifacts were not rerun or independently scientifically revalidated."
+    },
+    "later_study_boundary": {
+      "later_Pack01_roles": {
+        "QUARANTINE": 176,
+        "TRAIN": 4345,
+        "TUNE_VALIDATION": 479,
+        "MAIN_TEST": 0,
+        "FINAL_RECHECK": 0
+      },
+      "current_evaluation_denominator": 5000,
+      "not_to_import": [
+        "The later 176 Pack 01 quarantined rows must not be subtracted from the earlier frozen-model N=5,000.",
+        "The later five-pack 24,608→23,368 role/quarantine waterfall and hard-component isolation are not the current external-admission waterfall.",
+        "Later retrained model results, later holdout labels and later zero-sharing claims do not certify the earlier evaluation.",
+        "The earlier full Pack 01 evaluation and the later training/holdout experiment cannot be compared as a same-cohort causal improvement."
+      ]
+    },
+    "remaining_not_certified": [
+      "Independent validation of the original external policy/contract target bytes.",
+      "Global-history, temporal, blind, cold-both or full-construct certification.",
+      "A new per-record exclusion waterfall or compositional analysis beyond existing saved counts.",
+      "External finite-response, gradient or ranking validation."
+    ]
+  },
+  "scientific_execution": false,
+  "external_targets_accessed": false
+}

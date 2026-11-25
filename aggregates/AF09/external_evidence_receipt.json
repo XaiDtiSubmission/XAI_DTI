@@ -1,0 +1,345 @@
+{
+  "schema": "manuscript-existing-external-prediction-adoption/0.1",
+  "editorial_use": "v0.12 supplementary prediction evaluation only",
+  "scope": "saved reports, aggregate records and registered control metadata; historical payload descriptors compared by registered identity",
+  "contract_id": "IV-V0V2-v0.5-PACK01-FROZEN-SGC-SUPPLEMENTARY",
+  "run_id": "iv20261101_frozen_pack01_v05_r01",
+  "cases": [
+    {
+      "case_id": "formal_017_S",
+      "arm": "S",
+      "seed": 17,
+      "h0_checkpoint_sha256_equal": "364c153e4325ae02900c77aaaa099383c3dd280aba787edbd9bf593a6e44e56b",
+      "h1_head_sha256_equal": "b4ceae7eabc790b87f85494c86aff9f87298600bf094c88c603843c3720d2e65",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_029_S",
+      "arm": "S",
+      "seed": 29,
+      "h0_checkpoint_sha256_equal": "b94569610a112130ef25d68fc1c527cc303e71a862d3184370efbdba3acced9d",
+      "h1_head_sha256_equal": "dec61db6ce21ea22c9d2b517bddb3cec193c1305e5d68c4391ac76a10a983348",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_043_S",
+      "arm": "S",
+      "seed": 43,
+      "h0_checkpoint_sha256_equal": "e85a1cea5c27237e7b5d4c9c71ed05eb128d4e1c9913f95d33e92df3a24c630d",
+      "h1_head_sha256_equal": "51cb41d239bcb82481a6f9c70e18f08a791035d5f3637cfcf9b4d67a51d2293d",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_071_S",
+      "arm": "S",
+      "seed": 71,
+      "h0_checkpoint_sha256_equal": "7bf4e0e9de7def378e6d658906c3050eebc9fbabbfe09de904fedda820ea4fcf",
+      "h1_head_sha256_equal": "56a18149ab32c3cda2ac32110bd7138cdbbfa259670c6d27accca2dacec98c57",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_101_S",
+      "arm": "S",
+      "seed": 101,
+      "h0_checkpoint_sha256_equal": "6ec3e164aad68889e84f8c92ca29f9e254f0e6ddd72c24637f77f6bbe706b718",
+      "h1_head_sha256_equal": "683716c6189f7cfbbd7dc77304929904d1c1f3e1e29e2acc79d190cd761e490e",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_017_G",
+      "arm": "G",
+      "seed": 17,
+      "h0_checkpoint_sha256_equal": "0a01b9f9cef019c7c6fde6e632d4f71dd4027d616eac10c2e68b24082c02cb7e",
+      "h1_head_sha256_equal": "3e9fe632fafef2c5bbec1bcd27cd53eeb610792c7269e9cdff25f1e9b09b99d4",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_029_G",
+      "arm": "G",
+      "seed": 29,
+      "h0_checkpoint_sha256_equal": "e1220479e558cc6be81708db413ca49e06877795da65c03bfcca19f6fb570a68",
+      "h1_head_sha256_equal": "6a72e3508fb090b493df28c08fabcf120cd9e3c50ad1a05776db475322e45e2f",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_043_G",
+      "arm": "G",
+      "seed": 43,
+      "h0_checkpoint_sha256_equal": "7d677f77bd2e169c013529cd70b05e26b24fa03c3ee252746251d9bbe8df7ae4",
+      "h1_head_sha256_equal": "2e73dec06d3ab40928a152624fdfccd6f538a7fc6852742bdd3efdb0437b034b",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_071_G",
+      "arm": "G",
+      "seed": 71,
+      "h0_checkpoint_sha256_equal": "084fa13209283e7ec993a9c6a3ed91f9993f78eab6fef70c10e9ccef864b1af9",
+      "h1_head_sha256_equal": "5bcc45b47cbd24bca8377f1aed2915bae08509da2c6e8d2085b13098d6625add",
+      "own_case_encoder_binding_matches": true
+    },
+    {
+      "case_id": "formal_101_G",
+      "arm": "G",
+      "seed": 101,
+      "h0_checkpoint_sha256_equal": "b79f5f4b19a3ec02848706ee8e857ddde3586cb4fb8de177aae02f9c02c48c23",
+      "h1_head_sha256_equal": "ca6aea966554a929d6b0dfffcc626da3e353601a847291d6dab574c3cc544796",
+      "own_case_encoder_binding_matches": true
+    }
+  ],
+  "calibration": {
+    "parameter_file_sha256_registered": "64ea9752ae65b86158940b581a0ebc97dabc7e30c6c594aa4f0e06c6ba8457bd",
+    "slots_matched": 40,
+    "key": "case_id / endpoint / family",
+    "slot_hashes_match_inventory_in_v2": true,
+    "fits_in_historical_v2": 0
+  },
+  "cohort": {
+    "id": "pack_01",
+    "counts": {
+      "N": 5000,
+      "Kd": 1000,
+      "Ki": 4000,
+      "common_input_rejections": 0
+    },
+    "package_archive_sha256_registered": "5293d4f8f4e58611fea8947bbffabd6e23cde08d4c1603d4014f6c54b61e92c4",
+    "package_manifest_sha256_registered": "2fea8514eeb17a1c55e27abd49c9a0d6728c1a36f9dc6e902cf25288b7bc25bd",
+    "row_digest_from_v0_through_saved_v2": "8a66deafb47bf716c355f1eda4ff839182763cae2f8a504a3cff5b0b678fe994",
+    "protein_reference_role": "REFERENCE_TARGET_NOT_CERTIFIED_FULL_CONSTRUCT",
+    "known_history_scope": "listed frozen saved input/entity pairs, acquired-source union and registered history; unknown exposure retained; not global-history, temporal, blind, cold-both or construct certification",
+    "measurement_dedup": "ChEMBL activity_id为原生测量去重键；一条原生记录在多个Papyrus位置出现只保留一个贡献并记录全部位置；原116条的原始测量ID与原始浓度优先，注明原有修正/派生p差异",
+    "dataset_sample_unit": "full-stereo comparison-parent / canonical UniProt / endpoint",
+    "subsequent_pack01_roles": {
+      "FINAL_RECHECK": 0,
+      "MAIN_TEST": 0,
+      "QUARANTINE": 176,
+      "TRAIN": 4345,
+      "TUNE_VALIDATION": 479
+    },
+    "all_history_exposure_certification": "NOT_CERTIFIED"
+  },
+  "sealing": {
+    "no_truth_in_v1_prediction_seal": true,
+    "raw_streams_sealed_in_v1": 20,
+    "v1_prediction_seal_sha256": "09483334156ffb46cc55c29beff0571bd02a709eaf3cbf7ce74477a9bdfde38a",
+    "v1_worker_wait_observed_utc": "2026-11-01T02:23:41.753131+00:00",
+    "b05_binding_utc": "2026-11-01T02:26:37.214222+00:00",
+    "v2_phase_start_utc": "2026-11-01T02:26:37.338072+00:00",
+    "v2_uses_v1_completion_and_finalization": true,
+    "historical_stage_receipts": [
+      {
+        "phase": "V0",
+        "completion_sha256": "05256e5a5815d0b887ef598ada42565f1449968f57a90f509e983cfcfa139917",
+        "finalization_sha256": "10cad272decc06ea1516f58575cd22cc16c30d819f17aeefc76b869ba4eb966f",
+        "worker_wait_returncode": 0
+      },
+      {
+        "phase": "V1",
+        "completion_sha256": "7e6a4217b8f4481746bc5bbc09385d517961cef613a8ceb7c4a6c5ab04f6b47e",
+        "finalization_sha256": "98b911b4ac898f31cd8dc03cadc9084e6c4654ad719b373099be57f63fcfb947",
+        "worker_wait_returncode": 0
+      },
+      {
+        "phase": "V2",
+        "completion_sha256": "e833f6ee3ae027183ebb8690a21432c60269622bf956835f933cebd60b4918b0",
+        "finalization_sha256": "880fbf9b498c403b79f6c1113adf1d4e5885d1e5bfbbeefcd953d6c3e413d344",
+        "worker_wait_returncode": 0
+      }
+    ],
+    "v0_completion_identity_basis": "V0 transition, finalization, formal execution receipt and V1 seal; original completion artifact contains graph descriptors and was not used for data extraction"
+  },
+  "results": {
+    "external_primary_G_J_aff_source": "output/experiment_comparison_report_v0_1/sources/S23.json#/unique_primary",
+    "external_primary_G_J_aff": -0.019904367488992047,
+    "development_G_J_aff_source": "snapshots/bottleneck/results/smiles_gine_bottleneck_fr10_solver_repair_v0_1/run_001/finite_panel_comparisons.json#/summary/G/J_aff",
+    "development_G_J_aff": 0.033183450668572846,
+    "aggregation": "Within case: row-equal MAE within endpoint, equal Kd and Ki. Between cases: equal weights across five seeds per arm.",
+    "scope": "external prediction on the registered cohort; developmental FR results retain original support",
+    "scientific_PASS": false,
+    "practical_margin": null,
+    "CI_p_bootstrap": false
+  },
+  "access_and_accounting": {
+    "model_checkpoint_array_or_calibration_parameter_decodes_this_revision": 0,
+    "row_level_sample_prediction_or_truth_payload_reads_this_revision": 0,
+    "new_scientific_calls_this_revision": 0,
+    "unmetered_historical_io_as_recorded": "UNKNOWN_NOT_ZERO",
+    "old_budgets_and_unknowns_preserved": true
+  },
+  "verified_reports_aggregates_and_control_metadata": [
+    {
+      "document_id": "source_document_01",
+      "source_file_name": "source_manifest.json",
+      "bytes": 25663,
+      "sha256": "931c8c14a590ecd523aae308a651168268ce51bf10939c6e1b57e8b728806d7a"
+    },
+    {
+      "document_id": "source_document_02",
+      "source_file_name": "S22.md",
+      "bytes": 6655,
+      "sha256": "e3093214d26e82c3bef1d0c29ab5ab56fde0f6f947463c3ccca1158f1827a090"
+    },
+    {
+      "document_id": "source_document_03",
+      "source_file_name": "S23.json",
+      "bytes": 11018,
+      "sha256": "00627ee595e31d99320a1e5dd8e88f15b728f1856c7a284ef338bca4dc9b24ce"
+    },
+    {
+      "document_id": "source_document_04",
+      "source_file_name": "S24.md",
+      "bytes": 30349,
+      "sha256": "fa9426f6d1e914059c52ccb8a3ddcb60c433e40cda39ae055a307a06f32aea76"
+    },
+    {
+      "document_id": "source_document_05",
+      "source_file_name": "large_asset_references.json",
+      "bytes": 215154,
+      "sha256": "1c1c058cec8b90e4b3d03e009bc9ab0e8158aaca5b0f13a647984d67e0bb5a84"
+    },
+    {
+      "document_id": "source_document_06",
+      "source_file_name": "calibrator_seal.json",
+      "bytes": 810,
+      "sha256": "ebbc746c16d7b43952814cbe683e5af3814ea26a3bb76b7ca4575fcdb0817c91"
+    },
+    {
+      "document_id": "source_document_07",
+      "source_file_name": "finite_panel_comparisons.json",
+      "bytes": 823,
+      "sha256": "fcba236b2668728683afa3eb5b169b87cb53f6c25fd349bf5144cf518d99d0eb"
+    },
+    {
+      "document_id": "source_document_08",
+      "source_file_name": "snapshot_manifest.json",
+      "bytes": 271217,
+      "sha256": "077b511533225b4b47a2b6d4ac33f7631648307068b221226655152de5af3e7c"
+    },
+    {
+      "document_id": "source_document_09",
+      "source_file_name": "execution_receipt.json",
+      "bytes": 12354,
+      "sha256": "2173e7d6b478b89b6a737dfa9fd995f2f2e936f5fb08b9d6d4f0a3c0f140b0ed"
+    },
+    {
+      "document_id": "source_document_10",
+      "source_file_name": "authorization.json",
+      "bytes": 2269,
+      "sha256": "08f6e156b11491b5b669e954a9044bad75d176de7d085f254d821ebedb1def8e"
+    },
+    {
+      "document_id": "source_document_11",
+      "source_file_name": "finalization.json",
+      "bytes": 2893,
+      "sha256": "10cad272decc06ea1516f58575cd22cc16c30d819f17aeefc76b869ba4eb966f"
+    },
+    {
+      "document_id": "source_document_12",
+      "source_file_name": "finalization.json",
+      "bytes": 2894,
+      "sha256": "98b911b4ac898f31cd8dc03cadc9084e6c4654ad719b373099be57f63fcfb947"
+    },
+    {
+      "document_id": "source_document_13",
+      "source_file_name": "finalization.json",
+      "bytes": 2890,
+      "sha256": "880fbf9b498c403b79f6c1113adf1d4e5885d1e5bfbbeefcd953d6c3e413d344"
+    },
+    {
+      "document_id": "source_document_14",
+      "source_file_name": "V0_transition_receipt.json",
+      "bytes": 994,
+      "sha256": "ac6dfaa7ec8d7723198ec3734e6867b4d9749e7294d28988e191cca7112a9cd0"
+    },
+    {
+      "document_id": "source_document_15",
+      "source_file_name": "V1_transition_receipt.json",
+      "bytes": 927,
+      "sha256": "e7ae6d2dc43448b40f2cd00f8f6ae91b5d0f381b1561f5322a08d2e120041d3f"
+    },
+    {
+      "document_id": "source_document_16",
+      "source_file_name": "completion.json",
+      "bytes": 29320,
+      "sha256": "7e6a4217b8f4481746bc5bbc09385d517961cef613a8ceb7c4a6c5ab04f6b47e"
+    },
+    {
+      "document_id": "source_document_17",
+      "source_file_name": "completion.json",
+      "bytes": 1874,
+      "sha256": "e833f6ee3ae027183ebb8690a21432c60269622bf956835f933cebd60b4918b0"
+    },
+    {
+      "document_id": "source_document_18",
+      "source_file_name": "all_case_prediction_seal.json",
+      "bytes": 16053087,
+      "sha256": "09483334156ffb46cc55c29beff0571bd02a709eaf3cbf7ce74477a9bdfde38a"
+    },
+    {
+      "document_id": "source_document_19",
+      "source_file_name": "calibration_schema_evidence.json",
+      "bytes": 2382,
+      "sha256": "f8741aff596d72af8c282b129c740927f658ad71d05155269b8fcec40230c460"
+    },
+    {
+      "document_id": "source_document_20",
+      "source_file_name": "calibration_schema_key_inventory.json",
+      "bytes": 23382,
+      "sha256": "89fe173c76d703dc5ff192d28765ed1cf5a5c89fa63a7ae0f39c2b333febab58"
+    },
+    {
+      "document_id": "source_document_21",
+      "source_file_name": "slot_applications.json",
+      "bytes": 11102,
+      "sha256": "c465133e0d06a9388555bc9d98ae6d312fb103234bb6c7d7508bde9bf8d4d3e5"
+    },
+    {
+      "document_id": "source_document_22",
+      "source_file_name": "grant_V2.json",
+      "bytes": 2311,
+      "sha256": "555f0f0caf4611a321af6fb08fa3d5d0797a15133061cf5ca9f8e624354cdaca"
+    },
+    {
+      "document_id": "source_document_23",
+      "source_file_name": "exit_receipt.json",
+      "bytes": 1232,
+      "sha256": "35c74e06e3e3bf51ebc0fbdff4644ff46eab760065b3a2f296b0940e0e09cc4d"
+    },
+    {
+      "document_id": "source_document_24",
+      "source_file_name": "phase_start.json",
+      "bytes": 305,
+      "sha256": "64d34ca179d00dd43bbb98ce57e9b48fa9d3bb66dd0c2636b17ebb3bfb259660"
+    },
+    {
+      "document_id": "source_document_25",
+      "source_file_name": "handoff_contract.json",
+      "bytes": 5816,
+      "sha256": "a61212e6d64007a3d601d8bab899de1bfaf49d20ff57ee25c339a1be4163edf9"
+    },
+    {
+      "document_id": "source_document_26",
+      "source_file_name": "admission_policy_v1_60_3.json",
+      "bytes": 6871,
+      "sha256": "137a07e451397b7285820255d1981e6ebd1bb5bc622da5bcc8912906ee9ed88c"
+    },
+    {
+      "document_id": "source_document_27",
+      "source_file_name": "baseline_applicability_v1_0.json",
+      "bytes": 1800,
+      "sha256": "3d4eb1a18ce0548e41f2b097dda41794215dd06c497dcc9fc5bdc89c8f1abef8"
+    },
+    {
+      "document_id": "source_document_28",
+      "source_file_name": "baseline_evidence_index.json",
+      "bytes": 3680,
+      "sha256": "9d1653ebf7ed248ab0aceb8732f0fc5eb88408e4c9ade50eb7baa0f881968b4b"
+    },
+    {
+      "document_id": "source_document_29",
+      "source_file_name": "leakage_report.json",
+      "bytes": 34596,
+      "sha256": "7daf1a69237138dfdd62fd997c0a07216fb5694e9e334d03842e938a124ababc"
+    }
+  ],
+  "source_locator_note": "Historical absolute source-document keys are replaced by numbered identifiers and basenames. Their byte counts and hashes are retained. The exact original receipt remains in the authors private record."
+}

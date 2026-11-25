@@ -1,0 +1,363 @@
+{
+  "schema": "dti_local_protocol_index/0.20",
+  "record_kind": "selected_existing_local_protocol_and_event_metadata",
+  "public_preregistration_claim": false,
+  "independent_entire_history_verification_claim": false,
+  "source_files": {
+    "path_binding": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_path_recheck_v0_1/run_001/binding.json",
+      "bytes": 2195,
+      "sha256": "76c48b2716870f235e52570946c2189e1ca3ec86f80570f794c64321e5b475e4"
+    },
+    "path_panel_seal": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_path_recheck_v0_1/run_001/panel_seal.json",
+      "bytes": 877,
+      "sha256": "981ebf780d26a367d39d3f06a86beaf196f9a5f124941ad4bcfec46ca507694c"
+    },
+    "path_ledger": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_path_recheck_v0_1/run_001/dispatch_ledger.jsonl",
+      "bytes": 570827,
+      "sha256": "cbcc64045e7f7ac87819ba3516a115545a853f12e6aeeee67eaddd7eafe60291"
+    },
+    "A1_contract": {
+      "path": "DTI_submission_handoff_v0_1/workspace/docs/单内点割线与受限查询候选筛选执行合同_v0.1.md",
+      "bytes": 17269,
+      "sha256": "8faad703a8079b7b29c6ff2d29e99184b6131e97571056721f22e71fb8f645dd"
+    },
+    "A1_registry": {
+      "path": "DTI_submission_handoff_v0_1/workspace/planning/manuscript_midpoint_query_v0_1.json",
+      "bytes": 7931,
+      "sha256": "fbdfeeaa74eff1e04120399fe0a8213941ac89bb6299f30cbc8511f29aa27108"
+    },
+    "A1_binding": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/A1/run_002/binding.json",
+      "bytes": 1523,
+      "sha256": "f6fd43a8e8f1269ad0bf4bc83f2d21c8d925445b3434d3aad2eace44dcf5c497"
+    },
+    "A1_ledger": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/A1/run_002/dispatch.jsonl",
+      "bytes": 2132,
+      "sha256": "92b6f051ba93d04f51eaf0a4add713b6003af488ea5a5b70e642f13b5405f05b"
+    },
+    "geometry_plan": {
+      "path": "DTI_submission_handoff_v0_1/workspace/docs/FR40几何排序对照追加实验方案_v0.1.md",
+      "bytes": 11432,
+      "sha256": "cd2a095f4dd7e4c56b9515e915342679bd6b5d97350fc39e3536ba39cbc6b9ea"
+    },
+    "geometry_binding": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_geometry_control_v0_1/run_001/binding.json",
+      "bytes": 6431,
+      "sha256": "7e6317da14d54c7e74f72141caa8f2697e43faff78252a259f44e78c992d3111"
+    },
+    "geometry_ledger": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_geometry_control_v0_1/run_001/dispatch.jsonl",
+      "bytes": 7894,
+      "sha256": "6e4c2c3faced66ba36a53c2812ecedbf235231e840c7c5b5a4269e7f219db997"
+    },
+    "new_rank_plan": {
+      "path": "DTI_submission_handoff_v0_1/workspace/docs/FR40新源面板复核实验方案_v0.1.md",
+      "bytes": 7715,
+      "sha256": "78d595caac648ea58fe4e95487015d41e8121a4cf8e0a6087b07488a8f4d08fa"
+    },
+    "new_rank_authority": {
+      "path": "DTI_submission_handoff_v0_1/workspace/planning/manuscript_fr40_new_source_panel_execution_v0_1.json",
+      "bytes": 7484,
+      "sha256": "46df7bdfc066251ec4c03ca52d3de41e194cdbe14aed9208634e9145729fc48c"
+    },
+    "new_rank_binding": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_new_source_panel_v0_1/run_001/binding.json",
+      "bytes": 5647,
+      "sha256": "8dff204b15a34aff6710d1628e3e0b3e3742baf8ff95235faed7dd02411d22c0"
+    },
+    "new_rank_ledger": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_new_source_panel_v0_1/run_001/dispatch.jsonl",
+      "bytes": 13202,
+      "sha256": "389e519a0f32fbb21436d649e96e2c75f9d253aa856fe6100c440253afd57739"
+    },
+    "new_rank_receipt": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_new_source_panel_v0_1/run_001/execution_receipt.json",
+      "bytes": 861,
+      "sha256": "ce61ffd4896d98c0a21fd2d50968edb025f63a88b01d4d747125741dcfac9f70"
+    }
+  },
+  "control_hash_checks": {
+    "A1_contract_matches_binding": true,
+    "A1_registry_matches_binding": true,
+    "geometry_plan_matches_binding": true,
+    "new_rank_plan_matches_binding": true
+  },
+  "followup_path": {
+    "local_version": "v0.1",
+    "prior_information": "Original path-panel observations were available.",
+    "fixed_scope": "Selected source identities and restricted references before the follow-up numerical inputs.",
+    "saved_fields": {
+      "started_at_utc": "2026-11-20T08:50:30.527300+00:00",
+      "locked_at_utc": "2026-11-20T08:50:31.657797+00:00",
+      "sealed_before_numerical_inputs": true
+    },
+    "source_ids": [
+      "path_binding",
+      "path_panel_seal",
+      "path_ledger"
+    ],
+    "field_locators": {
+      "started_at_utc": "path_binding#/started_at_utc",
+      "locked_at_utc": "path_panel_seal#/locked_at_utc",
+      "sealed_before_numerical_inputs": "path_panel_seal#/sealed_before_numerical_inputs"
+    },
+    "recorded_events": [
+      {
+        "line": 7,
+        "event": "PANEL_LOCKED",
+        "at_utc": "2026-11-20T08:50:31.657966+00:00",
+        "sources": 128,
+        "links": 256
+      },
+      {
+        "line": 8,
+        "event": "RESERVED_BEFORE_DISPATCH",
+        "at_utc": "2026-11-20T08:50:31.659958+00:00",
+        "sequence": 4,
+        "block": "INPUT_calibrators"
+      },
+      {
+        "line": 9,
+        "event": "RETURN_COMMITTED",
+        "at_utc": "2026-11-20T08:50:31.660403+00:00",
+        "sequence": 4,
+        "block": "INPUT_calibrators"
+      }
+    ]
+  },
+  "single_interior_A1": {
+    "local_version": "v0.1; accepted recovery run_002",
+    "prior_information": "Follow-up path responses already existed; this is a secondary analysis.",
+    "fixed_scope": "GINE q, D, restricted row-uniform, half/full target spans and endpoint-specific primary presentation before this secondary aggregation.",
+    "saved_fields": {
+      "binding_at_utc": "2026-11-20T09:33:51.907062+00:00",
+      "contract_sha256": "8faad703a8079b7b29c6ff2d29e99184b6131e97571056721f22e71fb8f645dd",
+      "registry_sha256": "fbdfeeaa74eff1e04120399fe0a8213941ac89bb6299f30cbc8511f29aa27108",
+      "primary": {
+        "arm": "G",
+        "function": "q",
+        "operation": "D",
+        "reference": "FIT_ROW_UNIFORM",
+        "seed_layer": "MEAN5"
+      },
+      "primary_endpoint_layers": [
+        "Kd",
+        "Ki"
+      ],
+      "midpoint_for_target": {
+        "1": "1/2",
+        "1/2": "1/4"
+      }
+    },
+    "source_ids": [
+      "A1_contract",
+      "A1_registry",
+      "A1_binding",
+      "A1_ledger"
+    ],
+    "field_locators": {
+      "binding_at_utc": "A1_binding#/at_utc",
+      "primary": "A1_registry#/A1/primary",
+      "primary_endpoint_layers": "A1_registry#/A1/primary_endpoint_layers",
+      "midpoint_for_target": "A1_registry#/A1/midpoint_for_target"
+    },
+    "text_locators": {
+      "contract_primary": "A1_contract:31-39",
+      "direct_target_and_cost_boundary": "A1_contract:58-64"
+    },
+    "recorded_events": [
+      {
+        "line": 1,
+        "at_utc": "2026-11-20T09:33:51.948158+00:00",
+        "state": "RESERVED",
+        "phase": "READ_panel_and_references.json"
+      },
+      {
+        "line": 2,
+        "at_utc": "2026-11-20T09:33:51.948652+00:00",
+        "state": "COMPLETED",
+        "phase": "READ_panel_and_references.json"
+      },
+      {
+        "line": 3,
+        "at_utc": "2026-11-20T09:33:51.970619+00:00",
+        "state": "RESERVED",
+        "phase": "READ_source_results.jsonl"
+      },
+      {
+        "line": 4,
+        "at_utc": "2026-11-20T09:33:51.974448+00:00",
+        "state": "COMPLETED",
+        "phase": "READ_source_results.jsonl"
+      },
+      {
+        "line": 5,
+        "at_utc": "2026-11-20T09:33:51.977254+00:00",
+        "state": "RESERVED",
+        "phase": "READ_span_summary.jsonl"
+      },
+      {
+        "line": 6,
+        "at_utc": "2026-11-20T09:33:51.978282+00:00",
+        "state": "COMPLETED",
+        "phase": "READ_span_summary.jsonl"
+      },
+      {
+        "line": 7,
+        "at_utc": "2026-11-20T09:33:52.110713+00:00",
+        "state": "RESERVED",
+        "phase": "PILOT"
+      },
+      {
+        "line": 8,
+        "at_utc": "2026-11-20T09:33:52.132181+00:00",
+        "state": "COMPLETED",
+        "phase": "PILOT"
+      },
+      {
+        "line": 9,
+        "at_utc": "2026-11-20T09:33:52.132679+00:00",
+        "state": "RESERVED",
+        "phase": "MAIN"
+      },
+      {
+        "line": 10,
+        "at_utc": "2026-11-20T09:33:53.436589+00:00",
+        "state": "COMPLETED",
+        "phase": "MAIN"
+      }
+    ],
+    "limit": "Not a choice demonstrated to precede original path-response generation or all earlier observations."
+  },
+  "original_geometric_control": {
+    "local_version": "v0.1; run_001",
+    "prior_information": "Original-panel gradient/hash ranking results were available before the added geometric comparison.",
+    "fixed_scope": "Distance ranking and its queried responses sealed before unified full-candidate scoring.",
+    "source_ids": [
+      "geometry_plan",
+      "geometry_binding",
+      "geometry_ledger"
+    ],
+    "field_locators": {
+      "plan_hash": "geometry_binding#/controls/plan/sha256",
+      "prior_results_binding": "geometry_binding#/prior_artifacts"
+    },
+    "text_locators": {
+      "prior_results": "geometry_plan:3",
+      "distance_rule_and_sealing": "geometry_plan:21-26"
+    },
+    "recorded_events": [
+      {
+        "line": 54,
+        "event": "GEOMETRY_SUBMISSION_SEALED",
+        "time_ns": "1795407449991508000"
+      },
+      {
+        "line": 55,
+        "event": "UNIFIED_SCORE_RESERVED",
+        "time_ns": "1795407449991582000"
+      },
+      {
+        "line": 56,
+        "event": "UNIFIED_SCORE_COMPLETE",
+        "time_ns": "1795407450039255000"
+      }
+    ]
+  },
+  "new_source_ranking": {
+    "local_version": "v0.1; run_001",
+    "prior_information": "Original-panel ranking results were available.",
+    "fixed_scope": "New-panel candidate rules, numerical ranking rules and directional interpretation fixed before new-panel scoring; requested policy responses could be seen before final action seals.",
+    "saved_fields": {
+      "predeclared_directional_readouts": {
+        "primary": "positive Kd geometry minus gradient at both query counts",
+        "secondary": "negative Ki geometry minus gradient at eight checks",
+        "Ki_four_checks": "descriptive"
+      },
+      "unique_targets_before_action_seal": 2766,
+      "additional_targets_after_seal": 2354
+    },
+    "source_ids": [
+      "new_rank_plan",
+      "new_rank_authority",
+      "new_rank_binding",
+      "new_rank_ledger",
+      "new_rank_receipt"
+    ],
+    "field_locators": {
+      "criteria": "new_rank_authority#/predeclared_directional_readouts",
+      "plan_hash": "new_rank_binding#/controls/plan/sha256",
+      "queried_before_action_seal": "new_rank_receipt#/unique_targets_before_action_seal",
+      "remaining_after_seal": "new_rank_receipt#/additional_targets_after_seal"
+    },
+    "text_locators": {
+      "known_prior_results": "new_rank_plan:3",
+      "policy_order": "new_rank_plan:20-27",
+      "criteria": "new_rank_plan:31-40"
+    },
+    "recorded_events": [
+      {
+        "line": 10,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409902264514000",
+        "groups": 2
+      },
+      {
+        "line": 21,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409902382504000",
+        "groups": 30
+      },
+      {
+        "line": 36,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409902641980000",
+        "groups": 32
+      },
+      {
+        "line": 51,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409902899915000",
+        "groups": 32
+      },
+      {
+        "line": 66,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409903159411000",
+        "groups": 32
+      },
+      {
+        "line": 81,
+        "event": "THREE_POLICY_ORDERS_FIXED",
+        "time_ns": "1795409903421357000",
+        "groups": 32
+      },
+      {
+        "line": 88,
+        "event": "ALL_ACTIONS_SEALED",
+        "time_ns": "1795409903426510000"
+      },
+      {
+        "line": 89,
+        "event": "UNIFIED_SCORE_RESERVED",
+        "time_ns": "1795409903426590000"
+      },
+      {
+        "line": 90,
+        "event": "UNIFIED_SCORE_COMPLETE",
+        "time_ns": "1795409903474898000"
+      }
+    ],
+    "limit": "Does not mean all candidate responses were invisible before the action seal."
+  },
+  "numerical_scope_notes": [
+    "F32 score/deletion objects and CPU-F64 response objects remain distinct; output carry is not gradient equivalence.",
+    "The two calibration procedures do not exclude all possible scalar calibrators.",
+    "New cancellation or influence analyses cannot be retrospectively assigned to these prior primary criteria."
+  ],
+  "time_ns_encoding": "Decimal strings preserve the original integer timestamp fields without conversion through a floating-point representation."
+}

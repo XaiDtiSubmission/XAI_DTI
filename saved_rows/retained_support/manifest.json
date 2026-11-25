@@ -1,0 +1,32 @@
+{
+  "scope": "Saved project-derived R02 source-level losses, support and diagnostic outputs for R01 claim checks",
+  "files": [
+    {
+      "path": "saved_rows/retained_support/source_level_g_and_losses.jsonl.gz",
+      "bytes": 16730322,
+      "sha256": "6d2e380a7d2e252db23c25e80acf040646510e705b072c5e2a92b9fd323c317b",
+      "original_bytes": 16730322,
+      "original_sha256": "6d2e380a7d2e252db23c25e80acf040646510e705b072c5e2a92b9fd323c317b",
+      "serialized_lines": 87920,
+      "source_byte_copy": true
+    },
+    {
+      "path": "saved_rows/retained_support/reference_support_ledger.jsonl.gz",
+      "bytes": 3947414,
+      "sha256": "c5b1db2b6b788c49a33d44628fcc87c8e32bb9ad54d00fea463e548bb9dc76f1",
+      "original_bytes": 3947414,
+      "original_sha256": "c5b1db2b6b788c49a33d44628fcc87c8e32bb9ad54d00fea463e548bb9dc76f1",
+      "serialized_lines": 322659,
+      "source_byte_copy": true
+    },
+    {
+      "path": "saved_rows/retained_support/retained_q_diagnostic_per_source.csv.gz",
+      "bytes": 2826921,
+      "sha256": "9b426d0ce0960f10f54a995c4737e65fe2ed146ac9519bcdbc663ffbc95f5949",
+      "original_bytes": 10640798,
+      "original_sha256": "b820f508fc4ce77fd0b22e1435d2f6df5d26b8eaf3655935732645ebd1938d0f",
+      "serialized_lines": 64621,
+      "source_byte_copy": false
+    }
+  ]
+}

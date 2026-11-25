@@ -1,0 +1,13 @@
+panel,endpoint,retained_sources_with_any_support,retained_links_or_candidates,retained_original_32_candidate_task_sources,original_sources,original_operations_or_candidates,direct_source_groups_without_remaining_record,direct_source_groups_need_requalification,links_or_candidates_without_support_under_scenario,retained_links_or_candidates_need_requalification,sources_without_any_remaining_links_or_candidates,sources_with_changed_membership,direct_ranking_source_donor_C_lost,sources_with_original_32_candidate_task_unavailable,sources_with_less_than_8_remaining_candidates,original_label_groups,retained_label_groups
+path_original,Kd,16,32,,16,32,0,0,0,0,0,0,,,,,
+path_original,Ki,15,29,,16,32,1,0,3,0,1,2,,,,,
+path_recheck,Kd,64,128,,64,128,0,0,0,0,0,0,,,,,
+path_recheck,Ki,60,119,,64,128,0,0,9,0,4,5,,,,,
+ranking_original,Kd,16,512,16,16,512,0,0,0,0,0,0,0,0,0,,
+ranking_original,Ki,15,457,14,16,512,1,0,55,0,1,2,55,2,1,,
+ranking_new,Kd,16,512,16,16,512,0,0,0,0,0,0,0,0,0,,
+ranking_new,Ki,16,512,16,16,512,0,0,0,0,0,0,0,0,0,,
+full_O_SRC,Kd,206,8150,,206,8150,0,0,0,0,0,0,,,,,
+full_O_SRC,Ki,1948,264231,,2036,314509,41,0,50278,0,88,113,,,,,
+MODEL_GATE,Kd,,,,,,,,,,,,,,,798,798
+MODEL_GATE,Ki,,,,,,,,,,,,,,,4899,4822

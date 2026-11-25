@@ -1,0 +1,526 @@
+{
+  "table_id": "C05_GAIN_GROUP",
+  "Data_group": "Data S4",
+  "panel": "P_OSRC / 2242 sources,322659 links",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer",
+    "operation_layer",
+    "reference_scheme",
+    "gain_sign"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "S",
+        "G"
+      ],
+      "native_raw_json_tokens": [
+        "\"S\"",
+        "\"G\""
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "17",
+        "29",
+        "43",
+        "71",
+        "101",
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"17\"",
+        "\"29\"",
+        "\"43\"",
+        "\"71\"",
+        "\"101\"",
+        "\"MEAN5\""
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"Kd\"",
+        "\"Ki\"",
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "operation_layer",
+      "definition": "D/P/DP replacement or original saved ALL3_EQUAL aggregate.",
+      "native_values_navigation_only": [
+        "D",
+        "P",
+        "DP",
+        "ALL3_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"D\"",
+        "\"P\"",
+        "\"DP\"",
+        "\"ALL3_EQUAL\""
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "reference_scheme",
+      "definition": "Native full reference in O_SRC; native restricted and renormalized reference in PATH.",
+      "native_values_navigation_only": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "native_raw_json_tokens": [
+        "\"FIT_ROW_UNIFORM\"",
+        "\"FIT_PROTEIN_INPUT_UNIFORM\""
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "gain_sign",
+      "definition": "Original named grouping coordinate; preserve native labels without semantic inference.",
+      "native_values_navigation_only": [
+        1,
+        -1,
+        0
+      ],
+      "native_raw_json_tokens": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "rows_present": 864,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "Skill_conditional",
+    "Skill_contribution",
+    "gain_conditional",
+    "gain_contribution",
+    "source_mass",
+    "class_MPH"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:Skill_conditional",
+      "native_field": "Skill_conditional",
+      "role": "metric",
+      "definition": "Function-self signed net approximation value B minus E; paired/difference fields retain their explicit comparator. No absolute value.",
+      "units": "function-output units",
+      "conditional_scope": "Conditional only when field/parent explicitly says conditional",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 680,
+        "SAVED_NULL": 184
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "field_key": "metric:Skill_contribution",
+      "native_field": "Skill_contribution",
+      "role": "metric",
+      "definition": "Function-self signed net approximation value B minus E; paired/difference fields retain their explicit comparator. No absolute value.",
+      "units": "function-output units",
+      "conditional_scope": "Conditional only when field/parent explicitly says conditional",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:gain_conditional",
+      "native_field": "gain_conditional",
+      "role": "metric",
+      "definition": "Saved anchored-deletion g cell mean or full-denominator contribution, as named. g belongs to bar_qI, not whole-q response Skill.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "Conditional fields use original cell denominator; empty cell retains null",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 680,
+        "SAVED_NULL": 184
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "field_key": "metric:gain_contribution",
+      "native_field": "gain_contribution",
+      "role": "metric",
+      "definition": "Saved anchored-deletion g cell mean or full-denominator contribution, as named. g belongs to bar_qI, not whole-q response Skill.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "Conditional fields use original cell denominator; empty cell retains null",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:source_mass",
+      "native_field": "source_mass",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:class_MPH",
+      "native_field": "class_MPH",
+      "role": "metric",
+      "definition": "Shape [8,3]; rows C0-C7 and columns M (class mass), P (helpful contribution), H (harmful magnitude). Full-domain denominator contributions restricted to the gain-sign group, without division by group source_mass; conditional means are separate.",
+      "units": "M: dimensionless mass; P and H: function-output units",
+      "conditional_scope": "No inferred position labels",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "PRESENT_NONEMPTY_SAVED_VECTOR": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [
+            {
+              "pointer": "",
+              "kind": "array",
+              "length": 8
+            },
+            {
+              "pointer": "/0",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/1",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/2",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/3",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/4",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/5",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/6",
+              "kind": "array",
+              "length": 3
+            },
+            {
+              "pointer": "/7",
+              "kind": "array",
+              "length": 3
+            }
+          ],
+          "scalar_leaf_count": 24,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:conditional_status",
+      "native_field": "conditional_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:source_count",
+      "native_field": "source_count",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360,
+        "SAVED_NULL": 504
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "field_key": "axis:arm",
+      "native_field": "arm",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:seed_layer",
+      "native_field": "seed_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:endpoint_layer",
+      "native_field": "endpoint_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:operation_layer",
+      "native_field": "operation_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:reference_scheme",
+      "native_field": "reference_scheme",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:gain_sign",
+      "native_field": "gain_sign",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 864,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 864
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "1eabad23ea53c79a489a5257a9273073968ad42c8f767e2443e89743a551a7d9",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "confirmed_position_definitions": {
+    "class_MPH": {
+      "field": "class_MPH",
+      "shape": [
+        8,
+        3
+      ],
+      "row_axis": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "column_axis": [
+        "M",
+        "P",
+        "H"
+      ],
+      "normalization": "Full original source-domain denominator contributions, restricted to gain-sign group. No division by group source_mass; conditional group means are separate."
+    }
+  },
+  "data_file": "C05_GAIN_GROUP.jsonl"
+}

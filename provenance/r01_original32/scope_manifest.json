@@ -1,0 +1,198 @@
+{
+  "schema": "dti-r01-bounded-validation/0.1",
+  "authority": "CURRENT_USER_APPROVED_EXECUTION_PLAN_V1_0",
+  "plan": "docs/R01-R03结项执行方案_v1.0_2026-11-25.md",
+  "script": {
+    "path": "scripts/execute_r01_frozen_core_v0_1.py",
+    "sha256": "0448605ddd95e9f6b508cc13838c13c0224eea321fff8eccb0cb87e75ca224fe"
+  },
+  "output_root": "DTI_R01_R03_execution_v0_1/R01/run_001",
+  "target": {
+    "arm": "G",
+    "operation": "D",
+    "lambda": 1,
+    "reference": "FIT_ROW_UNIFORM",
+    "fits": [
+      17,
+      29,
+      43,
+      71,
+      101
+    ],
+    "endpoints": [
+      "Kd",
+      "Ki"
+    ],
+    "functions": [
+      "h1",
+      "q"
+    ]
+  },
+  "asset_ids": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "P006",
+    "P007",
+    "P008",
+    "P009",
+    "P010",
+    "P011",
+    "P012",
+    "P013",
+    "P014",
+    "P015",
+    "N010",
+    "N012",
+    "P033",
+    "P034",
+    "P035"
+  ],
+  "resolved_model_cache_assets": [
+    {
+      "source_id": "formal_017_G.h0_checkpoint",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_controlled_training_v0_1/run_001/formal_017_G/best_epoch_150.pt",
+      "bytes": 2539646,
+      "sha256": "0a01b9f9cef019c7c6fde6e632d4f71dd4027d616eac10c2e68b24082c02cb7e"
+    },
+    {
+      "source_id": "formal_017_G.h1_head",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_lr_robustness_v0_1/run_001/formal_017_G/selected_head.pt",
+      "bytes": 1185421,
+      "sha256": "3e9fe632fafef2c5bbec1bcd27cd53eeb610792c7269e9cdff25f1e9b09b99d4"
+    },
+    {
+      "source_id": "formal_017_G.cache",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_v0_1/run_001/formal_017_G/frozen_representations.npy",
+      "bytes": 233316480,
+      "sha256": "988048db1bd65a22b632be6a9d3f0c6fe10f743a1bb5af4bf38328a180d9ce5e"
+    },
+    {
+      "source_id": "formal_029_G.h0_checkpoint",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_controlled_training_v0_1/run_001/formal_029_G/best_epoch_150.pt",
+      "bytes": 2539646,
+      "sha256": "e1220479e558cc6be81708db413ca49e06877795da65c03bfcca19f6fb570a68"
+    },
+    {
+      "source_id": "formal_029_G.h1_head",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_lr_robustness_v0_1/run_001/formal_029_G/selected_head.pt",
+      "bytes": 1185421,
+      "sha256": "6a72e3508fb090b493df28c08fabcf120cd9e3c50ad1a05776db475322e45e2f"
+    },
+    {
+      "source_id": "formal_029_G.cache",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_v0_1/run_001/formal_029_G/frozen_representations.npy",
+      "bytes": 233316480,
+      "sha256": "456d6157ee6626b9175f8d46a8fb0c25860c14d46fce8fd31173a13641315209"
+    },
+    {
+      "source_id": "formal_043_G.h0_checkpoint",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_controlled_training_v0_1/run_001/formal_043_G/best_epoch_136.pt",
+      "bytes": 2539646,
+      "sha256": "7d677f77bd2e169c013529cd70b05e26b24fa03c3ee252746251d9bbe8df7ae4"
+    },
+    {
+      "source_id": "formal_043_G.h1_head",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_lr_robustness_v0_1/run_001/formal_043_G/selected_head.pt",
+      "bytes": 1185421,
+      "sha256": "2e73dec06d3ab40928a152624fdfccd6f538a7fc6852742bdd3efdb0437b034b"
+    },
+    {
+      "source_id": "formal_043_G.cache",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_v0_1/run_001/formal_043_G/frozen_representations.npy",
+      "bytes": 233316480,
+      "sha256": "63c54a3d9749b2d302cf58969c4ed25af4bd9232559387262f0db1462493c01a"
+    },
+    {
+      "source_id": "formal_071_G.h0_checkpoint",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_controlled_training_v0_1/run_001/formal_071_G/best_epoch_135.pt",
+      "bytes": 2539646,
+      "sha256": "084fa13209283e7ec993a9c6a3ed91f9993f78eab6fef70c10e9ccef864b1af9"
+    },
+    {
+      "source_id": "formal_071_G.h1_head",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_lr_robustness_v0_1/run_001/formal_071_G/selected_head.pt",
+      "bytes": 1185421,
+      "sha256": "5bcc45b47cbd24bca8377f1aed2915bae08509da2c6e8d2085b13098d6625add"
+    },
+    {
+      "source_id": "formal_071_G.cache",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_v0_1/run_001/formal_071_G/frozen_representations.npy",
+      "bytes": 233316480,
+      "sha256": "dbb461b94797b26a4e681a397e846cbcd22c0daca8818a9c72ec4692a5e0e23f"
+    },
+    {
+      "source_id": "formal_101_G.h0_checkpoint",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_controlled_training_v0_1/run_001/formal_101_G/best_epoch_150.pt",
+      "bytes": 2539646,
+      "sha256": "b79f5f4b19a3ec02848706ee8e857ddde3586cb4fb8de177aae02f9c02c48c23"
+    },
+    {
+      "source_id": "formal_101_G.h1_head",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_lr_robustness_v0_1/run_001/formal_101_G/selected_head.pt",
+      "bytes": 1185421,
+      "sha256": "ca6aea966554a929d6b0dfffcc626da3e353601a847291d6dab574c3cc544796"
+    },
+    {
+      "source_id": "formal_101_G.cache",
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI_Bottleneck/results/smiles_gine_bottleneck_h3_v0_1/run_001/formal_101_G/frozen_representations.npy",
+      "bytes": 233316480,
+      "sha256": "31085f4b5e25d01af46efc6401f38932739bd70f9aa81a335a20fc75200ee27a"
+    }
+  ],
+  "AST_reused": [
+    "Lex",
+    "checkpoint",
+    "make_head",
+    "cache"
+  ],
+  "historical_worker_executed": false,
+  "pilot": {
+    "fit": 17,
+    "original_source_indices0": [
+      0,
+      16
+    ],
+    "original_link_indices0": [
+      0,
+      1,
+      32,
+      33
+    ]
+  },
+  "numerical_acceptance": {
+    "new_same_F64_target_replay": "abs(new-saved)<=1e-12+1e-12*sum(abs(new),abs(saved))",
+    "basis": "Original algebra-style comparison; explicitly new target-replay criterion, not an inherited summary threshold.",
+    "chain_AD": "per coordinate abs(chain-AD)<=1e-6+1e-5*max(abs(chain),abs(AD))",
+    "FD_tests": "Not rerun; historical qualification retained at original scope.",
+    "certified_roundoff_or_practical_margin": false
+  },
+  "hard_call_limits": {
+    "checkpoint_decodes": 10,
+    "native_head_forward": 960,
+    "source_input_AD": 320,
+    "direction_dot": 640,
+    "chain_AD_coordinate_checks": 4096
+  },
+  "bounded_decode": {
+    "cache": "Only original 64-link four-corner rows in five own caches; each cache <=224 rows.",
+    "calibration": "Only 10 GINE affine slots / 20 coefficients; other numeric leaves skipped lexically.",
+    "saved_array": "Only P033[case=5..9,link=0..63,operation=0,lambda_index=5,function in {0,3},fields=0..3].",
+    "h0_incidental": "weights_only CPU load decodes full archive; nonfusion storage metadata only, no numeric inspection/application."
+  },
+  "forbidden": [
+    "training",
+    "HPO",
+    "encoder construction/forward",
+    "new input encoding",
+    "calibration fitting",
+    "raw molecule/sequence input",
+    "labels/truth/F32 prediction scores",
+    "new inferential statistics",
+    "unlisted model/case/function/operation/span",
+    "historical output writes",
+    "external publication/upload"
+  ]
+}

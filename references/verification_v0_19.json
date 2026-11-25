@@ -1,0 +1,1071 @@
+{
+  "schema": "dti-bmc-reference-verification/0.19",
+  "date": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "status": "ALL_24_IDENTITIES_AND_OBTAINED_KEY_FIELDS_VERIFIED_WITH_DISCLOSED_LIMITS",
+  "task": "21 inherited references plus three targeted neighbouring primary studies; unified current keys and reusable Vancouver strings.",
+  "files": {
+    "drafts/bmc_bioinformatics_v0_19/references/references_v0_19.json": {
+      "bytes": 75580,
+      "sha256": "e9b1319bba0bf6db52362a239ba773ce39338ed3bdb85f9ab7baa2cc8a10f20d"
+    },
+    "drafts/bmc_bioinformatics_v0_19/references/references_v0_19.bib": {
+      "bytes": 10315,
+      "sha256": "3c8abe7f2b55fe92ca4f53466d8591314b3021b7037a651535a11041fcf41816"
+    },
+    "DTI_submission_handoff_v0_1/reading/manuscript_v0_18.md": {
+      "bytes": 74329,
+      "sha256": "bd3be720bcb56d99223d38e8f5fcfd976c6266ff11a60356766bbd127cb7ed7e"
+    }
+  },
+  "checks": {
+    "item_count": 24,
+    "unique_json_keys": 24,
+    "bib_records": 24,
+    "bib_json_keys_equal": true,
+    "all_vancouver_present": true,
+    "all_human_not_attested": true,
+    "all_complete_full_text_claims_false": true,
+    "bib_balanced_braces": true
+  },
+  "counts": {
+    "references": 24,
+    "inherited": 21,
+    "added": 3,
+    "metadata_only": 1,
+    "abstract_read": 11,
+    "selected_sections_read": 12,
+    "complete_full_text_read": 0,
+    "human_read_attested": 0,
+    "doi_obtained": 14,
+    "doi_not_obtained": 10
+  },
+  "verification_method": "Official conference/journal records and author originals; publisher-deposited Crossref metadata cross-checks for available DOIs. Official BibTeX was fetched as text when the browser could not render its content type. Metadata and selected passages, not unpublished manuscript content, were sent in public queries.",
+  "content_reading_boundary": "Selected-section reading does not imply complete full-text reading. Inherited 2026-11-02 read scopes are preserved separately and not promoted. No novelty certification, complete reference-to-claim semantic audit, retraction clearance or human-read attestation is claimed.",
+  "additions": [
+    {
+      "key": "han2022approximation",
+      "change": "Added official page range 5256-5268.",
+      "sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/17900-/bibtex",
+        "https://api.crossref.org/works/10.52202/068431-0380"
+      ]
+    },
+    {
+      "key": "bhattacharjee2024auditing",
+      "change": "New reference with complete author names, NeurIPS volume 37, pages 18593-18632 and DOI 10.52202/079017-0590.",
+      "sources": [
+        "https://papers.neurips.cc/paper_files/paper/27328-/bibtex"
+      ]
+    },
+    {
+      "key": "3dice2026",
+      "change": "New reference: Liu AZR, Le NQK, Chua MCH; Bioinformatics 42(7), article btag488, 2026.",
+      "sources": [
+        "https://academic.oup.com/bioinformatics/article/42/7/btag488/8723497",
+        "https://api.crossref.org/works/10.1093/bioinformatics/btag488"
+      ]
+    },
+    {
+      "key": "onawole2026framework",
+      "change": "New reference: Onawole AT, Blaskovich MAT, Zuegg J; Journal of Cheminformatics 18(1), article 81, 2026.",
+      "sources": [
+        "https://link.springer.com/article/10.1186/s13321-026-01200-x",
+        "https://api.crossref.org/works/10.1186/s13321-026-01200-x"
+      ]
+    },
+    {
+      "key": "yang2022mgraphdta",
+      "change": "Full displayed author name unchanged. Structured surname and Vancouver string follow both publisher-deposited metadata and PubMed XML: family='Yu-Chian Chen', given='Calvin', rather than an inferred split.",
+      "sources": [
+        "https://api.crossref.org/works/10.1039/D1SC05180F",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=35173947&retmode=xml"
+      ]
+    }
+  ],
+  "retained_year_and_name_policies": [
+    "BindingDB remains journal-issue year 2007 despite publisher online date 2006-12-01.",
+    "GraphDTA remains journal-issue year 2021 despite online publication 2020-10-24.",
+    "Hu uses hu2020strategies only; hu2020pretraining is an inherited alias.",
+    "SensX official journal listing and BibTeX support Nicholas Cogan; PDF display Nick Cogan is recorded without creating a second reference.",
+    "Use article identifiers bbaf554, btag488, e2304406120 and 81 as article identifiers, not fabricated page ranges.",
+    "Vancouver strings show first six authors then et al. when author count exceeds six; full author lists remain in JSON and BibTeX."
+  ],
+  "access_limitations": [
+    {
+      "source": "https://api.crossref.org/works/10.1021/acs.jcim.6c00037",
+      "status": "HTTP_429_NOT_RETRIED",
+      "fallback": "Official ACS indexed primary article, original article archive and PubMed identity metadata."
+    },
+    {
+      "source": "OpenReview forum pages for ICLR/TMLR",
+      "status": "BROWSER_CHALLENGE_NOT_BYPASSED",
+      "fallback": "Official conference programme/paper cover, author original and TMLR journal listing/BibTeX."
+    },
+    {
+      "source": "Several OUP/Nature/ACS/RSC/CVF direct pages",
+      "status": "403_OR_INACCESSIBLE_REDIRECT",
+      "fallback": "Official indexed primary publication passages, author original and publisher-deposited metadata where available."
+    },
+    {
+      "source": "Official NeurIPS BibTeX URLs",
+      "status": "BROWSER_UNSUPPORTED_CONTENT_TYPE",
+      "fallback": "Fetched the same public official BibTeX text using standard-library urllib; no authentication or access control bypass."
+    }
+  ],
+  "null_fields": [
+    {
+      "key": "sundararajan2017axiomatic",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "yeh2019infidelity",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "adebayo2018sanity",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "covert2021removing",
+      "fields": {
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "kang2020decoupling",
+      "fields": {
+        "volume": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "hu2020strategies",
+      "fields": {
+        "volume": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "kumar2025casterdta",
+      "fields": {
+        "pages": "Article identifier supplied in article_number instead of page range."
+      }
+    },
+    {
+      "key": "han2022approximation",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred."
+      }
+    },
+    {
+      "key": "mehrpanah2025tradeoff",
+      "fields": {
+        "volume": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "aggarwal2026sensx",
+      "fields": {
+        "volume": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "shah2024coar",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "bilodeau2024impossibility",
+      "fields": {
+        "pages": "Article identifier supplied in article_number instead of page range."
+      }
+    },
+    {
+      "key": "sotoudeh2019exactline",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "pages": "Not supplied or inapplicable in inspected official publication record; not inferred.",
+        "doi": "No formal publication DOI obtained from inspected primary records; not inferred."
+      }
+    },
+    {
+      "key": "3dice2026",
+      "fields": {
+        "pages": "Article identifier supplied in article_number instead of page range."
+      }
+    },
+    {
+      "key": "onawole2026framework",
+      "fields": {
+        "pages": "Article identifier supplied in article_number instead of page range."
+      }
+    },
+    {
+      "key": "bhattacharjee2024auditing",
+      "fields": {
+        "issue": "Not supplied or inapplicable in inspected official publication record; not inferred."
+      }
+    }
+  ],
+  "per_reference": [
+    {
+      "key": "liu2007bindingdb",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "METADATA_ONLY",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://academic.oup.com/nar/article/35/suppl_1/D198/1119109?login=false",
+      "support_locator": "Publisher bibliographic header and author list; publisher-deposited DOI metadata.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/nar/article/35/suppl_1/D198/1119109?login=false",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1093/nar/gkl999",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Use 2007 journal issue year; publisher online date is 2006-12-01. Crossref issue token Database maps to publisher suppl_1."
+      ]
+    },
+    {
+      "key": "ozturk2018deepdta",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://academic.oup.com/bioinformatics/article/34/17/i821/5093245",
+      "support_locator": "Publisher indexed bibliographic header and Abstract/Motivation; Crossref author list and pagination.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/bioinformatics/article/34/17/i821/5093245",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1093/bioinformatics/bty593",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Publisher direct retrieval redirected to an unavailable CDN; official indexed article excerpt and publisher-deposited metadata used."
+      ]
+    },
+    {
+      "key": "nguyen2021graphdta",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://academic.oup.com/bioinformatics/article/37/8/1140/5942970",
+      "support_locator": "Publisher indexed header and Abstract/Summary; Crossref author list and pagination.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/bioinformatics/article/37/8/1140/5942970",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1093/bioinformatics/btaa921",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Use 2021 issue year, with online publication 2020-10-24 recorded separately; this is not a year correction."
+      ]
+    },
+    {
+      "key": "bai2023drugban",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/html/2208.02194v2",
+      "support_locator": "Author version v2 bibliographic header and abstract; publisher-deposited journal fields.",
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/s42256-022-00605-1",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/html/2208.02194v2",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "ABSTRACT_READ"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1038/s42256-022-00605-1",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Formal journal citation is 2023; author v2 read version is dated 2023-01-19. Prior selected-section reading is preserved separately."
+      ]
+    },
+    {
+      "key": "sundararajan2017axiomatic",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "pages"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.mlr.press/v70/sundararajan17a.html",
+      "support_locator": "Official PMLR bibliographic header, abstract and BibTeX.",
+      "sources": [
+        {
+          "url": "https://proceedings.mlr.press/v70/sundararajan17a.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "yeh2019infidelity",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.neurips.cc/paper/2019/hash/a7471fdc77b3435276507cc8f2dc2569-Abstract.html",
+      "support_locator": "Official abstract and paper Definition 2.1, Section 2 perturbation cases, Section 3 sensitivity distinction.",
+      "sources": [
+        {
+          "url": "https://proceedings.neurips.cc/paper/2019/hash/a7471fdc77b3435276507cc8f2dc2569-Abstract.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/a7471fdc77b3435276507cc8f2dc2569-Bibtex.bib",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Official BibTeX leaves pages empty; no page range or DOI inferred."
+      ]
+    },
+    {
+      "key": "adebayo2018sanity",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.neurips.cc/paper/2018/hash/294a8ed24b1ad22ec2e7efea049b8737-Abstract.html",
+      "support_locator": "Official author list, venue/year, abstract and BibTeX.",
+      "sources": [
+        {
+          "url": "https://proceedings.neurips.cc/paper/2018/hash/294a8ed24b1ad22ec2e7efea049b8737-Abstract.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2018/file/294a8ed24b1ad22ec2e7efea049b8737-Bibtex.bib",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Official BibTeX leaves pages empty; no page range or DOI inferred."
+      ]
+    },
+    {
+      "key": "covert2021removing",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://www.jmlr.org/papers/v22/20-1316.html",
+      "support_locator": "Official JMLR bibliographic line 22(209):1-90 and abstract; three framework dimensions.",
+      "sources": [
+        {
+          "url": "https://www.jmlr.org/papers/v22/20-1316.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        }
+      ],
+      "notes": [
+        "209 is JMLR's article identifier, represented as number in its citation style. No DOI obtained."
+      ]
+    },
+    {
+      "key": "ortigossa2025texplainer",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/html/2404.16495v3",
+      "support_locator": "Author v3 Section 3 and 3.1 first-order Taylor/additive explanation and Section 3.2 computational aspects; publisher-deposited IEEE metadata.",
+      "sources": [
+        {
+          "url": "https://ieeexplore.ieee.org/document/10979702/",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/html/2404.16495v3",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1109/MIS.2025.3564330",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Formal journal fields verified through publisher-deposited Crossref record. IEEE direct access was not relied on for full-text reading; author v3 is the read version."
+      ]
+    },
+    {
+      "key": "kang2020decoupling",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/abs/1910.09217",
+      "support_locator": "Author abstract record with ICLR 2020 journal reference; official ICLR/OpenReview paper cover and abstract.",
+      "sources": [
+        {
+          "url": "https://openreview.net/forum?id=r1gRTCVFvB",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/abs/1910.09217",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "ABSTRACT_READ"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=r1gRTCVFvB",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "OpenReview forum challenge not bypassed. No formal DOI, volume, issue or page range obtained."
+      ]
+    },
+    {
+      "key": "hu2020strategies",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/html/1905.12265v3",
+      "support_locator": "Author v3 Appendix A edge-feature modifications to GIN; official ICLR 2020 programme and OpenReview paper cover.",
+      "sources": [
+        {
+          "url": "https://openreview.net/forum?id=HJlWWJSFDH",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/html/1905.12265v3",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        },
+        {
+          "url": "https://iclr.cc/virtual_2020/calendar.html",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Only current key hu2020strategies retained; historical hu2020pretraining is an alias, not a second reference. No pretraining of this manuscript's pipelines is inferred."
+      ]
+    },
+    {
+      "key": "yang2022mgraphdta",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8768884/",
+      "support_locator": "Primary article indexed abstract and Section 3.5 Grad-AAM visual explanation/structural alerts; publisher-deposited metadata.",
+      "sources": [
+        {
+          "url": "https://pubs.rsc.org/en-us/content/articlehtml/2022/sc/d1sc05180f",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8768884/",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1039/D1SC05180F",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=35173947&retmode=xml",
+          "role": "PRIMARY_ARTICLE_AUTHOR_NAME_METADATA",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "RSC direct page returned 403; indexed primary-article passages and publisher-deposited metadata used.",
+        "Publisher-deposited Crossref metadata and PubMed XML both split the last author as family='Yu-Chian Chen', given='Calvin'. The full displayed name is unchanged; structured/Vancouver/BibTeX names follow that source split rather than guessing from the last word."
+      ]
+    },
+    {
+      "key": "kumar2025casterdta",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "article_number",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://academic.oup.com/bib/article/26/5/bbaf554/8303310",
+      "support_locator": "Primary article BioLIP binding residue assessment and Interpretability analyses/PharmGKB mutation comparisons.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/bib/article/26/5/bbaf554/8303310",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1093/bib/bbaf554",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "bbaf554 is an article identifier, not a page range. Formal issue year is 2025."
+      ]
+    },
+    {
+      "key": "mahindran2026atoms",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13126640/",
+      "support_locator": "ACS indexed bibliographic header/abstract and original-article methods on four attribution methods, atom IoU and structural contact assessment.",
+      "sources": [
+        {
+          "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.6c00037",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13126640/",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41985080/",
+          "role": "PRIMARY_ARTICLE_IDENTITY_INDEX",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Crossref request returned HTTP429 and was not retried. ACS primary indexed article plus PubMed identity record used; direct ACS 403 and PMC challenge were not bypassed."
+      ]
+    },
+    {
+      "key": "han2022approximation",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/22b111819c74453837899689166c4cf9-Abstract-Conference.html",
+      "support_locator": "Official abstract and paper local function approximation framework/neighbourhood and loss distinction.",
+      "sources": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/22b111819c74453837899689166c4cf9-Abstract-Conference.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/17900-/bibtex",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.52202/068431-0380",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Page range 5256-5268 added from official BibTeX and matching publisher-deposited DOI record."
+      ]
+    },
+    {
+      "key": "muschalik2022modelchange",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://link.springer.com/article/10.1007/s13218-022-00766-6",
+      "support_locator": "Publisher header, author list, abstract and publisher-deposited volume/issue/pages.",
+      "sources": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s13218-022-00766-6",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1007/s13218-022-00766-6",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Model change is investigated through adapted permutation feature importance in online learning; not a finite response gradient audit."
+      ]
+    },
+    {
+      "key": "mehrpanah2025tradeoff",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "pages"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/html/2508.10490",
+      "support_locator": "Official CVF indexed paper metadata and author original Sections 1 and 4 on spectral complexity and explanation gap.",
+      "sources": [
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Mehrpanah_On_the_Complexity-Faithfulness_Trade-off_of_Gradient-Based_Explanations_ICCV_2025_paper.pdf",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/html/2508.10490",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        }
+      ],
+      "notes": [
+        "CVF direct retrieval returned 403; primary indexed paper and author original used. No formal publication DOI obtained; arXiv DOI not substituted for a conference DOI."
+      ]
+    },
+    {
+      "key": "aggarwal2026sensx",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://openreview.net/pdf/bfa1196ddb5370e421a084e987e8c48fa2d57d53.pdf",
+      "support_locator": "TMLR official accepted-paper listing and official BibTeX; indexed original PDF abstract on local Morris-style sensitivity attribution.",
+      "sources": [
+        {
+          "url": "https://openreview.net/forum?id=dKzReyfUeW",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://openreview.net/pdf/bfa1196ddb5370e421a084e987e8c48fa2d57d53.pdf",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "ABSTRACT_READ"
+        },
+        {
+          "url": "https://jmlr.org/tmlr/papers/bib/dKzReyfUeW.bib",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        },
+        {
+          "url": "https://jmlr.org/tmlr/papers/",
+          "role": "OFFICIAL_JOURNAL_ACCEPTED_PAPER_LIST",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Official TMLR list says May 2026; indexed PDF header says 04/2026. Year 2026 is consistent. Official BibTeX supplies no volume, issue, pages or DOI; these remain null. Nicholas Cogan retained from official list/BibTeX; PDF uses Nick Cogan."
+      ]
+    },
+    {
+      "key": "shah2024coar",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "pages"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.mlr.press/v235/shah24a.html",
+      "support_locator": "Official PMLR author list, bibliographic header, abstract and BibTeX.",
+      "sources": [
+        {
+          "url": "https://proceedings.mlr.press/v235/shah24a.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "bilodeau2024impossibility",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "article_number",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://arxiv.org/html/2212.11870",
+      "support_locator": "Author original Introduction and Sections 2-3 assumptions/complete and linear attribution limits; publisher-deposited PNAS metadata.",
+      "sources": [
+        {
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2304406120",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://arxiv.org/html/2212.11870",
+          "role": "AUTHOR_ORIGINAL_OR_ARCHIVED_PRIMARY_ARTICLE",
+          "access_scope": "SELECTED_SECTIONS_READ"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1073/pnas.2304406120",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "The theorem is conditional on specified attribution/model assumptions; not a claim that every gradient or XAI method is unusable."
+      ]
+    },
+    {
+      "key": "sotoudeh2019exactline",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume"
+      ],
+      "reading_scope": "ABSTRACT_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://proceedings.neurips.cc/paper/2019/hash/908075ea2c025c335f4865f7db427062-Abstract.html",
+      "support_locator": "Official author list, venue/year, abstract and BibTeX; ExactLine partitions piecewise-linear restrictions.",
+      "sources": [
+        {
+          "url": "https://proceedings.neurips.cc/paper/2019/hash/908075ea2c025c335f4865f7db427062-Abstract.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/908075ea2c025c335f4865f7db427062-Bibtex.bib",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Official BibTeX leaves pages empty; no page range or DOI inferred."
+      ]
+    },
+    {
+      "key": "3dice2026",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "article_number",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://academic.oup.com/bioinformatics/article/42/7/btag488/8723497",
+      "support_locator": "Publisher header, abstract and faithfulness/deletion-test methods and results: attention-ordered versus random masking, logit-margin changes and AUDC.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/bioinformatics/article/42/7/btag488/8723497",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1093/bioinformatics/btag488",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Published 2026-07-02. btag488 is an article identifier. Direct publisher retrieval was intermittent; indexed primary methods/results and publisher-deposited metadata corroborate the record."
+      ]
+    },
+    {
+      "key": "onawole2026framework",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "issue",
+        "article_number",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://link.springer.com/article/10.1186/s13321-026-01200-x",
+      "support_locator": "Publisher abstract, Introduction and Methods/XAI evaluation framework: scaffold recognition, activity-cliff context sensitivity, prediction-explanation consistency, model robustness.",
+      "sources": [
+        {
+          "url": "https://link.springer.com/article/10.1186/s13321-026-01200-x",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1186/s13321-026-01200-x",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Published 2026-05-04. Read relevant full-text sections, not the entire paper. Antimicrobial activity classification, not DTA finite-response gradient evaluation."
+      ]
+    },
+    {
+      "key": "bhattacharjee2024auditing",
+      "verification_status": "EXISTENCE_AND_KEY_BIBLIOGRAPHIC_FIELDS_VERIFIED",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "venue",
+        "volume",
+        "pages",
+        "doi"
+      ],
+      "reading_scope": "SELECTED_SECTIONS_READ",
+      "full_text_read": false,
+      "human_read": "NOT_ATTESTED",
+      "read_version_url": "https://papers.neurips.cc/paper_files/paper/2024/hash/21315abf210cef71317e887e9cda78b3-Abstract-Conference.html",
+      "support_locator": "Official paper Sections 2-5: local loss/locality, auditing framework, query-complexity upper/lower bounds and locality examples.",
+      "sources": [
+        {
+          "url": "https://papers.neurips.cc/paper_files/paper/2024/hash/21315abf210cef71317e887e9cda78b3-Abstract-Conference.html",
+          "role": "PRIMARY_PUBLICATION_RECORD",
+          "access_scope": "BIBLIOGRAPHIC_METADATA_AND_SCOPED_PRIMARY_CONTENT"
+        },
+        {
+          "url": "https://papers.neurips.cc/paper_files/paper/27328-/bibtex",
+          "role": "OFFICIAL_BIBTEX_OR_CONFERENCE_PROGRAMME",
+          "access_scope": "METADATA_ONLY"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.52202/079017-0590",
+          "role": "PUBLISHER_DEPOSITED_METADATA_CROSS_CHECK",
+          "access_scope": "METADATA_ONLY"
+        }
+      ],
+      "notes": [
+        "Preserve family-name particle von Luxburg. Formal DOI/page range verified from official BibTeX and publisher-deposited DOI metadata."
+      ]
+    }
+  ],
+  "privacy_and_execution": {
+    "private_manuscript_uploaded": false,
+    "full_text_payload_uploaded": false,
+    "research_payloads_opened": 0,
+    "model_decodes": 0,
+    "new_scientific_calls": 0,
+    "zotero_modified": false
+  },
+  "output_policy": "No main manuscript or supplement changed by this task. Root assigns Vancouver numbers by main-text first appearance and applies the same numbering to the supplement."
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS_STANDARD_LIBRARY_INDEPENDENT_ARITHMETIC_AND_SEAL_REVIEW",
+  "new_model_or_AD_calls": 0,
+  "link_function_rows_checked": 640,
+  "slots_checked": 20,
+  "slot_scalar_comparisons": 60,
+  "new_link_saved_array_scalar_comparisons": 2560,
+  "max_absolute_link_residuals": {
+    "A": 0,
+    "r": 0,
+    "epsilon": 0,
+    "Skill": 0
+  },
+  "max_absolute_slot_residuals": {
+    "E": 2.220446049250313e-16,
+    "B": 2.220446049250313e-16,
+    "Skill": 3.3306690738754696e-16
+  },
+  "independent_weighted_reduction": "math.fsum; same 16 sources x two fixed 0.5 donors per endpoint",
+  "historical_control_chain": [
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/binding.json",
+      "sha256": "76c48b2716870f235e52570946c2189e1ca3ec86f80570f794c64321e5b475e4",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/inputs_receipt.json",
+      "sha256": "e0f2b81db6da051c4dc8dd41a723d7de23c52b0a770f0a9480abc7cf709525db",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/panel_seal.json",
+      "sha256": "981ebf780d26a367d39d3f06a86beaf196f9a5f124941ad4bcfec46ca507694c",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/panel_composition.json",
+      "sha256": "3d49a84496c0754962ef2191e98489919f461c33a508646d576afadd291338f2",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/pilot_receipt.json",
+      "sha256": "2d6490593f06979350e23115d37321ef141d6fddbc9fcfe44cdcfee3eb057f58",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/dedup_and_carry_receipt.json",
+      "sha256": "db56211c6c2f9c538a86db0bb6e9b326f58800686d96bb83906090a3fff8dd93",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/execution_receipt.json",
+      "sha256": "4cc15f09754defc48804e7418f5176c3b239c22f9e30e647a10e80a039cefcff",
+      "bound_by": "historical run_seal.artifacts"
+    },
+    {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/evidence_v1_0/workspace/output/manuscript_path_recheck_v0_1/run_001/closing_receipt.json",
+      "sha256": "2a4d5914002e8225d3fd92aef31f9ba9fd4998733c4cdf8ca23b703a8bb7ced1",
+      "bound_by": "historical run_seal.artifacts"
+    }
+  ],
+  "historical_panel_P036_sha256": "931a5d9caa75515ec78e6fc4d580cfa60447cbda22c228582203a6b5223efcae",
+  "historical_current_five_case_model_cache_calibration_identity_match": true,
+  "historical_python_binary_sha256": "UNKNOWN; no retrospective inference",
+  "R01_status": {
+    "core_frozen_function_validation": "PASS_FOR_EXPLICIT_TARGET",
+    "original_32_new_run": "20_OF_20_PASS",
+    "followup_128": "20_OF_20_ACCEPTED_HISTORICAL_RUN_REUSED",
+    "other_retained_claims": "SAVED_MATERIAL_MAPPING_ONLY; no new whole-paper verification",
+    "rights_and_editorial_access": "PENDING_AUTHOR_OR_HOLDER_FACTS",
+    "all_R01_closed": false
+  },
+  "historical_output_write_scope": "New executor contains no historical output write path; AST extracts only specified helper definitions."
+}

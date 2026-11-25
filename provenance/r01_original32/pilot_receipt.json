@@ -1,0 +1,81 @@
+{
+  "status": "PASS_BEFORE_FULL_PANEL",
+  "case_id": "formal_017_G",
+  "source_indices0": [
+    0,
+    16
+  ],
+  "link_indices0": [
+    0,
+    1,
+    32,
+    33
+  ],
+  "endpoints": [
+    "Kd",
+    "Ki"
+  ],
+  "functions": [
+    "h1",
+    "q"
+  ],
+  "target_link_function_rows": 8,
+  "chain_AD_checks": [
+    {
+      "case_id": "formal_017_G",
+      "head": "h0",
+      "endpoint": "Kd",
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "failed_coordinates": 0,
+      "source_zero_preactivations": 0
+    },
+    {
+      "case_id": "formal_017_G",
+      "head": "h1",
+      "endpoint": "Kd",
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "failed_coordinates": 0,
+      "source_zero_preactivations": 0
+    },
+    {
+      "case_id": "formal_017_G",
+      "head": "h0",
+      "endpoint": "Ki",
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "failed_coordinates": 0,
+      "source_zero_preactivations": 0
+    },
+    {
+      "case_id": "formal_017_G",
+      "head": "h1",
+      "endpoint": "Ki",
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "failed_coordinates": 0,
+      "source_zero_preactivations": 0
+    }
+  ],
+  "corresponding_original_span_values_match": true,
+  "calls_at_release": {
+    "authenticated_asset_reads": 22,
+    "authenticated_asset_bytes": 248875482,
+    "affine_slots_decoded": 10,
+    "affine_coefficients_decoded": 20,
+    "cache_rows": 196,
+    "cache_coordinates": 200704,
+    "checkpoint_decode": 2,
+    "checkpoint_storages": 63,
+    "checkpoint_storage_bytes": 3705636,
+    "nonfusion_incidental_bytes": 1341204,
+    "head_parameters": 591108,
+    "source_input_AD": 4,
+    "chain_AD_coordinate_checks": 4096,
+    "native_head_forward": 12,
+    "direction_dot": 8,
+    "native_point_reuses": 4
+  },
+  "scope": "D lambda=1 only; no new FD qualification or other spans"
+}

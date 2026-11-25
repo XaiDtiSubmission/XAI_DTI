@@ -1,0 +1,795 @@
+{
+  "table_id": "C07_CURVE",
+  "Data_group": "Data S6",
+  "panel": "P_PATH / 32 sources,64 links",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer",
+    "operation_layer",
+    "reference_scheme",
+    "function_id",
+    "k"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "S",
+        "G"
+      ],
+      "native_raw_json_tokens": [
+        "\"S\"",
+        "\"G\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "17",
+        "29",
+        "43",
+        "71",
+        "101",
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"17\"",
+        "\"29\"",
+        "\"43\"",
+        "\"71\"",
+        "\"101\"",
+        "\"MEAN5\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"Kd\"",
+        "\"Ki\"",
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "operation_layer",
+      "definition": "D/P/DP replacement or original saved ALL3_EQUAL aggregate.",
+      "native_values_navigation_only": [
+        "D",
+        "P",
+        "DP",
+        "ALL3_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"D\"",
+        "\"P\"",
+        "\"DP\"",
+        "\"ALL3_EQUAL\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "reference_scheme",
+      "definition": "Native full reference in O_SRC; native restricted and renormalized reference in PATH.",
+      "native_values_navigation_only": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "native_raw_json_tokens": [
+        "\"FIT_ROW_UNIFORM\"",
+        "\"FIT_PROTEIN_INPUT_UNIFORM\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "function_id",
+      "definition": "Named mathematical function. Whole q=h1-h_aff differs from bar_qI.",
+      "native_values_navigation_only": [
+        "q",
+        "h0",
+        "h_aff",
+        "h1"
+      ],
+      "native_raw_json_tokens": [
+        "\"q\"",
+        "\"h0\"",
+        "\"h_aff\"",
+        "\"h1\""
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "k",
+      "definition": "Original named grouping coordinate; preserve native labels without semantic inference.",
+      "native_values_navigation_only": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "native_raw_json_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "rows_present": 38016,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "D_abs",
+    "D_align_conditional",
+    "D_align_numerator",
+    "abs_m",
+    "exact_zero_mass",
+    "m",
+    "qualification_mass",
+    "reversal_fraction_conditional",
+    "reversal_numerator",
+    "source_zero_mass",
+    "t",
+    "u_conditional",
+    "u_numerator"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:D_abs",
+      "native_field": "D_abs",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:D_align_conditional",
+      "native_field": "D_align_conditional",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:D_align_numerator",
+      "native_field": "D_align_numerator",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:abs_m",
+      "native_field": "abs_m",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:exact_zero_mass",
+      "native_field": "exact_zero_mass",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:m",
+      "native_field": "m",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:qualification_mass",
+      "native_field": "qualification_mass",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:reversal_fraction_conditional",
+      "native_field": "reversal_fraction_conditional",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:reversal_numerator",
+      "native_field": "reversal_numerator",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:source_zero_mass",
+      "native_field": "source_zero_mass",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:t",
+      "native_field": "t",
+      "role": "metric",
+      "definition": "Original sampled path coordinate.",
+      "units": "fraction of fixed operation displacement",
+      "conditional_scope": "33 saved grid nodes; no interpolation",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:u_conditional",
+      "native_field": "u_conditional",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:u_numerator",
+      "native_field": "u_numerator",
+      "role": "metric",
+      "definition": "Saved signed/magnitude/source-aligned projection quantity; native field distinguishes conditional mean and numerator.",
+      "units": "function-output units per displacement fraction",
+      "conditional_scope": "Source-nonzero qualification and source-zero mass remain separate",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:denominator_map",
+      "native_field": "denominator_map",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "PRESENT_NONEMPTY_SAVED_VECTOR": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [
+            {
+              "pointer": "",
+              "kind": "object",
+              "keys": [
+                "Kd_sources",
+                "Ki_sources",
+                "links_per_endpoint",
+                "seeds_per_arm"
+              ]
+            }
+          ],
+          "scalar_leaf_count": 4,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:evidence_tier",
+      "native_field": "evidence_tier",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:population_may_differ_across_functions",
+      "native_field": "population_may_differ_across_functions",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_BOOLEAN": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:qualification_status",
+      "native_field": "qualification_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:raw_link_count",
+      "native_field": "raw_link_count",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 15840,
+        "SAVED_NULL": 22176
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:source_denominator",
+      "native_field": "source_denominator",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 15840,
+        "SAVED_NULL": 22176
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "field_key": "axis:arm",
+      "native_field": "arm",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:seed_layer",
+      "native_field": "seed_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:endpoint_layer",
+      "native_field": "endpoint_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:operation_layer",
+      "native_field": "operation_layer",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:reference_scheme",
+      "native_field": "reference_scheme",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:function_id",
+      "native_field": "function_id",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_TEXT": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "axis:k",
+      "native_field": "k",
+      "role": "axis",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 38016,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 38016
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "0d3ec0d7d93c88b47d630e10f2faebc79870483742cf28880b8202235cc419ab",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "data_file": "C07_CURVE.jsonl.gz"
+}

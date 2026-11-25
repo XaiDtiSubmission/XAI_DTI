@@ -1,0 +1,69 @@
+{
+  "executable": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python",
+  "versions": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "torch": "2.13.0",
+    "psutil": "5.9.0"
+  },
+  "binary_checks": [
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python",
+      "bytes": 6917232,
+      "sha256": "9c703cf0cd964af9657144ccf8d3fb105db799e07321317b936ec0b45869324b"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/_C.cpython-312-darwin.so",
+      "bytes": 49944,
+      "sha256": "aee3839e4c52bd074fc78b026e3eee6e4f7cfd714ed571fae3483f30f67d5c3c"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/core/_multiarray_umath.cpython-312-darwin.so",
+      "bytes": 3180800,
+      "sha256": "a51276f3aab2d91051aa0ced3ddaa39a776ae60132ca4c07a91b82a8b7a92ea7"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/psutil/_psutil_osx.cpython-312-darwin.so",
+      "bytes": 76320,
+      "sha256": "2bd9ed50a4103ef4f678b5cc6d2cb6c9a2c56ada22ea7865144431ffeb0d8e8e"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_cpu.dylib",
+      "bytes": 337911904,
+      "sha256": "f1584a65a2a09b5ddbe90a4e195ba824087b430a9f21cb1df9b8894177b99987"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libc10.dylib",
+      "bytes": 1102704,
+      "sha256": "5db5749503cd842562a666510a72fa127dedd3a0046784760fdaeee9c562f23b"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_python.dylib",
+      "bytes": 29909256,
+      "sha256": "86d1a65fcc2bd9efac227098707c63e493b5cb2f954b475790b83ffaac1aa12c"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch.dylib",
+      "bytes": 16752,
+      "sha256": "c9d126afd218772f9cd17387f79eaf117cdf15d89d5a0b6231c03c9a43ace910"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libomp.dylib",
+      "bytes": 856096,
+      "sha256": "6256bee09e93c28d71c65711cc69224d69994c6965648b628b70a22772fe98d4"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+      "bytes": 23198400,
+      "sha256": "dde2b735d01caa531885115ea853b5a4172b935167b95a1acb2a10243e0d97e7"
+    }
+  ],
+  "CPU_only": true,
+  "float64": true,
+  "batch": 1,
+  "threads": 1,
+  "interop_threads": 1,
+  "input_AD_rule": "RELU_ZERO0",
+  "parameters_AD": false,
+  "historical_runtime_receipt_sha256": "2e3f4a85b935da195caac1ae995d623571aaacdc0256689833b6bfe6199ba7a5"
+}

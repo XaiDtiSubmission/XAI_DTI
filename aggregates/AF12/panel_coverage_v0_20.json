@@ -1,0 +1,195 @@
+{
+  "schema": "dti_panel_coverage_report/0.20",
+  "record_kind": "selected_existing_composition_and_qualification_metadata",
+  "new_identity_counts_computed": false,
+  "source_files": {
+    "original_composition": {
+      "path": "DTI_submission_handoff_v0_1/workspace/inherited/manuscript_handoff_v0_1/snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/panel_composition.json",
+      "bytes": 6902,
+      "sha256": "cbd979cb87054195a5acf9d41855da2899f8902dc53b58da9fbc3bc279650f85"
+    },
+    "followup_composition": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_path_recheck_v0_1/run_001/panel_composition.json",
+      "bytes": 957,
+      "sha256": "3d49a84496c0754962ef2191e98489919f461c33a508646d576afadd291338f2"
+    },
+    "original_candidates": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/A2/fr40_v0_2/01_candidate_metadata/candidate_receipt.json",
+      "bytes": 10669,
+      "sha256": "2ac9e3b4b96f57e897b4d0785779716adea62c429e3d0d6537b6165b6d424d0c"
+    },
+    "new_candidates": {
+      "path": "DTI_submission_handoff_v0_1/workspace/output/manuscript_midpoint_query_v0_1/FR40_new_source_panel_v0_1/preparation_v0_1/candidate_receipt.json",
+      "bytes": 10803,
+      "sha256": "3e3e3429f31f2082a9e37222dd2ef0f171c5ee67fcfd8c11370400d8414a868a"
+    }
+  },
+  "path_rows": [
+    {
+      "source_id": "original_composition",
+      "endpoint": "Kd",
+      "values": {
+        "selected_sources": 16,
+        "SMILES_input_keys": 16,
+        "sequence_input_keys": 12,
+        "distinct_FIT_donor_rows": 32,
+        "maximum_donor_row_use": 1,
+        "reference_design_different": 1
+      },
+      "json_pointers": {
+        "selected_sources": "/endpoint/Kd/N_selected_actual",
+        "SMILES_input_keys": "/endpoint/Kd/source_input_identities/smiles_sha256/unique",
+        "sequence_input_keys": "/endpoint/Kd/source_input_identities/target_sequence_key/unique",
+        "distinct_FIT_donor_rows": "/endpoint/Kd/donor_FIT_unique_rows",
+        "maximum_donor_row_use": "/endpoint/Kd/donor_FIT_max_reuse",
+        "reference_design_different": "/endpoint/Kd/reference_design_source_counts/DESIGN_DIFFERENT"
+      }
+    },
+    {
+      "source_id": "original_composition",
+      "endpoint": "Ki",
+      "values": {
+        "selected_sources": 16,
+        "SMILES_input_keys": 15,
+        "sequence_input_keys": 16,
+        "distinct_FIT_donor_rows": 32,
+        "maximum_donor_row_use": 1,
+        "reference_design_different": 5
+      },
+      "json_pointers": {
+        "selected_sources": "/endpoint/Ki/N_selected_actual",
+        "SMILES_input_keys": "/endpoint/Ki/source_input_identities/smiles_sha256/unique",
+        "sequence_input_keys": "/endpoint/Ki/source_input_identities/target_sequence_key/unique",
+        "distinct_FIT_donor_rows": "/endpoint/Ki/donor_FIT_unique_rows",
+        "maximum_donor_row_use": "/endpoint/Ki/donor_FIT_max_reuse",
+        "reference_design_different": "/endpoint/Ki/reference_design_source_counts/DESIGN_DIFFERENT"
+      }
+    },
+    {
+      "source_id": "followup_composition",
+      "endpoint": "Kd",
+      "values": {
+        "selected_sources": 64,
+        "SMILES_input_keys": 62,
+        "sequence_input_keys": 44,
+        "distinct_FIT_donor_rows": 126,
+        "maximum_donor_row_use": 2,
+        "reference_design_different": 11
+      },
+      "json_pointers": {
+        "selected_sources": "/endpoint/Kd/selected_sources",
+        "SMILES_input_keys": "/endpoint/Kd/input_identity_counts/smiles_sha256/unique",
+        "sequence_input_keys": "/endpoint/Kd/input_identity_counts/target_sequence_key/unique",
+        "distinct_FIT_donor_rows": "/endpoint/Kd/unique_FIT_donor_rows",
+        "maximum_donor_row_use": "/endpoint/Kd/max_donor_row_reuse",
+        "reference_design_different": "/endpoint/Kd/reference_design_different"
+      }
+    },
+    {
+      "source_id": "followup_composition",
+      "endpoint": "Ki",
+      "values": {
+        "selected_sources": 64,
+        "SMILES_input_keys": 64,
+        "sequence_input_keys": 53,
+        "distinct_FIT_donor_rows": 128,
+        "maximum_donor_row_use": 1,
+        "reference_design_different": 10
+      },
+      "json_pointers": {
+        "selected_sources": "/endpoint/Ki/selected_sources",
+        "SMILES_input_keys": "/endpoint/Ki/input_identity_counts/smiles_sha256/unique",
+        "sequence_input_keys": "/endpoint/Ki/input_identity_counts/target_sequence_key/unique",
+        "distinct_FIT_donor_rows": "/endpoint/Ki/unique_FIT_donor_rows",
+        "maximum_donor_row_use": "/endpoint/Ki/max_donor_row_reuse",
+        "reference_design_different": "/endpoint/Ki/reference_design_different"
+      }
+    }
+  ],
+  "ranking_rows": [
+    {
+      "source_id": "original_candidates",
+      "endpoint": "Kd",
+      "values": {
+        "eligible_before": 97,
+        "eligible_after": 62,
+        "selected_sources": 16
+      },
+      "json_pointers": {
+        "eligible_before": "/by_endpoint/Kd/all/sources_with_at_least_32_distinct_C",
+        "eligible_after": "/by_endpoint/Kd/after_exclusions/sources_with_at_least_32_distinct_C",
+        "selected_sources": "/by_endpoint/Kd/frozen_sources"
+      }
+    },
+    {
+      "source_id": "original_candidates",
+      "endpoint": "Ki",
+      "values": {
+        "eligible_before": 1483,
+        "eligible_after": 1427,
+        "selected_sources": 16
+      },
+      "json_pointers": {
+        "eligible_before": "/by_endpoint/Ki/all/sources_with_at_least_32_distinct_C",
+        "eligible_after": "/by_endpoint/Ki/after_exclusions/sources_with_at_least_32_distinct_C",
+        "selected_sources": "/by_endpoint/Ki/frozen_sources"
+      }
+    },
+    {
+      "source_id": "new_candidates",
+      "endpoint": "Kd",
+      "values": {
+        "eligible_before": 97,
+        "eligible_after": 46,
+        "selected_sources": 16
+      },
+      "json_pointers": {
+        "eligible_before": "/by_endpoint/Kd/all/sources_with_at_least_32_distinct_C",
+        "eligible_after": "/by_endpoint/Kd/after_exclusions/sources_with_at_least_32_distinct_C",
+        "selected_sources": "/by_endpoint/Kd/frozen_sources"
+      }
+    },
+    {
+      "source_id": "new_candidates",
+      "endpoint": "Ki",
+      "values": {
+        "eligible_before": 1483,
+        "eligible_after": 1411,
+        "selected_sources": 16
+      },
+      "json_pointers": {
+        "eligible_before": "/by_endpoint/Ki/all/sources_with_at_least_32_distinct_C",
+        "eligible_after": "/by_endpoint/Ki/after_exclusions/sources_with_at_least_32_distinct_C",
+        "selected_sources": "/by_endpoint/Ki/frozen_sources"
+      }
+    }
+  ],
+  "ranking_exclusions": {
+    "original": {
+      "source_id": "original_candidates",
+      "json_pointer": "/combined_excluded_pair_groups",
+      "value": 160
+    },
+    "new_source": {
+      "source_id": "new_candidates",
+      "json_pointer": "/combined_excluded_pair_groups",
+      "value": 192
+    },
+    "new_source_selected_pair_group_overlaps": {
+      "source_id": "new_candidates",
+      "json_pointer": "/selected_pair_group_overlaps",
+      "value": {
+        "original_path": 0,
+        "followup_path": 0,
+        "prior_fixed_query_replay": 0
+      }
+    }
+  },
+  "scope_notes": [
+    "All displayed values copy existing scalar metadata fields. No row_counts, input hashes or source/donor member IDs are included.",
+    "Source SMILES and sequence counts refer to saved input keys, not independent biological replicates.",
+    "FIT donor-row identity does not establish distinct donor chemical identity.",
+    "Counts remain endpoint-specific; no cross-endpoint or cross-panel distinct-entity total is inferred.",
+    "Selected source pair groups are separated; compounds, protein inputs and FIT donors may recur."
+  ]
+}

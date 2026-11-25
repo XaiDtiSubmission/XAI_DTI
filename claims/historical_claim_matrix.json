@@ -1,0 +1,237 @@
+{
+  "schema": "manuscript-claim-evidence/0.1",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "statement": "固定G读出更新在全MODEL_GATE上优于两条实际FIT-only标量校准流程。",
+      "scope": "全GATE5697；MAE→端点等权→五seed均值；各case自己的h0/haff/h1d/h1。",
+      "supporting_stages": [
+        "E01"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr10_solver_repair_v0_1/run_001/finite_panel_comparisons.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr10_solver_repair_v0_1/run_001/per_case_endpoint_risks.json"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "两条有限流程不代表所有校准函数",
+        "S较小且有反向",
+        "FIT内拟合及开发暴露保留"
+      ],
+      "section": "Results 1",
+      "figures_or_supplements": [
+        "Fig.2",
+        "Table2",
+        "S3"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C02",
+      "statement": "变化函数q具有锚定非加性幅度，四点分量与参考敏感性均保留。",
+      "scope": "完整O_SRC2242源/322659链接；两参考；M与U的绝对值顺序不同。",
+      "supporting_stages": [
+        "E02"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr20_engineering_recovery_v0_3/run_001/functional_summary.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr20_engineering_recovery_v0_3/run_001/reference_sensitivity.json"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "幅度不是性能收益",
+        "U-M仅描述抵消",
+        "O_SRC不是编码或生物支持证明"
+      ],
+      "section": "Results 2",
+      "figures_or_supplements": [
+        "Fig.2",
+        "S2"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C03",
+      "statement": "指定锚定成分与同域观察风险收益有联系，删减后仍有残余收益。",
+      "scope": "同O_SRC五风险；先合成预测再计算风险；qI删减并非全局加性投影。",
+      "supporting_stages": [
+        "E03"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr30_engineering_recovery_v0_1/run_001/five_function_risks.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr30_engineering_recovery_v0_1/run_001/five_risk_differences.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr30_engineering_recovery_v0_1/run_001/reference_sensitivity.json"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "不跨面板求解释比例",
+        "不证明全部交互必要或充分",
+        "原实用门禁未裁决"
+      ],
+      "section": "Results 2",
+      "figures_or_supplements": [
+        "Fig.2",
+        "Table2",
+        "S3"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C04",
+      "statement": "完整有限操作中G/q一阶近似优于固定置换，却不及零响应基线。",
+      "scope": "完整O_SRC；D/P/DP；主参考MEAN5端点等权；保留S和所有基本函数。",
+      "supporting_stages": [
+        "E04"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/lower_bound_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/paired_comparisons.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/summary.jsonl"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "E_perm>E>B不代表所有XAI",
+        "零响应基线与置换不同",
+        "R仅使用保存字段及缺失状态"
+      ],
+      "section": "Results 3",
+      "figures_or_supplements": [
+        "Fig.3",
+        "S4"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C05",
+      "statement": "方向错误与有害超幅构成损害，源级有益锚定成分与q近似失败可共存。",
+      "scope": "完整O_SRC；g针对bar_qI，Skill针对q；九格含零、边际与分母。",
+      "supporting_stages": [
+        "E05"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_diag_v0_2/run_001/class_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_diag_v0_2/run_001/diagnostic_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_diag_v0_2/run_001/gain_group_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_diag_v0_2/run_001/paired_error_decomposition.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_diag_v0_2/run_001/source_joint_summary.jsonl"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "配对误差账目不是病因分解",
+        "同源连接不是因果或独立检验",
+        "不追认原FR30保存过g"
+      ],
+      "section": "Results 3",
+      "figures_or_supplements": [
+        "Fig.3",
+        "S5"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C06",
+      "statement": "固定小面板的已测小跨度上G/q有正聚合Skill，完整跨度则全部为负。",
+      "scope": "32源/64链接；六跨度全部；受限两参考；非完整O_SRC。",
+      "supporting_stages": [
+        "E06"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/panel_composition.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/span_summary.jsonl"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "不是每条路径成功",
+        "不宣称1/4可靠半径",
+        "不同操作的lambda不是相等物理距离"
+      ],
+      "section": "Results 4",
+      "figures_or_supplements": [
+        "Fig.4",
+        "Table2",
+        "S6"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C07",
+      "statement": "投影幅度与源方向对齐的变化、采样反号和抵消描述跨度失效边界。",
+      "scope": "固定33节点；同路径联合类别；条件分母与零投影保留。",
+      "supporting_stages": [
+        "E06"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/curve_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/path_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/readout_cancellation_summary.jsonl",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/same_path_joint_summary.jsonl"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "反号不是充分分类器",
+        "未采到反号不是连续全路径无反号",
+        "三类抵消不作因果百分比分摊"
+      ],
+      "section": "Results 5",
+      "figures_or_supplements": [
+        "Fig.5",
+        "S7"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    },
+    {
+      "claim_id": "C08",
+      "statement": "经验数值审计和链式检查为已用函数/AD对象提供局部资格记录。",
+      "scope": "FR40 FD120经验匹配、chain40；路径FD7具资格匹配/33不可判、chain40。",
+      "supporting_stages": [
+        "E04",
+        "E06",
+        "E07"
+      ],
+      "exact_data_or_qualification_snapshots": [
+        "snapshots/bottleneck/audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/final_acceptance.json",
+        "snapshots/bottleneck/protocol/smiles_gine_bottleneck_fr40_v0_8/ad_policy.json",
+        "snapshots/bottleneck/protocol/smiles_gine_bottleneck_fr40_v0_8/derivative_qualification.json",
+        "snapshots/bottleneck/protocol/smiles_gine_bottleneck_fr40_v0_8/numerical_policy.json",
+        "snapshots/bottleneck/results/smiles_gine_bottleneck_fr40_path_span_v0_2/run_001/qualification_receipt.json"
+      ],
+      "report_and_seal_lookup": "manifests/stage_authority.json",
+      "required_boundaries": [
+        "不同资格分母不比较通过率",
+        "经验匹配不是严格误差认证",
+        "不可判不等于导数错误"
+      ],
+      "section": "Methods / S7",
+      "figures_or_supplements": [
+        "S7",
+        "S8"
+      ],
+      "evidence_level": "FINITE_DEVELOPMENT_COMPUTATIONAL_CASE_STUDY",
+      "new_hypothesis_or_statistic_created": false
+    }
+  ],
+  "historical_decisions_preserved": {
+    "SGC": "S_NOMINAL_ADVANTAGE_DEV_WITH_ORIGINAL_STATISTICAL_SCOPE_ONLY",
+    "H1_IC01": "NO_DEFINED_COLLISION_WITNESS_ON_COMPLETE_FIT",
+    "H2": "NO_REGISTERED_GN_REPAIR_SUPPORT_NO_STABLE_XAI_INCREMENTAL_VALUE",
+    "H3": "MIXED_OR_CONTROL_LIMITED_NO_REGISTERED_H3_SUPPORT",
+    "route1": "DIRECTIONAL_G_AND_RELATIVE_GAIN_REPLICATED_AT_TWO_FIXED_LRS",
+    "NP01": "NO_REGISTERED_NP01_SUPPORT"
+  },
+  "not_supported": [
+    "SMILES universal superiority",
+    "all GINE information completeness",
+    "H3 sole cause identified",
+    "biochemical mechanism",
+    "XAI-guided action selection advantage",
+    "independent confirmation",
+    "FR population CI/p values or practical superiority PASS"
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "table_id": "B2_REFERENCE",
+  "Data_group": "Data S3",
+  "panel": "P_OSRC / 2242 sources,322659 links",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer",
+    "function_id",
+    "operation_layer"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "S",
+        "G"
+      ],
+      "native_raw_json_tokens": [
+        "\"S\"",
+        "\"G\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "17",
+        "29",
+        "43",
+        "71",
+        "101",
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"17\"",
+        "\"29\"",
+        "\"43\"",
+        "\"71\"",
+        "\"101\"",
+        "\"MEAN5\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"Kd\"",
+        "\"Ki\"",
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "function_id",
+      "definition": "Named mathematical function. Whole q=h1-h_aff differs from bar_qI.",
+      "native_values_navigation_only": [
+        "q",
+        "h0",
+        "h_aff",
+        "h1"
+      ],
+      "native_raw_json_tokens": [
+        "\"q\"",
+        "\"h0\"",
+        "\"h_aff\"",
+        "\"h1\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "operation_layer",
+      "definition": "D/P/DP replacement or original saved ALL3_EQUAL aggregate.",
+      "native_values_navigation_only": [
+        "D",
+        "P",
+        "DP",
+        "ALL3_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"D\"",
+        "\"P\"",
+        "\"DP\"",
+        "\"ALL3_EQUAL\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "sensitive_minus_main_E",
+    "sensitive_minus_main_B",
+    "sensitive_minus_main_Skill",
+    "sensitive_minus_main_R"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:sensitive_minus_main_E",
+      "native_field": "sensitive_minus_main_E",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:sensitive_minus_main_B",
+      "native_field": "sensitive_minus_main_B",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:sensitive_minus_main_Skill",
+      "native_field": "sensitive_minus_main_Skill",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:sensitive_minus_main_R",
+      "native_field": "sensitive_minus_main_R",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:status",
+      "native_field": "status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:qualification_status",
+      "native_field": "qualification_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:numeric_status",
+      "native_field": "numeric_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "8f979ee852e84e496c1e14affecf691b212888075f5b8a37a1f10cc86c7d5b56",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "data_file": "B2_REFERENCE.jsonl"
+}

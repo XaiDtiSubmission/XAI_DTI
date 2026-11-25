@@ -1,0 +1,230 @@
+{
+  "schema": "sgc-fr40-runtime-policy-v0.8",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "status": "PURPOSE_PROFILE_FROZEN_ACTUAL_EPISODE_LOCK_NOT_YET_CREATED",
+  "entry_literal": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python",
+  "versions": {
+    "python": "3.12.7",
+    "torch": "2.13.0",
+    "numpy": "1.26.4",
+    "psutil": "5.9.0"
+  },
+  "device": "CPU",
+  "main_dtype": "float64",
+  "replay_dtype": "float32",
+  "batch_size": 1,
+  "input_shape": [
+    1,
+    1024
+  ],
+  "cpu_threads": 1,
+  "interop_threads": 1,
+  "deterministic_algorithms": true,
+  "warn_only": false,
+  "compile": false,
+  "AMP": false,
+  "padding": false,
+  "cross_sample_sum_VJP": false,
+  "MPS_CUDA_initialize": false,
+  "accelerator_fallback": false,
+  "module": "Fusion eval; parameters requires_grad=False; input AD only",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "readonly_exception": "only listed interpreter/stdlib/torch/numpy/psutil and actual required libraries,read-only; no original research data/repo/checkpoints or environment write/install",
+  "historical_reference": {
+    "path": "historical_sources/DTI_XAI_Bottleneck/audit/smiles_gine_bottleneck_fr40_execution_v0_1/run_001/runtime_identity_receipt.json",
+    "bytes": 14551,
+    "sha256": "96b15b9ae645e69b4cf2263cc89ef942f10c2a7960bf245645d3719bfa0b4b0b",
+    "fingerprint": {
+      "st_dev": "16777231",
+      "st_ino": "43515909",
+      "st_mode": "33188",
+      "st_size": "14551",
+      "st_mtime_ns": "1793367110586149718",
+      "st_ctime_ns": "1793367110586149718",
+      "st_nlink": "1"
+    }
+  },
+  "reference_identity_entries": [
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python",
+      "bytes": 6917232,
+      "sha256": "9c703cf0cd964af9657144ccf8d3fb105db799e07321317b936ec0b45869324b",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38783919",
+        "st_mode": "33261",
+        "st_size": "6917232",
+        "st_mtime_ns": "1789705791262273034",
+        "st_ctime_ns": "1789705791262374290",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/_C.cpython-312-darwin.so",
+      "bytes": 49944,
+      "sha256": "aee3839e4c52bd074fc78b026e3eee6e4f7cfd714ed571fae3483f30f67d5c3c",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822309",
+        "st_mode": "33261",
+        "st_size": "49944",
+        "st_mtime_ns": "1786948941766804090",
+        "st_ctime_ns": "1789705801103896165",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/_C.cpython-312-darwin.so"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/core/_multiarray_umath.cpython-312-darwin.so",
+      "bytes": 3180800,
+      "sha256": "a51276f3aab2d91051aa0ced3ddaa39a776ae60132ca4c07a91b82a8b7a92ea7",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38790464",
+        "st_mode": "33261",
+        "st_size": "3180800",
+        "st_mtime_ns": "1786948936590669180",
+        "st_ctime_ns": "1789705794210943464",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/core/_multiarray_umath.cpython-312-darwin.so"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/psutil/_psutil_osx.cpython-312-darwin.so",
+      "bytes": 76320,
+      "sha256": "2bd9ed50a4103ef4f678b5cc6d2cb6c9a2c56ada22ea7865144431ffeb0d8e8e",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38795514",
+        "st_mode": "33261",
+        "st_size": "76320",
+        "st_mtime_ns": "1786948936294491996",
+        "st_ctime_ns": "1789705795491202145",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/psutil/_psutil_osx.cpython-312-darwin.so"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_cpu.dylib",
+      "bytes": 337911904,
+      "sha256": "f1584a65a2a09b5ddbe90a4e195ba824087b430a9f21cb1df9b8894177b99987",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822734",
+        "st_mode": "33261",
+        "st_size": "337911904",
+        "st_mtime_ns": "1786948943432354596",
+        "st_ctime_ns": "1789705801287045402",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_cpu.dylib"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libc10.dylib",
+      "bytes": 1102704,
+      "sha256": "5db5749503cd842562a666510a72fa127dedd3a0046784760fdaeee9c562f23b",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822735",
+        "st_mode": "33261",
+        "st_size": "1102704",
+        "st_mtime_ns": "1786948942900202505",
+        "st_ctime_ns": "1789705801288246323",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libc10.dylib"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_python.dylib",
+      "bytes": 29909256,
+      "sha256": "86d1a65fcc2bd9efac227098707c63e493b5cb2f954b475790b83ffaac1aa12c",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822723",
+        "st_mode": "33261",
+        "st_size": "29909256",
+        "st_mtime_ns": "1786948943483931534",
+        "st_ctime_ns": "1789705801193065399",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch_python.dylib"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch.dylib",
+      "bytes": 16752,
+      "sha256": "c9d126afd218772f9cd17387f79eaf117cdf15d89d5a0b6231c03c9a43ace910",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822724",
+        "st_mode": "33261",
+        "st_size": "16752",
+        "st_mtime_ns": "1786948942902772906",
+        "st_ctime_ns": "1789705801193245322",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libtorch.dylib"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libomp.dylib",
+      "bytes": 856096,
+      "sha256": "6256bee09e93c28d71c65711cc69224d69994c6965648b628b70a22772fe98d4",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38822726",
+        "st_mode": "33188",
+        "st_size": "856096",
+        "st_mtime_ns": "1786948942902285442",
+        "st_ctime_ns": "1789705801193979517",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/torch/lib/libomp.dylib"
+    },
+    {
+      "path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+      "bytes": 23198400,
+      "sha256": "dde2b735d01caa531885115ea853b5a4172b935167b95a1acb2a10243e0d97e7",
+      "fingerprint": {
+        "st_dev": "16777231",
+        "st_ino": "38790691",
+        "st_mode": "33261",
+        "st_size": "23198400",
+        "st_mtime_ns": "1786948936673721305",
+        "st_ctime_ns": "1789705794271607717",
+        "st_nlink": "1"
+      },
+      "literal_path": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/lib/python3.12/site-packages/numpy/.dylibs/libopenblas64_.0.dylib"
+    }
+  ],
+  "initial_alias_chain_reference": [
+    {
+      "literal": "historical_sources/DTI_XAI/.venv-v3_2-wp4-v0_1/bin/python",
+      "mode": 33261,
+      "inode": "38783919",
+      "device": "16777231"
+    }
+  ],
+  "metadata_reuse_rule": "before first scientific access,compare exact declared path/alias/resolved target,available historical stable fingerprint,version and CPU/backend/profile metadata; unchanged declared entry may reuse prior SHA with explicit INHERITED_HASH_NOT_REHASHED status; metadata is traceability,not numerical-equivalence proof",
+  "targeted_change_rule": "only identified missing/changed required components within exact appended runtime list may receive one opaque read/hash; record old/new metadata/SHA; no whole-environment scan/forced rehash; missing permission/profile/version/backend conflict => NOT_READY or STOP,no silent fallback",
+  "initial_realization": "bind one actual runtime_realization_id before any response; compatible identity refresh disclosed before launch,not called unchanged; no hot-swap after any scientific dispatch",
+  "identity_refresh_envelope": {
+    "files_max": 16,
+    "opaque_hash_bytes_max": 536870912,
+    "per_target_hash_passes_max": 1,
+    "scope": "prospective v0.8 targeted refresh ceiling,not old balance certification orautomatic access now",
+    "automatic_overrun": false
+  },
+  "ordinary_loader_IO": "normal declared dependency loading separated from explicit identity hashes/scientific reads; unmeasured physical IO=null,not0; no source evidence read under loader label",
+  "actual_runtime_lock": null,
+  "primitive_error_proof_gate": false,
+  "no_runtime_access_now": true,
+  "code_identity_policy": "identity_policy.json;numeric code/dependency runtimefixed beforeL0,writercontrol versions do nothot-swapnumeric",
+  "live_owner_graph_retention": "L1_reuse_policy.json,no additionalforward forAD;resourcecap unchanged,actualfeasibility notclaimed"
+}
+

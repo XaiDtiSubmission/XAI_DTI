@@ -1,0 +1,215 @@
+{
+  "schema": "DTI_R03_TARGETED_RECONSTRUCTION_RECEIPT_v0_1",
+  "stage": "full_900_batched",
+  "status": "TARGETED_RECONSTRUCTION_MATCH",
+  "scope_sha256": "c88988a6bbed2e404ba80c3d9d3d9d942cfba10f1a2d3356a12b06d0f4eb267a",
+  "protocol_sha256": "6d6597a95038fbfab97234533bcfc7e48f41b20b4f00810c55fe0e216646efc2",
+  "script": {
+    "path": "scripts/execute_r03_targeted_reconstruction_v0_1.py",
+    "sha256": "7be3a91d9ada80d88a75d75ddb161b615e665984b00d132ed9e3b4804e4a8dd1"
+  },
+  "source_bindings": {
+    "formal_bindingdb": {
+      "path": "DTI_R01_R03_local_recovery_v0_1/opaque/DTI_XAI/data/processed/wp1/v1_1/bindingdb_development_coldboth.parquet",
+      "bytes": 9609543,
+      "sha256": "d28f7e31c33dad1f5d2aa1be7c4f737ce766e834b25d1c2e4bee0fbb25f16507"
+    },
+    "frozen_eu": {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI/data/processed/wp1/v1_4/affinity_evidence_units.parquet",
+      "bytes": 66634561,
+      "sha256": "8d026360f560c5689579ca48d0919b48f89a8179ad24ccd6cae2a8f3c95f77a0"
+    },
+    "frozen_label": {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/controlled/DTI_XAI/data/processed/wp1/v1_4/affinity_group_labels.parquet",
+      "bytes": 46606649,
+      "sha256": "62335304b4760e3a8af87c35721e4f503966185bac6515a716695d1552783b66"
+    },
+    "target_identity_register": {
+      "path": "DTI_R01_R03_local_recovery_v0_1/derived/R03目标身份链.jsonl",
+      "bytes": 1017672,
+      "sha256": "f6bfd3b3c1eb7c0512b156e8047229ad6cff68957747186f5fd67999e8857f32"
+    },
+    "static_recipe_only": {
+      "path": "DTI_R01_R03_integrated_handoff_v0_1/baseline_v0_3/baseline_v0_2/static/DTI_XAI/scripts/wp1_v1_4_freeze_labels_and_tasks.py",
+      "bytes": 26948,
+      "sha256": "a399fc275f7db48351fae1c9b74dba8f07a5a0e051e30a578a97b95a44c13d77"
+    }
+  },
+  "runtime": {
+    "executable": "historical_sources/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "pyarrow": "16.1.0"
+    },
+    "isolated_package_target": "historical_sources/DTI_Submission/DTI_R01_R03_execution_v0_1/R03/tooling/site-packages"
+  },
+  "projection": {
+    "formal_bindingdb": {
+      "columns": [
+        "record_id",
+        "source_record_id",
+        "source_database",
+        "compound_connectivity_key",
+        "target_sequence_key",
+        "endpoint",
+        "p_affinity",
+        "standardized_smiles",
+        "target_sequence",
+        "doi",
+        "pmid"
+      ],
+      "logical_projected_rows": 991,
+      "predicate_groups": 900,
+      "predicate_applied_before_python_materialization": true,
+      "max_groups_per_predicate": 32,
+      "predicate_batches": 29,
+      "predicate_construction": "Disjoint exact group predicates in fixed sorted batches; no broader filter",
+      "parquet_physical_note": "The reader may process containing column chunks; only filtered target rows are materialized for reconstruction.",
+      "schema": {
+        "record_id": "string",
+        "source_record_id": "string",
+        "source_database": "string",
+        "compound_connectivity_key": "string",
+        "target_sequence_key": "string",
+        "endpoint": "string",
+        "p_affinity": "double",
+        "standardized_smiles": "string",
+        "target_sequence": "string",
+        "doi": "string",
+        "pmid": "string"
+      }
+    },
+    "frozen_eu": {
+      "columns": [
+        "analysis_cohort",
+        "compound_connectivity_key",
+        "target_sequence_key",
+        "endpoint",
+        "evidence_unit_id",
+        "record_id",
+        "source_reference_type",
+        "source_reference_id",
+        "raw_record_count",
+        "raw_record_ids",
+        "p_affinity",
+        "standardized_smiles",
+        "target_sequence"
+      ],
+      "logical_projected_rows": 991,
+      "predicate_groups": 900,
+      "predicate_applied_before_python_materialization": true,
+      "max_groups_per_predicate": 32,
+      "predicate_batches": 29,
+      "predicate_construction": "Disjoint exact group predicates in fixed sorted batches; no broader filter",
+      "parquet_physical_note": "The reader may process containing column chunks; only filtered target rows are materialized for reconstruction.",
+      "schema": {
+        "analysis_cohort": "string",
+        "compound_connectivity_key": "string",
+        "target_sequence_key": "string",
+        "endpoint": "string",
+        "evidence_unit_id": "string",
+        "record_id": "string",
+        "source_reference_type": "string",
+        "source_reference_id": "string",
+        "raw_record_count": "int64",
+        "raw_record_ids": "string",
+        "p_affinity": "double",
+        "standardized_smiles": "string",
+        "target_sequence": "string"
+      }
+    },
+    "frozen_label": {
+      "columns": [
+        "analysis_cohort",
+        "compound_connectivity_key",
+        "target_sequence_key",
+        "endpoint",
+        "label_group_id",
+        "record_ids",
+        "evidence_units",
+        "raw_records",
+        "p_affinity_min",
+        "p_affinity_median",
+        "p_affinity_max",
+        "p_affinity_span",
+        "conflict_level",
+        "hard_invalid_affinity",
+        "primary_continuous_keep",
+        "standardized_smiles",
+        "standardized_smiles_count",
+        "target_sequence",
+        "target_sequence_count"
+      ],
+      "logical_projected_rows": 900,
+      "predicate_groups": 900,
+      "predicate_applied_before_python_materialization": true,
+      "max_groups_per_predicate": 32,
+      "predicate_batches": 29,
+      "predicate_construction": "Disjoint exact group predicates in fixed sorted batches; no broader filter",
+      "parquet_physical_note": "The reader may process containing column chunks; only filtered target rows are materialized for reconstruction.",
+      "schema": {
+        "analysis_cohort": "string",
+        "compound_connectivity_key": "string",
+        "target_sequence_key": "string",
+        "endpoint": "string",
+        "label_group_id": "string",
+        "record_ids": "string",
+        "evidence_units": "int64",
+        "raw_records": "int64",
+        "p_affinity_min": "double",
+        "p_affinity_median": "double",
+        "p_affinity_max": "double",
+        "p_affinity_span": "double",
+        "conflict_level": "string",
+        "hard_invalid_affinity": "bool",
+        "primary_continuous_keep": "bool",
+        "standardized_smiles": "string",
+        "standardized_smiles_count": "int64",
+        "target_sequence": "string",
+        "target_sequence_count": "int64"
+      }
+    }
+  },
+  "group_status_counts": {
+    "PASS": 900
+  },
+  "groups_checked": 900,
+  "roles": {
+    "MODEL_GATE": 299,
+    "MODEL_FIT": 548,
+    "MODEL_SELECT": 53
+  },
+  "record_contribution_rows": 991,
+  "evidence_unit_rows": 991,
+  "groups_with_highest_frequency_ties": 51,
+  "failed_checks": [],
+  "historical_actual_producer_identity": "UNKNOWN",
+  "old_research_scripts_executed": false,
+  "raw_archive_conversion_checked": false,
+  "new_model_calls": 0,
+  "ci_pvalues_or_performance_recomputed": false,
+  "interpretation": "New reconstruction for declared target groups; no assertion that historical producer identity or all pre-run selection history has been recovered.",
+  "started_utc": "2026-11-25T08:01:17.825358+00:00",
+  "completed_utc": "2026-11-25T08:01:26.475749+00:00",
+  "elapsed_seconds": 8.650393724441528,
+  "outputs": [
+    {
+      "path": "full_900_batched/evidence_units.jsonl",
+      "bytes": 949081,
+      "sha256": "cb382ae40f6bf8817513f1eb32c4d52bf51c7514b9f1a138e95fe6acf64f146d"
+    },
+    {
+      "path": "full_900_batched/groups.jsonl",
+      "bytes": 2506911,
+      "sha256": "a62c783e28be9ca742b8d5cbee6fb5739c2c0d566793c93bd663aa9eeabbd506"
+    },
+    {
+      "path": "full_900_batched/record_contributions.jsonl",
+      "bytes": 763126,
+      "sha256": "62a9d61f7b15c2e5ebc3f109a473c01a4bd62eca32f4ce902210565c0018680b"
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "scope": "Static imports only; not an installation lock or execution attestation.",
+  "items": [
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr00_fr10_execute_v0_4.py",
+      "static_import_roots": [
+        "argparse",
+        "numpy",
+        "pathlib",
+        "psutil",
+        "pyarrow",
+        "re",
+        "scipy",
+        "warnings"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr20_execute_v0_4.py",
+      "static_import_roots": [
+        "argparse",
+        "fcntl",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr30_execute_v0_2.py",
+      "static_import_roots": [
+        "argparse",
+        "numpy",
+        "pathlib",
+        "pyarrow",
+        "signal"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr40_diag_v0_2.py",
+      "static_import_roots": [
+        "argparse",
+        "numpy",
+        "pathlib",
+        "pyarrow"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr40_execute_v0_2.py",
+      "static_import_roots": [
+        "hashlib",
+        "pathlib",
+        "psutil"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/scripts/sgc_fr40_path_span_v0_2.py",
+      "static_import_roots": [
+        "argparse",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/fr40_v0_8/control.py",
+      "static_import_roots": [
+        "collections",
+        "numpy",
+        "pathlib",
+        "psutil"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/fr40_v0_8/numeric.py",
+      "static_import_roots": [
+        "collections",
+        "numpy"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/__init__.py",
+      "static_import_roots": []
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/inputs.py",
+      "static_import_roots": [
+        "dataclasses",
+        "numpy",
+        "re",
+        "spec",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/models.py",
+      "static_import_roots": [
+        "math",
+        "os",
+        "spec",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/optimization.py",
+      "static_import_roots": [
+        "math",
+        "spec",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/spec.py",
+      "static_import_roots": [
+        "hashlib"
+      ]
+    },
+    {
+      "path": "src/historical/bottleneck/src/sgc_v0_2/statistics.py",
+      "static_import_roots": [
+        "collections",
+        "math",
+        "numpy",
+        "scipy",
+        "spec"
+      ]
+    },
+    {
+      "path": "src/historical/lineage/wp1_build_standardized_cohorts.py",
+      "static_import_roots": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "functools",
+        "gzip",
+        "hashlib",
+        "io",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "pyarrow",
+        "rdkit",
+        "re",
+        "shutil",
+        "sys",
+        "time",
+        "typing",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "src/historical/lineage/wp1_v1_4_freeze_labels_and_tasks.py",
+      "static_import_roots": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "pyarrow",
+        "re",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/drafts/full_manuscript_v0_13/render_fig4_v0_13.py",
+      "static_import_roots": [
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/prepare_manuscript_fr40_new_source_panel_v0_1.py",
+      "static_import_roots": [
+        "collections",
+        "importlib",
+        "json",
+        "os",
+        "pathlib",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/render_w03_b1_b2_v0_1.py",
+      "static_import_roots": [
+        "collections",
+        "hashlib",
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/render_w03_b3_v0_1.py",
+      "static_import_roots": [
+        "collections",
+        "hashlib",
+        "matplotlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/render_w03_b4_v0_1.py",
+      "static_import_roots": [
+        "collections",
+        "hashlib",
+        "html",
+        "importlib",
+        "io",
+        "itertools",
+        "json",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/revise_gap_gr3_gr4_v0_1.py",
+      "static_import_roots": [
+        "PIL",
+        "ast",
+        "collections",
+        "docx",
+        "pathlib",
+        "pypdf",
+        "reportlab"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_fr40_fixed_query_replay_v0_1.py",
+      "static_import_roots": [
+        "ast",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "signal",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_fr40_geometry_control_v0_1.py",
+      "static_import_roots": [
+        "ast",
+        "collections",
+        "importlib",
+        "itertools",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "signal",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_fr40_new_source_panel_v0_1.py",
+      "static_import_roots": [
+        "collections",
+        "importlib",
+        "itertools",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "signal",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_midpoint_query_a1_recovery_v0_1.py",
+      "static_import_roots": [
+        "argparse",
+        "collections",
+        "contextlib",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "re",
+        "statistics",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_midpoint_query_a1_v0_1.py",
+      "static_import_roots": [
+        "argparse",
+        "collections",
+        "contextlib",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "re",
+        "statistics",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_midpoint_query_a2_fr40_followup_v0_1.py",
+      "static_import_roots": [
+        "ast",
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "statistics",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_midpoint_query_a2_fr40_metadata_v0_2.py",
+      "static_import_roots": [
+        "ast",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "psutil",
+        "re",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/run_manuscript_path_recheck_v0_1.py",
+      "static_import_roots": [
+        "argparse",
+        "collections",
+        "contextlib",
+        "datetime",
+        "hashlib",
+        "importlib",
+        "io",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "psutil",
+        "re",
+        "signal",
+        "stat",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "src/historical/manuscript/scripts/time_manuscript_midpoint_query_a2_fr40_lookup_v0_2.py",
+      "static_import_roots": [
+        "ast",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psutil",
+        "statistics",
+        "struct",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    }
+  ]
+}

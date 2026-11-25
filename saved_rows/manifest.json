@@ -1,0 +1,91 @@
+{
+  "scope": "Registered project-derived path and ranking output rows and membership identifiers",
+  "source_bytes_preserved": true,
+  "license": "CC-BY-4.0 for project-owned material; see RIGHTS.md and DATA_SOURCES.md",
+  "files": [
+    {
+      "path": "saved_rows/followup_path/panel_and_references.json",
+      "bytes": 130718,
+      "sha256": "931a5d9caa75515ec78e6fc4d580cfa60447cbda22c228582203a6b5223efcae",
+      "original_basename": "panel_and_references.json"
+    },
+    {
+      "path": "saved_rows/followup_path/source_results.jsonl",
+      "bytes": 9124514,
+      "sha256": "b094c5706e1da09394a932e85e3fbb5f272e14dd6e7064ee0e378fd5a6664d91",
+      "original_basename": "source_results.jsonl"
+    },
+    {
+      "path": "saved_rows/new_source_ranking/actions_geometry.json",
+      "bytes": 69683,
+      "sha256": "82ebc8bc75559ade42f10bd3e35931e386581306a82763721c9cd14b2af57fb7",
+      "original_basename": "actions_geometry.private.json"
+    },
+    {
+      "path": "saved_rows/new_source_ranking/actions_gradient.json",
+      "bytes": 69741,
+      "sha256": "6b1f95bc17fd619876326868446c20112de009dc30fa5e3e3bfaf32e8d3f1f68",
+      "original_basename": "actions_gradient.private.json"
+    },
+    {
+      "path": "saved_rows/new_source_ranking/actions_hash.json",
+      "bytes": 68880,
+      "sha256": "b8ffa528b4d9eeb67af99fc2230ceae5a9eeecd80b8e88359739deecb66f0451",
+      "original_basename": "actions_hash.private.json"
+    },
+    {
+      "path": "saved_rows/new_source_ranking/candidate_manifest.json",
+      "bytes": 182322,
+      "sha256": "6781e137fecb6632f3fb1e2d93f9462d72d496b0990ce5cb06c3afac6af73600",
+      "original_basename": "candidate_manifest.private.json"
+    },
+    {
+      "path": "saved_rows/new_source_ranking/paired_results.json",
+      "bytes": 241939,
+      "sha256": "3da22c9e7bfe669103898eccc7b985942e7676a5f348c1a2ab83595e0a09d87e",
+      "original_basename": "paired_results.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking/actions_gradient.json",
+      "bytes": 69875,
+      "sha256": "f204055a4a6f3ac5c94e4db80bbb4897d42e0bba7ee998b40c2b2014ed9af410",
+      "original_basename": "actions_gradient.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking/actions_hash.json",
+      "bytes": 69071,
+      "sha256": "e468da86a2ad46399686bda9b7e3732a31122509bddedd337b5219df25f68587",
+      "original_basename": "actions_hash.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking/paired_results.json",
+      "bytes": 138281,
+      "sha256": "6336c0a0782dbd5476270fd4f03caff61b6237654eb63156b084b6ec129c291d",
+      "original_basename": "paired_results.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking_candidates/candidate_manifest.json",
+      "bytes": 180593,
+      "sha256": "62f58090e27eb1405df87f85115b35818e2e80fbc01b82ba0ddb0049beab3884",
+      "original_basename": "candidate_manifest.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking_geometry/geometry_actions.json",
+      "bytes": 69941,
+      "sha256": "f1f403d26650e6fc1604b641c68d4640489a32c772a445f0af31583afaffcf94",
+      "original_basename": "geometry_actions.private.json"
+    },
+    {
+      "path": "saved_rows/original_ranking_geometry/paired_results.json",
+      "bytes": 242487,
+      "sha256": "93b522fc1301ca7fe18c93212068f0bcc11a55d28a1ce7466026a96c0490d763",
+      "original_basename": "paired_results.private.json"
+    },
+    {
+      "path": "saved_rows/ranking_lookup_followup/result.json",
+      "bytes": 2805,
+      "sha256": "c16a290ffd4dbf26f2d80c2ee1213724ea283d143c8db09fa9d84eaf7b8975fc",
+      "original_basename": "result.private.json"
+    }
+  ]
+}

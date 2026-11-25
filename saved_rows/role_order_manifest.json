@@ -1,0 +1,40 @@
+{
+  "source_sha256": "3c9785154cac712c5c3f4c2e19d9d17e9e3ee8cbd011e7a8bdf6d9742b050354",
+  "scope": "Projection of original FR00 role identities in saved score order",
+  "exported_fields": [
+    "score_index0",
+    "binding_row_index0",
+    "endpoint",
+    "graph_record_index0",
+    "label_group_id",
+    "pair_group_id",
+    "smiles_sha256",
+    "target_sequence_key",
+    "train_fit_row_index0",
+    "train_tune_row_index0",
+    "v3_3_role"
+  ],
+  "files": [
+    {
+      "path": "saved_rows/model_fit/identity_order.jsonl.gz",
+      "rows": 46140,
+      "role": "MODEL_FIT",
+      "bytes": 7522093,
+      "sha256": "c9eb2f9a5ebde8a3edf55e516547fbf28d40b4eabd29383a807b6f4a779e5e36"
+    },
+    {
+      "path": "saved_rows/model_gate/identity_order.jsonl.gz",
+      "rows": 5697,
+      "role": "MODEL_GATE",
+      "bytes": 928098,
+      "sha256": "fcc6c082c40d7a8f06959968116c93d05546034891d9add5b822a6949169cf3a"
+    },
+    {
+      "path": "saved_rows/model_select/identity_order.jsonl.gz",
+      "rows": 5125,
+      "role": "MODEL_SELECT",
+      "bytes": 841390,
+      "sha256": "17314dbb4831d2e07a3af72ca6674e5dd101cbe6461f94db724e2e32786a06e6"
+    }
+  ]
+}

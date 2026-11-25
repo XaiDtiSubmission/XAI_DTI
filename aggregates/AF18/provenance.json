@@ -1,0 +1,122 @@
+{
+  "original_objects": "R02 formal source disposition applied to eligibility and support for frozen models",
+  "source_assets": {
+    "record_disposition.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_2/R02/disposition/record_disposition.jsonl",
+      "bytes": 1949504,
+      "sha256": "c5367a6e71c04b19c94a7267689f14ec4e211cd53118d046e421334324461408"
+    },
+    "support_counts.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/两条来源冻结支持范围情景回执.json",
+      "bytes": 709377,
+      "sha256": "65d1b2db63571d24548e13612ddec05f3a2a5208664906abc0e8962139300052"
+    },
+    "gate_by_fit_endpoint.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/gate_conditional/gate_conditional_per_fit_endpoint.csv",
+      "bytes": 9375,
+      "sha256": "ea1df56f47cdca2f6b5049d26bfed8b31931317e4291d6d677449ddce26f1440"
+    },
+    "gate_summary.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/gate_conditional/gate_conditional_summary.csv",
+      "bytes": 2060,
+      "sha256": "f2f4eec693e9677b1e705f5f85c8f9e28b91bcc25ee457e713772f39bc9b07d8"
+    },
+    "path_by_fit_endpoint.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/path_conditional/run_001/conditional_80_slots.json",
+      "bytes": 101508,
+      "sha256": "5c27e8233220d3c4f30e30a08376af96b7093c7acc7746095efe9b21ed6fe368"
+    },
+    "path_mean5_by_endpoint.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/path_conditional/run_001/conditional_fixed_fit_means.json",
+      "bytes": 42020,
+      "sha256": "e3fb7dc6e4f0d67983cbb922d3d2910e25bd5ec049d7f657e841fca7aeb064ea"
+    },
+    "complete_operation_GINE_q.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/完整操作GINE_q保留支持重聚合.json",
+      "bytes": 66369,
+      "sha256": "d0a4cb6fcb6b2c75918df190994a24741b8548735c6ebef23a21142867bb20dc"
+    },
+    "original_ranking_retained_sources.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_1/R02/排序原32候选任务保留源情景.json",
+      "bytes": 24103,
+      "sha256": "9875b2cfbfef14d8185edd0e7c1657ffa3ecf613bf5cae5d8d4428a1c10e5e53"
+    },
+    "anchored_summary.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_2/R02/anchored/run_002/summary.json",
+      "bytes": 220298,
+      "sha256": "225cb8ae5a1364368d060f4449bc615528bc68dc95d2ef9d59e7c053a9dc1f05"
+    },
+    "diagnostic_by_fit_endpoint.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_2/R02/diagnostics/diagnostic_by_fit_endpoint.csv",
+      "bytes": 34545,
+      "sha256": "e444af8d1f88a321ba9a83f4fba437c545eac7d9ae284d28f8c12fb3fe9aa2be"
+    },
+    "retained_gain_skill_joint.csv": {
+      "source_path": "DTI_R01_R03_execution_v0_2/R02/diagnostics/retained_gain_skill_joint.csv",
+      "bytes": 46126,
+      "sha256": "1d0f935361f0feae3e9815fb6ca398431899e1429ad8558a74cbe4a0b6cc889b"
+    }
+  },
+  "display_mean_sources": [
+    "DTI_R01_R03_execution_v0_1/R02/path_conditional/run_001/conditional_fixed_fit_means.json",
+    "DTI_R01_R03_execution_v0_1/R02/完整操作GINE_q保留支持重聚合.json"
+  ],
+  "files": {
+    "GINE_equal_endpoint_display_means.csv": {
+      "bytes": 2748,
+      "sha256": "2edede2dec5028256135164d4804b890ee13b05a2672d6e4273ce8503bb45fb3"
+    },
+    "README.md": {
+      "bytes": 3069,
+      "sha256": "1cc8787eb80a87b7903b8f646c9ab8ea24e0a50fdd17d57fd6bb9147af78586a"
+    },
+    "anchored_summary.csv": {
+      "bytes": 100358,
+      "sha256": "991144875f77aa4d766b9ce5368cbfbfa6add26db85fc19018e99002d9de2487"
+    },
+    "complete_operation_GINE_q.csv": {
+      "bytes": 26261,
+      "sha256": "0dc8b3492befccb32ced254dac06c788892bfe152e26e3fc8bcc4c74608946bd"
+    },
+    "diagnostic_by_fit_endpoint.csv": {
+      "bytes": 34545,
+      "sha256": "e444af8d1f88a321ba9a83f4fba437c545eac7d9ae284d28f8c12fb3fe9aa2be"
+    },
+    "frozen_lineage_scope.json": {
+      "bytes": 800,
+      "sha256": "5dd8064148bf069afbe4c3b4f1ca83e7232ea5780abc52805628b1c3fd2e3c18"
+    },
+    "gate_by_fit_endpoint.csv": {
+      "bytes": 9375,
+      "sha256": "ea1df56f47cdca2f6b5049d26bfed8b31931317e4291d6d677449ddce26f1440"
+    },
+    "gate_summary.csv": {
+      "bytes": 2060,
+      "sha256": "f2f4eec693e9677b1e705f5f85c8f9e28b91bcc25ee457e713772f39bc9b07d8"
+    },
+    "original_ranking_retained_sources.csv": {
+      "bytes": 7314,
+      "sha256": "65c2d6ca455131b70a05698f8a3ac24c73939de503ec45dfb77da07173585089"
+    },
+    "path_by_fit_endpoint.csv": {
+      "bytes": 24090,
+      "sha256": "d1d6e6407a280907fa09af7b2336f42d20d132a3aab61a83b81a3d355cc4ad47"
+    },
+    "path_mean5_by_endpoint.csv": {
+      "bytes": 4426,
+      "sha256": "425a6079727e3bdef0102bb6e4432cc5a659a82d7a420d2a50da3775e38d997e"
+    },
+    "record_disposition.csv": {
+      "bytes": 938416,
+      "sha256": "55fb0ac8daff63163f3d3fa06f2206cf7208267be85e1402469873e32b738962"
+    },
+    "retained_gain_skill_joint.csv": {
+      "bytes": 46126,
+      "sha256": "1d0f935361f0feae3e9815fb6ca398431899e1429ad8558a74cbe4a0b6cc889b"
+    },
+    "support_counts.csv": {
+      "bytes": 1232,
+      "sha256": "7c2655863d4e87e2ea8a15300d33c46e3b74a9b63c9c31f3ada7cb06c82975d2"
+    }
+  }
+}

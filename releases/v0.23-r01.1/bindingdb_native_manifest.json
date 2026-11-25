@@ -1,0 +1,42 @@
+{
+  "source_snapshot": "BindingDB 202608",
+  "files": [
+    {
+      "path": "source_data/bindingdb_202608/bindingdb_development_coldboth.parquet",
+      "bytes": 9609543,
+      "sha256": "d28f7e31c33dad1f5d2aa1be7c4f737ce766e834b25d1c2e4bee0fbb25f16507",
+      "basis": "Exact registered WP1 v1.1 BindingDB development input",
+      "reported_sources": {
+        "US Patent": 81380,
+        "Curated from the literature by BindingDB": 19795,
+        "WIPO": 329
+      }
+    },
+    {
+      "path": "source_data/bindingdb_202608/BindingDB_Patents_202608_tsv.zip",
+      "bytes": 172105433,
+      "sha256": "88d0e6664ac063489d2c161c80b6a83fd347eb87e924e47a44d01ee3de93ce13",
+      "basis": "Original BindingDB-curated patents archive, byte-identical"
+    },
+    {
+      "path": "source_data/bindingdb_202608/BindingDB_Articles_202608_native_only.tsv.gz",
+      "bytes": 18157775,
+      "sha256": "d407864a86f92290a69ef743ac8a2d2dc2195c765ef199bf51c1d2cd63324e78",
+      "basis": "Articles ZIP filtered by Curation/DataSource; TSV reserialized",
+      "original_basename": "BindingDB_BindingDB_Articles_202608_tsv.zip",
+      "original_sha256": "2529b1c572aa7b298e57355e251c9a9572b82dd35f97259d5e3866ee69bfada5",
+      "original_source_counts": {
+        "ChEMBL": 429,
+        "Curated from the literature by BindingDB": 93023,
+        "Taylor Research Group, UCSD": 260
+      },
+      "retained_rows": 93023
+    },
+    {
+      "path": "source_data/bindingdb_202608/DATA_SOURCES.md",
+      "bytes": 14029,
+      "sha256": "6032a03899476a98a7f0b8bacbb896f2cc75c9c0a707dadead07b53c733764f5",
+      "basis": "Source attribution and licence notes"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "table_id": "B2_PAIRED",
+  "Data_group": "Data S3",
+  "panel": "P_OSRC / 2242 sources,322659 links",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer",
+    "comparator_id",
+    "policy_id",
+    "operation_layer"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "S",
+        "G"
+      ],
+      "native_raw_json_tokens": [
+        "\"S\"",
+        "\"G\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "17",
+        "29",
+        "43",
+        "71",
+        "101",
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"17\"",
+        "\"29\"",
+        "\"43\"",
+        "\"71\"",
+        "\"101\"",
+        "\"MEAN5\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"Kd\"",
+        "\"Ki\"",
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "comparator_id",
+      "definition": "Original paired comparator; retain subtraction order.",
+      "native_values_navigation_only": [
+        "h0",
+        "h_aff"
+      ],
+      "native_raw_json_tokens": [
+        "\"h0\"",
+        "\"h_aff\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "policy_id",
+      "definition": "Native full reference in O_SRC; native restricted and renormalized reference in PATH.",
+      "native_values_navigation_only": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "native_raw_json_tokens": [
+        "\"FIT_ROW_UNIFORM\"",
+        "\"FIT_PROTEIN_INPUT_UNIFORM\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "operation_layer",
+      "definition": "D/P/DP replacement or original saved ALL3_EQUAL aggregate.",
+      "native_values_navigation_only": [
+        "D",
+        "P",
+        "DP",
+        "ALL3_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"D\"",
+        "\"P\"",
+        "\"DP\"",
+        "\"ALL3_EQUAL\""
+      ],
+      "rows_present": 576,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "DeltaE",
+    "DeltaR"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:DeltaE",
+      "native_field": "DeltaE",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:DeltaR",
+      "native_field": "DeltaR",
+      "role": "metric",
+      "definition": "Original saved signed contrast; comparator and order are those in native axes/field path. Never reconstructed from other cells.",
+      "units": "function-output units; R contrast dimensionless",
+      "conditional_scope": "Matched original scope",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:E_observed_direction",
+      "native_field": "E_observed_direction",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:R_observed_direction",
+      "native_field": "R_observed_direction",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:empirical_check_state",
+      "native_field": "empirical_check_state",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:pair_R_status",
+      "native_field": "pair_R_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:missing_ratio_reasons",
+      "native_field": "missing_ratio_reasons",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [
+            {
+              "pointer": "",
+              "kind": "array",
+              "length": 0
+            }
+          ],
+          "scalar_leaf_count": 0,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:status",
+      "native_field": "status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:qualification_status",
+      "native_field": "qualification_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:numeric_status",
+      "native_field": "numeric_status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 576,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 576
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "3fbbeb8d2e79569def00a8b57f31c692d635a7ffabaee1bb3c7c74d54ead1257",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "data_file": "B2_PAIRED.jsonl"
+}

@@ -1,0 +1,877 @@
+{
+  "table_id": "C02_REFERENCE",
+  "Data_group": "Data S1",
+  "panel": "P_OSRC / 2242 sources,322659 links",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer",
+    "target_id",
+    "quantity_id"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "S",
+        "G"
+      ],
+      "native_raw_json_tokens": [
+        "\"S\"",
+        "\"G\""
+      ],
+      "rows_present": 648,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "seed_017",
+        "seed_029",
+        "seed_043",
+        "seed_071",
+        "seed_101",
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"seed_017\"",
+        "\"seed_029\"",
+        "\"seed_043\"",
+        "\"seed_071\"",
+        "\"seed_101\"",
+        "\"MEAN5\""
+      ],
+      "rows_present": 648,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"Kd\"",
+        "\"Ki\"",
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 648,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "target_id",
+      "definition": "Original amplitude target; do not equate component/background/nonlinear objects.",
+      "native_values_navigation_only": [
+        "q",
+        "q_bg",
+        "q_nl"
+      ],
+      "native_raw_json_tokens": [
+        "\"q\"",
+        "\"q_bg\"",
+        "\"q_nl\""
+      ],
+      "rows_present": 648,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "quantity_id",
+      "definition": "Original four-corner or response quantity; native identity retained.",
+      "native_values_navigation_only": [
+        "q0",
+        "qD",
+        "qP",
+        "qI",
+        "rD_obs",
+        "rP_obs"
+      ],
+      "native_raw_json_tokens": [
+        "\"q0\"",
+        "\"qD\"",
+        "\"qP\"",
+        "\"qI\"",
+        "\"rD_obs\"",
+        "\"rP_obs\""
+      ],
+      "rows_present": 648,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "mean_delta",
+    "mean_abs_delta",
+    "strict_sign_flip_fraction",
+    "transition_counts/0",
+    "transition_counts/1",
+    "transition_counts/2",
+    "transition_counts/3",
+    "transition_counts/4",
+    "transition_counts/5",
+    "transition_counts/6",
+    "transition_counts/7",
+    "transition_counts/8",
+    "transition_fractions/0",
+    "transition_fractions/1",
+    "transition_fractions/2",
+    "transition_fractions/3",
+    "transition_fractions/4",
+    "transition_fractions/5",
+    "transition_fractions/6",
+    "transition_fractions/7",
+    "transition_fractions/8",
+    "transition_counts"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:mean_delta",
+      "native_field": "mean_delta",
+      "role": "metric",
+      "definition": "Native saved amplitude/reference quantity. Container, quantity_id and target/function axes define this field; no label-loss interpretation is inferred.",
+      "units": "function-output units unless native field states otherwise",
+      "conditional_scope": "M and U use different absolute-value/synthesis order",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:mean_abs_delta",
+      "native_field": "mean_abs_delta",
+      "role": "metric",
+      "definition": "Native saved amplitude/reference quantity. Container, quantity_id and target/function axes define this field; no label-loss interpretation is inferred.",
+      "units": "function-output units unless native field states otherwise",
+      "conditional_scope": "M and U use different absolute-value/synthesis order",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:strict_sign_flip_fraction",
+      "native_field": "strict_sign_flip_fraction",
+      "role": "metric",
+      "definition": "Original saved probability/mass/fraction with its original full or qualified denominator.",
+      "units": "dimensionless mass/fraction",
+      "conditional_scope": "Original denominator; numerator is not an independent sample count",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/0",
+      "native_field": "transition_counts/0",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/1",
+      "native_field": "transition_counts/1",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/2",
+      "native_field": "transition_counts/2",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/3",
+      "native_field": "transition_counts/3",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/4",
+      "native_field": "transition_counts/4",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/5",
+      "native_field": "transition_counts/5",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/6",
+      "native_field": "transition_counts/6",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/7",
+      "native_field": "transition_counts/7",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts/8",
+      "native_field": "transition_counts/8",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 360,
+      "rows_absent": 288,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 360
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/0",
+      "native_field": "transition_fractions/0",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/1",
+      "native_field": "transition_fractions/1",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/2",
+      "native_field": "transition_fractions/2",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/3",
+      "native_field": "transition_fractions/3",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/4",
+      "native_field": "transition_fractions/4",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/5",
+      "native_field": "transition_fractions/5",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/6",
+      "native_field": "transition_fractions/6",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/7",
+      "native_field": "transition_fractions/7",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_fractions/8",
+      "native_field": "transition_fractions/8",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "dimensionless fraction",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:arm",
+      "native_field": "arm",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:seed_layer",
+      "native_field": "seed_layer",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:endpoint_layer",
+      "native_field": "endpoint_layer",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:target_id",
+      "native_field": "target_id",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:quantity_id",
+      "native_field": "quantity_id",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:status",
+      "native_field": "status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:source_denominators",
+      "native_field": "source_denominators",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_VALUE": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [
+            {
+              "pointer": "",
+              "kind": "object",
+              "keys": [
+                "Kd",
+                "Ki"
+              ]
+            }
+          ],
+          "scalar_leaf_count": 2,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:source_denominator_map",
+      "native_field": "source_denominator_map",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 648
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:counts_reason",
+      "native_field": "counts_reason",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 648,
+      "rows_absent": 0,
+      "states": {
+        "SAVED_NULL": 360,
+        "SAVED_VALUE": 288
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        },
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:transition_counts",
+      "native_field": "transition_counts",
+      "role": "metric",
+      "definition": "Reference sign transitions: outer main FIT_ROW_UNIFORM sign and inner sensitivity FIT_PROTEIN_INPUT_UNIFORM sign, both ordered -1,0,+1; flattened row-major index=3*row+column. A suffix /j identifies that zero-based position.",
+      "units": "native count",
+      "conditional_scope": "Native single-seed/single-endpoint counts only; equal-weight aggregate count nulls retain NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE. Fractions keep the saved aggregation.",
+      "rows_present": 288,
+      "rows_absent": 360,
+      "states": {
+        "SAVED_NULL": 288
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": [
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "a3600454dc38060f1a829b6d6d826be5f08fa05dc99201382168c511b53c88a0",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "confirmed_position_definitions": {
+    "reference_transitions": {
+      "fields": [
+        "transition_fractions",
+        "transition_counts"
+      ],
+      "row_axis": {
+        "reference": "FIT_ROW_UNIFORM",
+        "signs": [
+          -1,
+          0,
+          1
+        ]
+      },
+      "column_axis": {
+        "reference": "FIT_PROTEIN_INPUT_UNIFORM",
+        "signs": [
+          -1,
+          0,
+          1
+        ]
+      },
+      "flatten": "row-major index=3*row_index+column_index",
+      "positions": [
+        {
+          "index": 0,
+          "main_sign": -1,
+          "sensitivity_sign": -1
+        },
+        {
+          "index": 1,
+          "main_sign": -1,
+          "sensitivity_sign": 0
+        },
+        {
+          "index": 2,
+          "main_sign": -1,
+          "sensitivity_sign": 1
+        },
+        {
+          "index": 3,
+          "main_sign": 0,
+          "sensitivity_sign": -1
+        },
+        {
+          "index": 4,
+          "main_sign": 0,
+          "sensitivity_sign": 0
+        },
+        {
+          "index": 5,
+          "main_sign": 0,
+          "sensitivity_sign": 1
+        },
+        {
+          "index": 6,
+          "main_sign": 1,
+          "sensitivity_sign": -1
+        },
+        {
+          "index": 7,
+          "main_sign": 1,
+          "sensitivity_sign": 0
+        },
+        {
+          "index": 8,
+          "main_sign": 1,
+          "sensitivity_sign": 1
+        }
+      ],
+      "aggregation": "Original equal computational-seed/endpoint layer aggregation; counts only single-seed/single-endpoint; other count layers null with NOT_APPLICABLE_TO_EQUAL_WEIGHT_AGGREGATE"
+    }
+  },
+  "data_file": "C02_REFERENCE.json"
+}

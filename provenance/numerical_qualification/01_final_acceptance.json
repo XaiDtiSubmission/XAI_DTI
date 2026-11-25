@@ -1,0 +1,1350 @@
+{
+  "schema": "sgc-fr40-final-acceptance-v0.1",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "status": "ACCEPTED_COMPLETE_FINITE_EMPIRICAL_DEVELOPMENT_RESEARCH",
+  "authority": "在当前项目中按照FR40最小执行合同v0.8始终推进，直到完成FR40所有的研究内容并取得明确的科学结论。期间遇到工程问题按照最小工程方案修订，遇到科学问题按照最推荐方案审批并采纳。",
+  "all10cases": true,
+  "source_opens": 56,
+  "source_decode_purposes": 56,
+  "source_opaque_bytes": 2444539101,
+  "native_calls": {
+    "/scientific_calls/FD_neural_scalar_forward": 240,
+    "/scientific_calls/float32_qualification_neural_scalar_forward": 394960,
+    "/scientific_calls/main_neural_scalar_forward": 394960,
+    "/scientific_calls/math_control_input_derivatives": 8,
+    "/scientific_calls/math_control_scalar_forward": 32,
+    "/scientific_calls/research_input_backward": 44840
+  },
+  "internal_two_endpoint_linear_scalars": 1580320,
+  "math_control_result_records": 24,
+  "all_source_input_AD": 44840,
+  "parameter_gradient_calls": 0,
+  "training": 0,
+  "truth_opens": 0,
+  "statistical_inference": 0,
+  "source_domains": {
+    "source_rows": 2242,
+    "Kd": 206,
+    "Ki": 2036,
+    "links": 322659,
+    "needed_keys": 19748
+  },
+  "checks": {
+    "opaque_schema_budget_ledger": 226,
+    "metadata_stream_oracle_resources": 34,
+    "total": 260,
+    "failures": []
+  },
+  "acceptance_details": [
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/admission_execution_receipt.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/admission_finish.signal",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/admission_seal.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/clock_anchor.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/control_binding_receipt.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/process_start.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/runtime_identity_receipt.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/L0_mapping_identity.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/commit_ledger.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/event_ledger.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/execution_receipt.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/frozen_plan.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science/science_progress.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science_finish.signal",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science_process_start.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science_supervision_receipt.json",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science_supervisor_resources.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/science_watchdog_resources.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/supervisor_resources.jsonl",
+      true
+    ],
+    [
+      "artifact:audit/smiles_gine_bottleneck_fr40_execution_v0_2/run_001/watchdog_resources.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/lower_bound_summary.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/paired_comparisons.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/reference_sensitivity.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/span_summary.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/analysis/summary.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_G/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_S/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_017_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_G/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_S/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_029_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_G/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_S/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_043_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_G/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_S/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_071_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_G/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_S/operation_values.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/cases/formal_101_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/operations/needed_keys.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/operations/operation_indices.npy",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/operations/panel_manifest.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/FD_checks.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/FD_coverage.json",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/affine_identities.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/all_source_AD.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/chain_AD.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/group_acceptance.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/math_controls.jsonl",
+      true
+    ],
+    [
+      "artifact:results/smiles_gine_bottleneck_fr40_v0_8/run_001/qualification/point_regions.jsonl",
+      true
+    ],
+    [
+      "actualowner_watchdog_exit0",
+      true
+    ],
+    [
+      "complete",
+      true
+    ],
+    [
+      "56once",
+      true
+    ],
+    [
+      "reservedclosed",
+      true
+    ],
+    [
+      "cap:/scientific_calls/FD_derivative_checks",
+      true
+    ],
+    [
+      "cap:/scientific_calls/FD_neural_scalar_forward",
+      true
+    ],
+    [
+      "cap:/scientific_calls/actual_module_forward_calls_max",
+      true
+    ],
+    [
+      "cap:/scientific_calls/float32_qualification_neural_scalar_forward",
+      true
+    ],
+    [
+      "cap:/scientific_calls/h1_head_decode",
+      true
+    ],
+    [
+      "cap:/scientific_calls/head_constructions_max",
+      true
+    ],
+    [
+      "cap:/scientific_calls/internal_two_endpoint_linear_output_scalars",
+      true
+    ],
+    [
+      "cap:/scientific_calls/main_neural_scalar_forward",
+      true
+    ],
+    [
+      "cap:/scientific_calls/math_control_input_derivatives",
+      true
+    ],
+    [
+      "cap:/scientific_calls/math_control_scalar_forward",
+      true
+    ],
+    [
+      "cap:/scientific_calls/original_checkpoint_decode",
+      true
+    ],
+    [
+      "cap:/scientific_calls/research_input_backward",
+      true
+    ],
+    [
+      "cap:/scientific_calls/state_apply_max",
+      true
+    ],
+    [
+      "cap:/scientific_calls/total_neural_scalar_forward",
+      true
+    ],
+    [
+      "cap:/scientific_sources/all_checkpoint_storage_bytes_max",
+      true
+    ],
+    [
+      "cap:/scientific_sources/all_checkpoint_storages_max",
+      true
+    ],
+    [
+      "cap:/scientific_sources/cache_decoded_coordinates",
+      true
+    ],
+    [
+      "cap:/scientific_sources/cache_decoded_rows",
+      true
+    ],
+    [
+      "cap:/scientific_sources/cache_files",
+      true
+    ],
+    [
+      "cap:/scientific_sources/cache_opaque_bytes",
+      true
+    ],
+    [
+      "cap:/scientific_sources/calibrator_affine_slots",
+      true
+    ],
+    [
+      "cap:/scientific_sources/calibrator_coefficient_floats",
+      true
+    ],
+    [
+      "cap:/scientific_sources/calibrator_files",
+      true
+    ],
+    [
+      "cap:/scientific_sources/h1_head_archive_bytes",
+      true
+    ],
+    [
+      "cap:/scientific_sources/h1_head_files",
+      true
+    ],
+    [
+      "cap:/scientific_sources/metadata_bytes",
+      true
+    ],
+    [
+      "cap:/scientific_sources/metadata_files",
+      true
+    ],
+    [
+      "cap:/scientific_sources/necessary_cache_coordinate_finite_checks",
+      true
+    ],
+    [
+      "cap:/scientific_sources/opaque_bytes",
+      true
+    ],
+    [
+      "cap:/scientific_sources/opaque_sha_passes_max",
+      true
+    ],
+    [
+      "cap:/scientific_sources/opens_max",
+      true
+    ],
+    [
+      "cap:/scientific_sources/original_full_checkpoint_archive_bytes",
+      true
+    ],
+    [
+      "cap:/scientific_sources/original_full_checkpoints",
+      true
+    ],
+    [
+      "cap:/scientific_sources/original_nonfusion_storage_incidental_bytes_cap",
+      true
+    ],
+    [
+      "cap:/scientific_sources/prediction_archives",
+      true
+    ],
+    [
+      "cap:/scientific_sources/prediction_incidental_finite_schema_only",
+      true
+    ],
+    [
+      "cap:/scientific_sources/prediction_member_decoded_scalars",
+      true
+    ],
+    [
+      "cap:/scientific_sources/prediction_members",
+      true
+    ],
+    [
+      "cap:/scientific_sources/prediction_necessary_parity_scalars",
+      true
+    ],
+    [
+      "cap:/scientific_sources/research_used_head_scalar_finite_checks",
+      true
+    ],
+    [
+      "cap:/scientific_sources/unique_files",
+      true
+    ],
+    [
+      "cap:/scientific_sources/unique_used_head_parameters",
+      true
+    ],
+    [
+      "cap:/scientific_work/D_P_DP_operations",
+      true
+    ],
+    [
+      "cap:/scientific_work/DeltaR_equality_checks_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_ReLU_unit_observations_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_check_records",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_normalization_and_dot_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_perturbed_coordinate_representability_checks_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_point_records_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_region_unit_pair_comparisons_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_representability_boolean_fields_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_ternary_mask_hash_bytes_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/FD_whole_vector_comparison_events_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/I_src_four_point_contrasts",
+      true
+    ],
+    [
+      "cap:/scientific_work/R_perm_raw_ratio_slots",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_B_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_E_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_R_checks_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_Skill_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_source_gradient_vectors",
+      true
+    ],
+    [
+      "cap:/scientific_work/affine_vertex_applications",
+      true
+    ],
+    [
+      "cap:/scientific_work/algebra_allowance_evaluations_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/branch_block_equality_checks_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/branch_coordinate_equality_checks_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_auxiliary_matvecs",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_coordinate_comparisons",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_coordinate_finite_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_groups",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_mask_products",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_matvec_output_coordinate_views",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_matvec_product_views",
+      true
+    ],
+    [
+      "cap:/scientific_work/chain_AD_receipt_integer_field_views_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/four_function_operation_views",
+      true
+    ],
+    [
+      "cap:/scientific_work/function_operations",
+      true
+    ],
+    [
+      "cap:/scientific_work/function_triplets",
+      true
+    ],
+    [
+      "cap:/scientific_work/joint_span_norm_primitive_pairs_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/link_lower_bound_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/main_branch_dot_products",
+      true
+    ],
+    [
+      "cap:/scientific_work/main_error_abs",
+      true
+    ],
+    [
+      "cap:/scientific_work/native_input_gradient_coordinate_finite_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/native_source_gradient_coordinates",
+      true
+    ],
+    [
+      "cap:/scientific_work/paired_records",
+      true
+    ],
+    [
+      "cap:/scientific_work/per_function_DP_sums",
+      true
+    ],
+    [
+      "cap:/scientific_work/permuted_branch_dot_products",
+      true
+    ],
+    [
+      "cap:/scientific_work/permuted_error_abs",
+      true
+    ],
+    [
+      "cap:/scientific_work/q_source_gradient_vectors",
+      true
+    ],
+    [
+      "cap:/scientific_work/q_vertex_compositions",
+      true
+    ],
+    [
+      "cap:/scientific_work/qualification_point_float_field_views_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/qualification_point_integer_field_views_max",
+      true
+    ],
+    [
+      "cap:/scientific_work/raw_E_B_Skill_R_slots",
+      true
+    ],
+    [
+      "cap:/scientific_work/raw_R_ratio_slots",
+      true
+    ],
+    [
+      "cap:/scientific_work/reference_sensitivity_records",
+      true
+    ],
+    [
+      "cap:/scientific_work/response_abs_zero_baseline",
+      true
+    ],
+    [
+      "cap:/scientific_work/signed_DP_identity_checks",
+      true
+    ],
+    [
+      "cap:/scientific_work/source_donor_case_triplets",
+      true
+    ],
+    [
+      "cap:/scientific_work/source_group_function_policy_metric_reductions",
+      true
+    ],
+    [
+      "cap:/scientific_work/source_policy_lower_bound_slots",
+      true
+    ],
+    [
+      "cap:/scientific_work/span_summary_records",
+      true
+    ],
+    [
+      "cap:/scientific_work/summary_float_field_views",
+      true
+    ],
+    [
+      "cap:/scientific_work/summary_lower_bound_slots",
+      true
+    ],
+    [
+      "cap:/scientific_work/summary_metric_records",
+      true
+    ],
+    [
+      "cap:/scientific_work/weighted_metric_contribution_vectors",
+      true
+    ],
+    [
+      "cap:/scientific_work/weighted_statistic_field_views",
+      true
+    ],
+    [
+      "cap:/scientific_work/zero_displacement_checks_max",
+      true
+    ],
+    [
+      "files46",
+      true
+    ],
+    [
+      "header:cases/formal_101_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_101_G/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_101_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_101_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_101_S/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_101_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_S/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_G/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_029_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_S/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_G/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_043_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_G/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_S/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_017_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_S/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_S/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_S/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_G/permutation_approximations.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_G/operation_values.npy",
+      true
+    ],
+    [
+      "header:cases/formal_071_G/source_lower_bounds.npy",
+      true
+    ],
+    [
+      "header:operations/operation_indices.npy",
+      true
+    ],
+    [
+      "rows:analysis/summary.jsonl",
+      true
+    ],
+    [
+      "rows:analysis/paired_comparisons.jsonl",
+      true
+    ],
+    [
+      "rows:analysis/reference_sensitivity.jsonl",
+      true
+    ],
+    [
+      "rows:analysis/lower_bound_summary.jsonl",
+      true
+    ],
+    [
+      "rows:analysis/span_summary.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/affine_identities.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/FD_checks.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/point_regions.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/all_source_AD.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/group_acceptance.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/math_controls.jsonl",
+      true
+    ],
+    [
+      "rows:qualification/chain_AD.jsonl",
+      true
+    ],
+    [
+      "rows:operations/needed_keys.jsonl",
+      true
+    ],
+    [
+      "rows:operations/panel_manifest.jsonl",
+      true
+    ],
+    [
+      "chains40",
+      true
+    ],
+    [
+      "seq_SHA_line2048:event_ledger.jsonl",
+      true
+    ],
+    [
+      "all_unique_blockterminals",
+      true
+    ],
+    [
+      "allblocks_completeknown",
+      true
+    ],
+    [
+      "seq_SHA_line2048:commit_ledger.jsonl",
+      true
+    ],
+    [
+      "rootplanunchanged",
+      true
+    ]
+  ],
+  "L3_details": [
+    {
+      "check": "441compactstreams",
+      "passed": true
+    },
+    {
+      "check": "4521plannedblocks",
+      "passed": true
+    },
+    {
+      "check": "exactallstreamranges",
+      "passed": true
+    },
+    {
+      "check": "1077713purposeevents",
+      "passed": true
+    },
+    {
+      "check": "790160nativeforward",
+      "passed": true
+    },
+    {
+      "check": "44840inputAD",
+      "passed": true
+    },
+    {
+      "check": "56opens56decodes",
+      "passed": true
+    },
+    {
+      "check": "allterminalcostsexactreceipt",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 0D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 0P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 0DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 1D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 1P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 1DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 2D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 2P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 2DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 3D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 3P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 3DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 4D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 4P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 4DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 5D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 5P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 5DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 6D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 6P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 6DP",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 7D",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 7P",
+      "passed": true
+    },
+    {
+      "check": "savedmathoracle 7DP",
+      "passed": true
+    },
+    {
+      "check": "allresourceswithinoriginalbounds",
+      "passed": true
+    },
+    {
+      "check": "finalsealwithin24h",
+      "passed": true
+    }
+  ],
+  "FD": {
+    "classifications": {
+      "EMPIRICAL_SMOOTH_MATCH": 120
+    },
+    "completed": 120,
+    "eligible": 120,
+    "groups": 40,
+    "no_minimum_coverage_gate": true,
+    "planned_directions": 120,
+    "status": "EMPIRICAL_CLASSIFICATIONS_RECORDED"
+  },
+  "chain_groups": 40,
+  "all_source_AD_receipt_groups": 40,
+  "stream_count": 441,
+  "reservation_blocks": 4521,
+  "block_cap": 8192,
+  "artifact_commits": 445,
+  "commit_cap": 8192,
+  "unknown_dispatched_events": 0,
+  "source_or_model_retries": 0,
+  "source_science_files": 46,
+  "scientific_NPY_data_bytes": 1592075408,
+  "resources": {
+    "samples": 135,
+    "max_RSS_bytes": 5753454592,
+    "min_available_bytes": 23571431424,
+    "min_disk_bytes": 254925983744
+  },
+  "evidence_tier": "FINITE_EMPIRICAL_EXPOSED_DEVELOPMENT_ONLY",
+  "primary_G_q": [
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "function_id": "q",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "E": 0.5121941479692061,
+      "B": 0.28575335952690356,
+      "Skill": -0.22644078844230267,
+      "R": 1.7656930503472068,
+      "E_perm": 0.7475644744408095,
+      "Skill_perm": -0.46181111491390603,
+      "R_perm": 2.591852151669162,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "function_id": "q",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "E": 0.5045917490671511,
+      "B": 0.28395690795939144,
+      "Skill": -0.22063484110775966,
+      "R": 1.751088027480423,
+      "E_perm": 0.739580631340153,
+      "Skill_perm": -0.4556237233807615,
+      "R_perm": 2.5799370424805077,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "function_id": "q",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "E": 0.56226499249893,
+      "B": 0.2737708821825424,
+      "Skill": -0.28849411031638766,
+      "R": 2.057653773192711,
+      "E_perm": 0.8012598095331918,
+      "Skill_perm": -0.5274889273506493,
+      "R_perm": 2.936752968257775,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "function_id": "q",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "E": 0.5691991127101362,
+      "B": 0.27409559804575945,
+      "Skill": -0.2951035146643768,
+      "R": 2.082614916950827,
+      "E_perm": 0.8063873744464928,
+      "Skill_perm": -0.5322917764007333,
+      "R_perm": 2.9541222143207024,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "function_id": "q",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "E": 0.9060032251330945,
+      "B": 0.338779491947035,
+      "Skill": -0.5672237331860593,
+      "R": 2.6630975251215436,
+      "E_perm": 1.127422483908639,
+      "Skill_perm": -0.788642991961604,
+      "R_perm": 3.3199402005907275,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "function_id": "q",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "E": 0.9056072923103644,
+      "B": 0.3374699206667742,
+      "Skill": -0.5681373716435902,
+      "R": 2.673070153402649,
+      "E_perm": 1.12580869052516,
+      "Skill_perm": -0.7883387698583858,
+      "R_perm": 3.328326276671922,
+      "R_status": "DEFINED_COMPUTED_EMPIRICAL"
+    }
+  ],
+  "comparisons_G": [
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.1790137340561157,
+      "DeltaR": 0.1804936823267983,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.17380987295474654,
+      "DeltaR": 0.1804936823267983,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.1785687906347065,
+      "DeltaR": 0.18353744289323615,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "D",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.17350015913681593,
+      "DeltaR": 0.18353744289323604,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.24516568084015183,
+      "DeltaR": 0.3366377003160257,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.23954944878830503,
+      "DeltaR": 0.3366377003160257,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.24555469052120804,
+      "DeltaR": 0.33061192395634953,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "P",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.2398826623739424,
+      "DeltaR": 0.33061192395634953,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.37898160909775347,
+      "DeltaR": 0.346579841181764,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "policy_id": "FIT_ROW_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.36924495401898483,
+      "DeltaR": 0.3465798411817639,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h0",
+      "DeltaE": 0.380849529934594,
+      "DeltaR": 0.34892718323447935,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    },
+    {
+      "arm": "G",
+      "operation_layer": "DP",
+      "policy_id": "FIT_PROTEIN_INPUT_UNIFORM",
+      "comparator_id": "h_aff",
+      "DeltaE": 0.3712170312140787,
+      "DeltaR": 0.34892718323447924,
+      "E_observed_direction": "OBSERVED_HIGHER",
+      "R_observed_direction": "OBSERVED_HIGHER"
+    }
+  ],
+  "findings": {
+    "q_AD_finite_response": "mainG threeoperations:negativeSkill,EgreaterthanB;ADbetterthanpermutedgradients;bothreferencepolicies same direction",
+    "h1_vs_h0_and_affine": "Gmainthreeoperations aggregateDeltaEandDeltaRpositive;Sdescriptive directionalsohigher;no assertionallindividualseeds orpopulation",
+    "interpretation": "localderivative/mathematical checks passing doesnotmakethis first-order explanation reliableforlargerfiniteoperations;performanceandfidelitynotinterchangeable",
+    "not_claimed": [
+      "allXAIuseless",
+      "SMILES/GINE predictionperformance recertification",
+      "H3solecause",
+      "biologicalcausalmechanism",
+      "independentconfirmation",
+      "practicalmarginPASS",
+      "certifiedfloatingpointerrorbounds"
+    ]
+  },
+  "MODEL_GATE": "EXPOSED_DEVELOPMENT_ONLY",
+  "original_practical_gate": "NOT_ADJUDICATED",
+  "FR50_FR60_release": false,
+  "original_clock_preserved": true,
+  "old_run_seal_preserved": true,
+  "old_v0_7_v0_8_contracts_preserved": true,
+  "L3_new_scientific_source_reads": 0,
+  "L3_new_neural_or_AD_or_math_evaluations": 0,
+  "output_validation_IO": {
+    "opaque_validation_passes": 2,
+    "opaque_bytes_per_pass": 1612347248,
+    "known_opaque_bytes_total": 3224694496,
+    "reason_for_second_pass": "firstvalidationstdoutwastruncatedattooltransport;compactsecondpassreceivedfullresults;not scientific rerun",
+    "headers_and_control_reads": "additionalownregisteredoutputmetadata/controlreads;notexhaustiveOSphysicalIO",
+    "unobserved_physical_IO": null
+  },
+  "remaining_science_authority": "original56single-readandnative790160/AD44840quotasused;noadditionalqueryortrial released"
+}

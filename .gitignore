@@ -1,0 +1,7 @@
+/payload/
+/source_data/
+/.release-downloads/
+/.venv/
+__pycache__/
+*.py[cod]
+.DS_Store

@@ -1,0 +1,567 @@
+{
+  "record_kind": "Selected historical checkpoint and mathematical schema; not a new execution authorization",
+  "source_sha256": "3617e2cd829c4da0bf54868da6902598244887485bc9062146f105d51c9f7582",
+  "checkpoint_schema": {
+    "schema": "sgc-fr40-checkpoint-schema-v0.8",
+    "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+    "status": "FROZEN_SCHEMA_NOT_DECODED_OR_ACTUALLY_QUALIFIED",
+    "dtype": "float32",
+    "element_bytes": 4,
+    "state_shapes": {
+      "S": {
+        "protein.lookup.nonpad": [
+          24,
+          64
+        ],
+        "protein.lookup.pad": [
+          1,
+          64
+        ],
+        "protein.convs.0.weight": [
+          128,
+          64,
+          4
+        ],
+        "protein.convs.0.bias": [
+          128
+        ],
+        "protein.convs.1.weight": [
+          128,
+          64,
+          6
+        ],
+        "protein.convs.1.bias": [
+          128
+        ],
+        "protein.convs.2.weight": [
+          128,
+          64,
+          8
+        ],
+        "protein.convs.2.bias": [
+          128
+        ],
+        "drug.lookup.nonpad": [
+          84,
+          128
+        ],
+        "drug.lookup.pad": [
+          1,
+          128
+        ],
+        "drug.convs.0.weight": [
+          65,
+          128,
+          4
+        ],
+        "drug.convs.0.bias": [
+          65
+        ],
+        "drug.convs.1.weight": [
+          65,
+          128,
+          6
+        ],
+        "drug.convs.1.bias": [
+          65
+        ],
+        "drug.convs.2.weight": [
+          65,
+          128,
+          8
+        ],
+        "drug.convs.2.bias": [
+          65
+        ],
+        "drug.projection.weight": [
+          128,
+          195
+        ],
+        "drug.projection.bias": [
+          128
+        ],
+        "fusion.first.weight": [
+          256,
+          1024
+        ],
+        "fusion.first.bias": [
+          256
+        ],
+        "fusion.second.weight": [
+          128,
+          256
+        ],
+        "fusion.second.bias": [
+          128
+        ],
+        "fusion.Kd.weight": [
+          1,
+          128
+        ],
+        "fusion.Kd.bias": [
+          1
+        ],
+        "fusion.Ki.weight": [
+          1,
+          128
+        ],
+        "fusion.Ki.bias": [
+          1
+        ]
+      },
+      "G": {
+        "protein.lookup.nonpad": [
+          24,
+          64
+        ],
+        "protein.lookup.pad": [
+          1,
+          64
+        ],
+        "protein.convs.0.weight": [
+          128,
+          64,
+          4
+        ],
+        "protein.convs.0.bias": [
+          128
+        ],
+        "protein.convs.1.weight": [
+          128,
+          64,
+          6
+        ],
+        "protein.convs.1.bias": [
+          128
+        ],
+        "protein.convs.2.weight": [
+          128,
+          64,
+          8
+        ],
+        "protein.convs.2.bias": [
+          128
+        ],
+        "drug.node_projection.weight": [
+          128,
+          7
+        ],
+        "drug.node_projection.bias": [
+          128
+        ],
+        "drug.blocks.0.edge.weight": [
+          128,
+          4
+        ],
+        "drug.blocks.0.edge.bias": [
+          128
+        ],
+        "drug.blocks.0.first.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.0.first.bias": [
+          128
+        ],
+        "drug.blocks.0.second.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.0.second.bias": [
+          128
+        ],
+        "drug.blocks.0.eps": [],
+        "drug.blocks.1.edge.weight": [
+          128,
+          4
+        ],
+        "drug.blocks.1.edge.bias": [
+          128
+        ],
+        "drug.blocks.1.first.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.1.first.bias": [
+          128
+        ],
+        "drug.blocks.1.second.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.1.second.bias": [
+          128
+        ],
+        "drug.blocks.1.eps": [],
+        "drug.blocks.2.edge.weight": [
+          128,
+          4
+        ],
+        "drug.blocks.2.edge.bias": [
+          128
+        ],
+        "drug.blocks.2.first.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.2.first.bias": [
+          128
+        ],
+        "drug.blocks.2.second.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.2.second.bias": [
+          128
+        ],
+        "drug.blocks.2.eps": [],
+        "drug.blocks.3.edge.weight": [
+          128,
+          4
+        ],
+        "drug.blocks.3.edge.bias": [
+          128
+        ],
+        "drug.blocks.3.first.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.3.first.bias": [
+          128
+        ],
+        "drug.blocks.3.second.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.3.second.bias": [
+          128
+        ],
+        "drug.blocks.3.eps": [],
+        "drug.blocks.4.edge.weight": [
+          128,
+          4
+        ],
+        "drug.blocks.4.edge.bias": [
+          128
+        ],
+        "drug.blocks.4.first.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.4.first.bias": [
+          128
+        ],
+        "drug.blocks.4.second.weight": [
+          128,
+          128
+        ],
+        "drug.blocks.4.second.bias": [
+          128
+        ],
+        "drug.blocks.4.eps": [],
+        "drug.projection.weight": [
+          128,
+          128
+        ],
+        "drug.projection.bias": [
+          128
+        ],
+        "fusion.first.weight": [
+          256,
+          1024
+        ],
+        "fusion.first.bias": [
+          256
+        ],
+        "fusion.second.weight": [
+          128,
+          256
+        ],
+        "fusion.second.bias": [
+          128
+        ],
+        "fusion.Kd.weight": [
+          1,
+          128
+        ],
+        "fusion.Kd.bias": [
+          1
+        ],
+        "fusion.Ki.weight": [
+          1,
+          128
+        ],
+        "fusion.Ki.bias": [
+          1
+        ]
+      }
+    },
+    "head_state_shapes": {
+      "first.weight": [
+        256,
+        1024
+      ],
+      "first.bias": [
+        256
+      ],
+      "second.weight": [
+        128,
+        256
+      ],
+      "second.bias": [
+        128
+      ],
+      "Kd.weight": [
+        1,
+        128
+      ],
+      "Kd.bias": [
+        1
+      ],
+      "Ki.weight": [
+        1,
+        128
+      ],
+      "Ki.bias": [
+        1
+      ]
+    },
+    "roots": {
+      "original": [
+        "state_dict",
+        "epoch",
+        "arm",
+        "seed"
+      ],
+      "S_h1": [
+        "state_dict",
+        "epoch",
+        "arm",
+        "seed",
+        "LR",
+        "cache_sha256",
+        "head_only_S_LR"
+      ],
+      "G_h1": [
+        "state_dict",
+        "epoch",
+        "arm",
+        "seed",
+        "LR",
+        "cache_sha256",
+        "head_only_R1_G_LR"
+      ]
+    },
+    "root_value_rules": {
+      "original": "exact arm,seed,epoch from asset case map; state keys exactly arm schema",
+      "h1": "exact arm,seed,LR0.0006,cache_sha256 from map,head-only flag true; epoch int1..150 from sealed selected file, never new selection"
+    },
+    "per_original": {
+      "S": {
+        "storages": 26,
+        "scalars": 630917,
+        "storage_bytes": 2523668,
+        "nonfusion_scalars": 335363,
+        "nonfusion_bytes": 1341452,
+        "archive_bytes": 2531477,
+        "zip_entries_max": 42,
+        "nonstorage_entries_max": 16,
+        "nonstorage_payload_bytes_max": 7809
+      },
+      "G": {
+        "storages": 55,
+        "scalars": 630855,
+        "storage_bytes": 2523420,
+        "nonfusion_scalars": 335301,
+        "nonfusion_bytes": 1341204,
+        "archive_bytes": 2539646,
+        "zip_entries_max": 71,
+        "nonstorage_entries_max": 16,
+        "nonstorage_payload_bytes_max": 16226
+      }
+    },
+    "per_h1": {
+      "storages": 8,
+      "scalars": 295554,
+      "storage_bytes": 1182216,
+      "archive_bytes": 1185421,
+      "zip_entries_max": 24,
+      "nonstorage_entries_max": 16,
+      "nonstorage_payload_bytes_max": 3205
+    },
+    "total": {
+      "original_archives": 10,
+      "original_archive_bytes": 25355615,
+      "original_storages": 405,
+      "original_storage_bytes": 25235440,
+      "original_fusion_storage_bytes": 11822160,
+      "original_nonfusion_bytes": 13413280,
+      "h1_archives": 10,
+      "h1_archive_bytes": 11854210,
+      "h1_storages": 80,
+      "h1_storage_bytes": 11822160,
+      "all_storages": 485,
+      "all_storage_bytes": 37057600
+    },
+    "load": {
+      "weights_only": true,
+      "map_location": "cpu",
+      "mmap": false,
+      "opens_per_archive": 1,
+      "hash_passes_per_archive": 1,
+      "decodes_per_archive": 1,
+      "same_sole_read_buffer": true
+    },
+    "zip_before_load": "from same authenticated buffer, inspect central directory; storage uncompressed, unencrypted and declared byte-size multiset exactly schema; no second checkpoint decode for metadata",
+    "nonfusion_allowed": [
+      "state key",
+      "shape",
+      "dtype",
+      "storage size",
+      "storage alias/offset/stride metadata"
+    ],
+    "nonfusion_forbidden": [
+      "isfinite",
+      "norm",
+      "summary",
+      "values output",
+      "encoder construction",
+      "encoder forward",
+      "weight application to encoder"
+    ],
+    "no_storage_amplification": "individually cloned producer tensors; storage bytes equal numel*4, no additional shared/view backing or unexpected alias; otherwise STOP",
+    "zip_metadata_names": [
+      "data.pkl",
+      "byteorder",
+      "version",
+      ".data/serialization_id",
+      ".format_version",
+      ".storage_alignment"
+    ],
+    "zip_naming": "exact declared producer archive prefix plus data/<storage-id>; no filesystem extraction, path traversal or new members; actual serialization-layout proof bound before load",
+    "stop": "extra/root/schema/dtype/size/storage/identity conflict => STOP, no allowance growth or alternate decoder"
+  },
+  "cases": [
+    {
+      "case_code": 5,
+      "case_id": "formal_017_G",
+      "arm": "G",
+      "seed": 17,
+      "h0_original_epoch": 150,
+      "cache": "formal_017_G.cache",
+      "h0_checkpoint": "formal_017_G.h0_checkpoint",
+      "h1_head": "formal_017_G.h1_head",
+      "old_response": "formal_017_G.old_response"
+    },
+    {
+      "case_code": 6,
+      "case_id": "formal_029_G",
+      "arm": "G",
+      "seed": 29,
+      "h0_original_epoch": 150,
+      "cache": "formal_029_G.cache",
+      "h0_checkpoint": "formal_029_G.h0_checkpoint",
+      "h1_head": "formal_029_G.h1_head",
+      "old_response": "formal_029_G.old_response"
+    },
+    {
+      "case_code": 7,
+      "case_id": "formal_043_G",
+      "arm": "G",
+      "seed": 43,
+      "h0_original_epoch": 136,
+      "cache": "formal_043_G.cache",
+      "h0_checkpoint": "formal_043_G.h0_checkpoint",
+      "h1_head": "formal_043_G.h1_head",
+      "old_response": "formal_043_G.old_response"
+    },
+    {
+      "case_code": 8,
+      "case_id": "formal_071_G",
+      "arm": "G",
+      "seed": 71,
+      "h0_original_epoch": 135,
+      "cache": "formal_071_G.cache",
+      "h0_checkpoint": "formal_071_G.h0_checkpoint",
+      "h1_head": "formal_071_G.h1_head",
+      "old_response": "formal_071_G.old_response"
+    },
+    {
+      "case_code": 9,
+      "case_id": "formal_101_G",
+      "arm": "G",
+      "seed": 101,
+      "h0_original_epoch": 150,
+      "cache": "formal_101_G.cache",
+      "h0_checkpoint": "formal_101_G.h0_checkpoint",
+      "h1_head": "formal_101_G.h1_head",
+      "old_response": "formal_101_G.old_response"
+    }
+  ],
+  "science": {
+    "source_hash_domain": "SGC-FR40-PATH-v0.1",
+    "source_identity": [
+      "endpoint",
+      "str(label_group_id)",
+      "str(pair_group_id)"
+    ],
+    "source_rank": "raw SHA256 ascending then canonical full identity UTF8",
+    "donor_rank": "rawSHA256 ascending then int FIT row",
+    "panel": {
+      "Kd": 16,
+      "Ki": 16,
+      "donors_per_source": 2
+    },
+    "operations": [
+      "D:C",
+      "P:B",
+      "DP:D"
+    ],
+    "nodes": "k/32,k0..32; pinned original endpoints; RN64 source+tDelta interior",
+    "lambdas": [
+      0.03125,
+      0.0625,
+      0.125,
+      0.25,
+      0.5,
+      1
+    ],
+    "functions": [
+      "q",
+      "h0",
+      "h_aff",
+      "h1"
+    ],
+    "native_heads": [
+      "h0",
+      "h1"
+    ],
+    "AD": "computedReLUzero derivative0",
+    "function_order": "fa=a*f0+b;q=f1-fa;ma=a*m0;mq=m1-ma; r=derivedf(t)-derivedf(0);A=lambda*m(0);e=r-A;s=absr-abse",
+    "weights": "main .5; sensitive normalized original reciprocals;16source equal;2endpoints equal;5seeds equal;never average policies",
+    "unique_primary": "G/q/FIT_ROW_UNIFORM/MEAN5/KD_KI_EQUAL threeops x sixlambda full E vector, B/Skill mandatory",
+    "new_slopes": "no new q gradient; derive scalar q projection",
+    "no_point_adaptation": true,
+    "no_result_based_selection": true,
+    "FD": "samefirstsource/firstdonor DP k15/16/17; actualvector geometry mgeo; all40chain; no extra points; no minFDcoverage",
+    "tolerances": {
+      "algebra_atol": 1e-12,
+      "algebra_rtol": 1e-12,
+      "chain_FD_atol": 1e-06,
+      "chain_FD_rtol": 1e-05,
+      "oldr_atol": 1e-05,
+      "oldr_rtol": 1e-05,
+      "oldA_atol": 1e-06,
+      "oldA_rtol": 1e-05
+    },
+    "claim": "finite descriptive exposed development smallpanel; no causalmechanism/generalizedXAIgain",
+    "FR50_release": false,
+    "FR60_release": false
+  },
+  "historical_versions": {
+    "python": "3.12.7",
+    "torch": "2.13.0",
+    "numpy": "1.26.4",
+    "psutil": "5.9.0"
+  }
+}

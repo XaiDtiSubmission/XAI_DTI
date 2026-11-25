@@ -1,0 +1,132 @@
+{
+  "schema": "dti-public-claim-asset-map/0.1",
+  "release": "v0.23-r01.1",
+  "manuscript_version": "0.23",
+  "paths_are_repository_relative": true,
+  "release_payload_prefix": "payload/",
+  "coverage_classes": {
+    "BOUNDED_NEW_FROZEN_EXECUTION": "Already completed local original32 GINE target replay; public adapter newly provided but not model-executed during release preparation",
+    "ACCEPTED_HISTORICAL_EXECUTION": "Saved accepted run with static binding checks; does not assert a new local replay",
+    "SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS": "Original production outputs supplied; no whole-claim execution claim",
+    "FROZEN_RETAINED_SUPPORT_REAGGREGATION": "Completed retained-support analysis using frozen models and original numeric objects",
+    "SAVED_SCORE_ARITHMETIC_REPLAY": "Original and retained GATE metrics recomputed from released saved scores, exact label projection and calibrators without model inference",
+    "METHOD_METADATA_OR_STATIC_SCOPE": "Definitions, identities or bibliographic records; not numerical execution"
+  },
+  "core_target": {
+    "arm": "GINE",
+    "fits": [17, 29, 43, 71, 101],
+    "endpoints": ["Kd", "Ki"],
+    "functions": ["h1", "q"],
+    "operation": "D",
+    "lambda": 1,
+    "reference": "restricted FIT_ROW_UNIFORM",
+    "original_panel": {"sources": 32, "links": 64, "summary_slots": 20, "link_function_rows": 640},
+    "followup_panel": {"sources": 128, "links": 256, "summary_slots_accepted_historically": 20, "new_local_function_calls": 0},
+    "public_adapter_model_execution_during_packaging": false,
+    "entrypoint": "scripts/run_frozen_core.py"
+  },
+  "claims": [
+    {
+      "id": "C01", "object": "F32 saved prediction risk and FIT-only calibration",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION", "SAVED_SCORE_ARITHMETIC_REPLAY"],
+      "public_artifacts": ["aggregates/AF03/C01_CASES.json", "aggregates/AF03/C01_SUMMARY.json", "aggregates/AF18/gate_by_fit_endpoint.csv", "aggregates/AF18/gate_summary.csv", "methods/NUMERICAL_OBJECTS.md", "saved_rows/model_gate/frozen_labels.csv.gz", "saved_rows/model_gate/identity_order.jsonl.gz", "scripts/verify_gate_saved_scores.py"],
+      "release_artifacts": ["payload/selectors/numerical_sidecar_bindings.json", "payload/selectors/model_case_bindings.json", "payload/selectors/FR00_identity_order_binding.json"],
+      "release_families": ["payload/saved_scores/{case}/h0_predictions.npz#MODEL_GATE_old.npy", "payload/saved_scores/{case}/h1_high_lr_predictions.npz#MODEL_GATE_new.npy"],
+      "saved_score_execution": {"entrypoint":"scripts/verify_gate_saved_scores.py","independent_staging_values_checked":240,"maximum_absolute_difference":0,"model_inference":false},
+      "remaining_dependencies": ["Apply the label/source access conditions in DATA_SOURCES.md; use the exact saved role order and active NPZ members"],
+      "boundary": "Development-exposed MODEL_GATE; frozen retained-support analysis is not clean-data retraining."
+    },
+    {
+      "id": "C02", "object": "Source/reference-specific anchored component magnitudes M and U",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF02/C02_AMPLITUDES.json", "aggregates/AF02/C02_REFERENCE.json", "aggregates/AF18/anchored_summary.csv", "methods/fr20_output_schema.json"],
+      "release_artifacts": ["payload/selectors/full_O_SRC_panel_manifest.jsonl", "payload/selectors/full_O_SRC_corner_map.jsonl", "payload/selectors/full_O_SRC_reference_weights.jsonl"],
+      "boundary": "Amplitude is not label-risk gain; complete row-uniform and protein-input-uniform references remain distinct."
+    },
+    {
+      "id": "C03", "object": "Frozen anchored deletion and source/reference-specific label risk",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF03/C03_RISKS.json", "aggregates/AF03/C03_CONTRASTS.json", "aggregates/AF03/C03_REFERENCE.json", "aggregates/AF18/anchored_summary.csv", "methods/fr30_output_schema.json", "saved_rows/retained_support/source_level_g_and_losses.jsonl.gz", "saved_rows/retained_support/reference_support_ledger.jsonl.gz"],
+      "release_artifacts": ["payload/selectors/model_case_bindings.json", "payload/selectors/full_O_SRC_panel_manifest.jsonl", "payload/selectors/full_O_SRC_reference_weights.jsonl"],
+      "remaining_dependencies": ["Eligible truth values and preserved F32 score/calibration route for label-risk comparisons"],
+      "boundary": "Numerical anchored deletion is not retraining a globally additive model or biochemical causality."
+    },
+    {
+      "id": "C04", "object": "Complete-operation F64 response, zero/permutation controls and bound",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF04/B2_SUMMARY.jsonl", "aggregates/AF04/B2_PAIRED.jsonl", "aggregates/AF04/B2_REFERENCE.jsonl", "aggregates/AF04/B2_BOUND.jsonl", "aggregates/AF18/complete_operation_GINE_q.csv", "methods/complete_operation/output_schema.json"],
+      "release_artifacts": ["payload/complete_responses/operation_indices.npy", "payload/selectors/numerical_sidecar_bindings.json"],
+      "release_families": ["payload/complete_responses/{case}/operation_values.npy"],
+      "original_products_not_in_release_payload": ["Separate fixed-permutation projection arrays", "Separate source-lower-bound arrays"],
+      "boundary": "Published control/bound summaries are included; main arrays alone do not contain every archived control product."
+    },
+    {
+      "id": "C05", "object": "Helpful/harmful classes, source masses and paired gain-Skill contributions",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF05/C05_CLASSES.jsonl", "aggregates/AF05/C05_DIAGNOSTIC.jsonl", "aggregates/AF05/C05_GAIN_GROUP.jsonl", "aggregates/AF05/C05_PAIRED.jsonl", "aggregates/AF05/C05_SOURCE_JOINT.jsonl", "aggregates/AF18/diagnostic_by_fit_endpoint.csv", "aggregates/AF18/retained_gain_skill_joint.csv", "saved_rows/retained_support/retained_q_diagnostic_per_source.csv.gz"],
+      "boundary": "Native counts, source masses and unconditional contributions retain their own populations; conditional-cell means cannot be substituted."
+    },
+    {
+      "id": "C06", "object": "Original32 finite path/span approximation",
+      "coverage": ["BOUNDED_NEW_FROZEN_EXECUTION", "SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS"],
+      "public_artifacts": ["aggregates/AF06/B1_SPAN.jsonl", "methods/original32_axes.json", "provenance/r01_original32/original_32_slot_comparison.json", "provenance/r01_original32/original_32_link_comparison.json", "provenance/r01_original32/verification_receipt.json", "scripts/run_frozen_core.py"],
+      "release_artifacts": ["payload/selectors/original32_link_panel.jsonl", "payload/selectors/original32_source_panel.jsonl", "payload/references/original32_span_values.npy", "payload/selectors/model_case_bindings.json"],
+      "boundary": "Only the declared core target was newly executed; six observed spans are not a continuous safety radius."
+    },
+    {
+      "id": "C07", "object": "Signed path/grid response and projection cancellation",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS"],
+      "public_artifacts": ["aggregates/AF07/C07_CURVE.jsonl.gz", "aggregates/AF07/C07_PATH.jsonl", "aggregates/AF07/C07_READOUT.jsonl", "aggregates/AF07/C07_SAME_PATH_JOINT.jsonl", "aggregates/AF07/display_numeric_sources.csv"],
+      "original_products_not_in_release_payload": ["All original native 33-node arrays"],
+      "boundary": "Saved 33-node aggregate readouts are supplied; no new residual-cancellation metric or explanatory analysis is claimed."
+    },
+    {
+      "id": "C08", "object": "Empirical numerical and AD/FD qualification",
+      "coverage": ["METHOD_METADATA_OR_STATIC_SCOPE", "ACCEPTED_HISTORICAL_EXECUTION"],
+      "public_artifacts": ["methods/complete_operation/numerical_policy.json", "methods/complete_operation/runtime_policy.json", "provenance/numerical_qualification", "provenance/r01_original32/pilot_receipt.json"],
+      "boundary": "Original120 complete-operation FD checks, path7 qualified/33 unresolved and chain tests are distinct; public adapter does not repeat all checks."
+    },
+    {
+      "id": "PATH_RECHECK", "object": "Historical followup128 finite path/span",
+      "coverage": ["ACCEPTED_HISTORICAL_EXECUTION", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF08/primary_results.json", "aggregates/AF08/span_summary.jsonl", "saved_rows/followup_path/source_results.jsonl", "saved_rows/followup_path/panel_and_references.json", "provenance/r01_followup128/closing_receipt.json", "provenance/r01_original32/historical_128_coverage.json", "aggregates/AF18/path_by_fit_endpoint.csv"],
+      "release_artifacts": ["payload/selectors/followup128_panel_and_references.json"],
+      "boundary": "Zero new local followup function calls; historical Python binary digest UNKNOWN; pair exclusion is not entity isolation."
+    },
+    {
+      "id": "SECANT", "object": "Single-interior query approximation",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS"],
+      "public_artifacts": ["aggregates/AF11/primary_results.json", "aggregates/AF11/span_summary.jsonl"],
+      "boundary": "Saved1,728 span rows and primary comparisons supplied; no universal improvement over zero response or actual speed advantage."
+    },
+    {
+      "id": "RANKING", "object": "Original/new frozen32-candidate fixed-query tasks",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "FROZEN_RETAINED_SUPPORT_REAGGREGATION"],
+      "public_artifacts": ["aggregates/AF10/original_panel_summary.json", "aggregates/AF10/new_source_panel_summary.json", "saved_rows/original_ranking_candidates/candidate_manifest.json", "saved_rows/original_ranking/paired_results.json", "saved_rows/original_ranking_geometry/paired_results.json", "saved_rows/new_source_ranking/candidate_manifest.json", "saved_rows/new_source_ranking/paired_results.json", "aggregates/AF18/original_ranking_retained_sources.csv"],
+      "boundary": "Original/new panels and Kd reversal preserved; response-query counts are not total computational costs."
+    },
+    {
+      "id": "EXT", "object": "External Pack01 prediction only",
+      "coverage": ["SAVED_AGGREGATES_AND_SELECTED_DERIVED_ROWS", "METHOD_METADATA_OR_STATIC_SCOPE"],
+      "public_artifacts": ["aggregates/AF09/external_prediction_values.csv", "aggregates/AF09/external_evidence_receipt.json", "aggregates/AF12/data_traceability_notes_v0_20.json"],
+      "remaining_dependencies": ["Lawfully obtained original Pack01 inputs, labels, native source versions and exact model-input bindings"],
+      "boundary": "Negative predictive gain retained; not external XAI or unexposed confirmation."
+    },
+    {
+      "id": "PANEL_LINEAGE", "object": "Input encoding, finite coverage and registered frozen lineage",
+      "coverage": ["METHOD_METADATA_OR_STATIC_SCOPE"],
+      "public_artifacts": ["aggregates/AF12/frozen_smiles_vocabulary.json", "aggregates/AF12/input_encoding_specification.md", "aggregates/AF12/panel_coverage_v0_20.json", "aggregates/AF12/local_protocol_index_v0_20.json", "aggregates/AF18/frozen_lineage_scope.json", "provenance/r03/full_900_batched/receipt.json", "provenance/r03/archive_conversion/receipt.json", "src/historical/lineage/wp1_build_standardized_cohorts.py", "src/historical/lineage/wp1_v1_4_freeze_labels_and_tasks.py"],
+      "remaining_dependencies": ["This scientific-material subset does not supply all seven formal WP1 inputs and full provenance archives; consult the separately manifested BindingDB source-data assets and their scope"],
+      "boundary": "900registered groups/991archive conversions exact; actual historical producer UNKNOWN; all991 records map to991 evidence units in this scope."
+    }
+  ],
+  "revision_items": [
+    {"id":"R01","claims":["C01","C02","C03","C04","C05","C06","C07","C08","PATH_RECHECK","SECANT","RANKING","EXT"],"status":"PUBLIC_MATERIALS_AT_DISTINCT_ACCESS_AND_EXECUTION_LAYERS","entrypoints":["scripts/verify_release.py","scripts/run_frozen_core.py"]},
+    {"id":"R02","claims":["C01","C02","C03","C04","C05","C06","PATH_RECHECK","RANKING"],"status":"FROZEN_RETAINED_SUPPORT_RESULTS_INCLUDED","public_artifacts":["aggregates/AF18/record_disposition.csv","aggregates/AF18/support_counts.csv","aggregates/AF18/provenance.json"],"boundary":"726excluded associations; no upstream relabelling or model retraining"},
+    {"id":"R03","claims":["PANEL_LINEAGE"],"status":"REGISTERED_TARGET_RECONSTRUCTION_VERIFIED_HISTORICAL_PRODUCER_UNKNOWN","boundary":"Raw contribution/measurement values are not in this public package"},
+    {"id":"R04","claims":[],"status":"DIRECTED_BIBLIOGRAPHIC_COMPARISON","public_artifacts":["references/references_v0_19.json","references/references_v0_19.bib","references/verification_v0_19.json"],"boundary":"Not a systematic review, novelty proof or attestation of human/full-text reading"},
+    {"id":"R05","claims":["C07"],"status":"SAVED_READOUTS_AND_ALGEBRAIC_DEFINITIONS_ONLY","boundary":"No new quantitative residual-cancellation analysis"},
+    {"id":"R06","claims":["PANEL_LINEAGE","RANKING","C06","PATH_RECHECK"],"status":"EXISTING_COVERAGE_METADATA_AND_IDENTITIES_INCLUDED","boundary":"Input identity is not independent entity; selection ratios not perturbation weights or representativeness; no new ranking frequency/intersection analysis"},
+    {"id":"R07","claims":["C01","C02","C03","C04","C05","C06","C07"],"status":"SAVED_FIT_SPECIFIC_DIFFERENCES_AND_DIRECTION_COUNTS","boundary":"No source/target deletion, quantile, bootstrap, population CI or p-value analysis"}
+  ]
+}

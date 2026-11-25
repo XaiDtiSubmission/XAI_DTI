@@ -1,0 +1,16 @@
+{
+  "scope": "Original MODEL_GATE frozen comparison labels in registered score order",
+  "rows": 5697,
+  "endpoints": {
+    "Kd": 798,
+    "Ki": 4899
+  },
+  "truth_dtype": "binary64",
+  "truth_encoding": "Python float.hex(); decode with float.fromhex() without F32 rounding",
+  "source_truth_file_sha256": "9105443d72def4466d3572634e1a298a915622586389393eadce16f1b7abf252",
+  "source_role_order_sha256": "3c9785154cac712c5c3f4c2e19d9d17e9e3ee8cbd011e7a8bdf6d9742b050354",
+  "prediction_columns_exported": false,
+  "raw_source_records_exported": false,
+  "bytes": 488540,
+  "sha256": "28ad82d085fcb8c0399b202deefec782a73c3180ee191f84f3786a4fe7e4027b"
+}

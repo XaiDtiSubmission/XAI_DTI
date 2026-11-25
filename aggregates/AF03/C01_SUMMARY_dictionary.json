@@ -1,0 +1,299 @@
+{
+  "table_id": "C01_SUMMARY",
+  "Data_group": "Data S2",
+  "panel": "P_GATE / whole GATE 5697",
+  "native_axes": [
+    "arm",
+    "seed_layer",
+    "endpoint_layer"
+  ],
+  "axis_dictionary": [
+    {
+      "native_axis": "arm",
+      "definition": "S or G representation family; retains each own case coordinates.",
+      "native_values_navigation_only": [
+        "G",
+        "S",
+        "G_MINUS_S"
+      ],
+      "native_raw_json_tokens": [
+        "\"G\"",
+        "\"S\"",
+        "\"G_MINUS_S\""
+      ],
+      "rows_present": 3,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "seed_layer",
+      "definition": "Native computational seed/case layer, including saved MEAN5; not independent biological replication.",
+      "native_values_navigation_only": [
+        "MEAN5"
+      ],
+      "native_raw_json_tokens": [
+        "\"MEAN5\""
+      ],
+      "rows_present": 3,
+      "rows_absent": 0
+    },
+    {
+      "native_axis": "endpoint_layer",
+      "definition": "Kd, Ki or original saved equal-endpoint layer; no endpoint is synthesized.",
+      "native_values_navigation_only": [
+        "KD_KI_EQUAL"
+      ],
+      "native_raw_json_tokens": [
+        "\"KD_KI_EQUAL\""
+      ],
+      "rows_present": 3,
+      "rows_absent": 0
+    }
+  ],
+  "native_metric_columns": [
+    "J_aff",
+    "J_1d",
+    "risks/h0",
+    "risks/h_aff",
+    "risks/h_1d",
+    "risks/h1"
+  ],
+  "case_seed_policy": "Every native arm and seed/case layer is retained in each row. MEAN5 is an original saved aggregation, not a case or a new mean. native_axis_raw_json preserves exact numeric/string JSON tokens; native_axes provides lexical navigation coordinates.",
+  "references": "GATE: no four-corner reference. O_SRC: full references. PATH: restricted and renormalized original references; retain native policy tokens.",
+  "aggregation": "Native seed, endpoint, operation and container layers only; ALL3_EQUAL is a saved summary, not a fourth direction.",
+  "numeric_objects": "Prediction loss/g/bar_qI use saved F32 scores promoted to F64. Response Skill concerns named CPU-F64 functions, including whole q.",
+  "state_policy": "FIELD_ABSENT is not null; raw_json=null with a missing state means no token; raw_json=\"null\" is explicit saved null. Original unresolved, conditional-empty and qualification tags retain their meanings. No scientific PASS added.",
+  "fields": [
+    {
+      "field_key": "metric:J_aff",
+      "native_field": "J_aff",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 3,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 3
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:J_1d",
+      "native_field": "J_1d",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 3,
+      "rows_absent": 0,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 3
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:risks/h0",
+      "native_field": "risks/h0",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:risks/h_aff",
+      "native_field": "risks/h_aff",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:risks/h_1d",
+      "native_field": "risks/h_1d",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metric:risks/h1",
+      "native_field": "risks/h1",
+      "role": "metric",
+      "definition": "Saved prediction risk or signed risk contrast/part; native container and contrast axes specify GATE J versus O_SRC J30/C_I and positive/negative magnitudes.",
+      "units": "pAffinity loss units",
+      "conditional_scope": "GATE and O_SRC denominators remain separate",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "NON_NULL_SAVED_NUMBER": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:all_seed_J_1d_positive",
+      "native_field": "all_seed_J_1d_positive",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "SAVED_VALUE": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:all_seed_J_aff_positive",
+      "native_field": "all_seed_J_aff_positive",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "SAVED_VALUE": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:all_seed_endpoint_J_1d_positive",
+      "native_field": "all_seed_endpoint_J_1d_positive",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "SAVED_VALUE": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:all_seed_endpoint_J_aff_positive",
+      "native_field": "all_seed_endpoint_J_aff_positive",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 2,
+      "rows_absent": 1,
+      "states": {
+        "SAVED_VALUE": 2
+      },
+      "native_structure_variants": [
+        {
+          "token_available": true,
+          "structures": [],
+          "scalar_leaf_count": 1,
+          "null_leaf_pointers": []
+        }
+      ]
+    },
+    {
+      "field_key": "metadata:status",
+      "native_field": "status",
+      "role": "metadata",
+      "definition": "Original saved field, unchanged. Exact role is fixed by its native field/container, function/contrast axes and parent source register; no new scientific interpretation assigned.",
+      "units": "native field units / status",
+      "conditional_scope": "Original status and eligibility only",
+      "rows_present": 3,
+      "rows_absent": 0,
+      "states": {
+        "MISSING_FIELD": 3
+      },
+      "native_structure_variants": [
+        {
+          "token_available": false
+        }
+      ]
+    }
+  ],
+  "schema": "bmc-clean-aggregate-dictionary/0.19",
+  "saved_aggregate_sha256": "fcba236b2668728683afa3eb5b169b87cb53f6c25fd349bf5144cf518d99d0eb",
+  "array_policy": "Retain saved arrays, named keys and positions. The explicit position definitions below apply only to their named tables and populations.",
+  "data_file": "C01_SUMMARY.json"
+}

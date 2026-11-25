@@ -1,0 +1,64 @@
+{
+  "schema": "sgc-fr40-derivative-qualification-v0.8",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "checks": 120,
+  "groups": 40,
+  "source_points_max": 40,
+  "perturbed_points_max": 240,
+  "point_records_max": 280,
+  "ReLU_units_per_point": 384,
+  "point_unit_observations_max": 107520,
+  "point_mask_encoded_bytes_max": 26880,
+  "each_group": [
+    "case_id",
+    "native_head",
+    "endpoint"
+  ],
+  "directions": [
+    "D",
+    "P",
+    "DP"
+  ],
+  "native_heads": [
+    "h0",
+    "h1"
+  ],
+  "source_selection": "canonical first frozen source and first frozen FIT donor per endpoint; no response selection or replacement",
+  "direction": "delta=donor-source in float64; exact computed all-zero check first; nonzero norm finite/positive; v=delta/norm in float64, shared by FD and AD dot",
+  "eta": 0.0009765625,
+  "eta_exact": "2^-10",
+  "representability": {
+    "coordinate_arrays": "z_plus=RN64(z+eta*v),z_minus=RN64(z-eta*v),same1024-vector used for f calls",
+    "predicate": "all arrays finite AND any(z_plus!=z) AND any(z_minus!=z) AND any(z_plus!=z_minus)",
+    "comparison": "exact computed numerical equality,signed zeros equal; whole-vector any,not every coordinate",
+    "unrepresentable": "if any of the three any predicates false => UNRESOLVED_UNREPRESENTABLE_STEP; no plus/minus model call, never fabricated values",
+    "unchanged_individual_coordinates": "allowed; zeros in direction/unchanged coordinates alone do not fail",
+    "finite_failure": "evaluated mandatory norm/vector/point nonfinite => INVALID_NUMERIC and STOP"
+  },
+  "statuses": [
+    "EMPIRICAL_SMOOTH_MATCH",
+    "EMPIRICAL_SMOOTH_MISMATCH",
+    "UNRESOLVED_KINK_OR_CROSS_REGION",
+    "UNRESOLVED_UNREPRESENTABLE_STEP",
+    "TRIVIAL_ZERO_DISPLACEMENT",
+    "INVALID_NUMERIC"
+  ],
+  "classification_order": [
+    "evaluated mandatory invalid => INVALID_NUMERIC",
+    "exact all-zero delta => TRIVIAL_ZERO_DISPLACEMENT,no division or perturbation calls",
+    "nonzero nonrepresentable whole-vector points => UNRESOLVED_UNREPRESENTABLE_STEP,no perturbation calls",
+    "any computed exact preactivation zero or changed computed region among source/plus/minus => UNRESOLVED_KINK_OR_CROSS_REGION",
+    "remaining empirical-smooth residual tolerance => MATCH/MISMATCH"
+  ],
+  "smooth_eligibility": "all evaluated required values finite; representability true; same computed ternary regions at source/plus/minus, no computed zero units; not certified real-arithmetic smoothness",
+  "empirical_allowance_file": "numerical_policy.json",
+  "group_acceptance": "all mandatory chain_AD checks pass; any actually eligible FD mismatch or INVALID_NUMERIC STOP; non-smooth,unrepresentable,trivial states do not block fixed-AD main panel",
+  "nontrivial_FD_minimum_gate": null,
+  "coverage": "all120 planned directions and40 groups retained, expected/attempted/completed/state counts; stopped prefixes use NOT_EXECUTED_AFTER_STOP metadata,not fake classification; overall zero eligible FD => NO_ELIGIBLE_FD_NOT_A_PASS,not automatic study STOP",
+  "no_adaptive_eta_or_point": true,
+  "no_source_deletion": true,
+  "no_full_source_kink_scan": true,
+  "no_new_forward_or_backward_for_masks": true,
+  "not_classical_derivative_certification": true
+}
+

@@ -1,0 +1,381 @@
+{
+  "schema": "sgc-fr30-output-schema-v0.4",
+  "contract_id": "SGC-FR30-v0.4-DESCRIPTIVE-RISK-COMPOSITION-FULL-BOUND-CHAIN",
+  "status": "APPROVED_PRIMARY_SECONDARY_OUTPUT_SCHEMA_NO_OUTPUT_CREATED",
+  "layers": {
+    "arms": [
+      "G",
+      "S"
+    ],
+    "seeds": [
+      17,
+      29,
+      43,
+      71,
+      101,
+      "MEAN5"
+    ],
+    "endpoints": [
+      "Kd",
+      "Ki",
+      "KD_KI_EQUAL"
+    ],
+    "policies": [
+      "FIT_ROW_UNIFORM",
+      "FIT_PROTEIN_INPUT_UNIFORM"
+    ]
+  },
+  "risk_rows": {
+    "logical_rows": 360,
+    "unique_numeric_slots": 216,
+    "key": [
+      "arm",
+      "seed_layer",
+      "endpoint_layer",
+      "reference_scheme",
+      "function_id"
+    ],
+    "value_fields": [
+      "risk",
+      "source_denominator",
+      "status"
+    ],
+    "shared_baseline_views": "four functions reference canonical shared computed slots; do not count duplicate views as new evaluations"
+  },
+  "difference_rows": {
+    "logical_rows": 360,
+    "unique_numeric_slots": 288,
+    "ids": [
+      "C_I",
+      "J30_aff",
+      "J30_1d",
+      "J30_minusI_aff",
+      "J30_minusI_1d"
+    ],
+    "key": [
+      "arm",
+      "seed_layer",
+      "endpoint_layer",
+      "reference_scheme",
+      "contrast_id"
+    ],
+    "primary_key": [
+      "G",
+      "MEAN5",
+      "KD_KI_EQUAL",
+      "FIT_ROW_UNIFORM",
+      "C_I"
+    ],
+    "value_fields": [
+      "difference",
+      "raw_sign",
+      "status"
+    ],
+    "practical_PASS": false,
+    "practical_margin": null
+  },
+  "reference_comparison": {
+    "unique_delta_CI_slots": 36,
+    "reported_views": 108,
+    "ids": [
+      "delta_CI",
+      "delta_J30_minusI_aff",
+      "delta_J30_minusI_1d"
+    ],
+    "all_same_panel": true,
+    "delta_CI_formula": "C_I_sensitivity-C_I_main"
+  },
+  "future_artifacts": [
+    "entry_receipt.json",
+    "closed_input_binding.json",
+    "prediction_recipe_seal.json",
+    "reuse_qualification_receipt.json",
+    "truth_projection_and_exposure_receipt.json",
+    "five_function_risks.json",
+    "five_risk_differences.json",
+    "reference_sensitivity.json",
+    "numerical_identity_receipt.json",
+    "source_and_call_ledger.jsonl",
+    "resource_log.jsonl",
+    "execution_receipt.json",
+    "supervisor_exit_receipt.json",
+    "checkpoint_manifest_reference_only.json",
+    "claim_scope.json",
+    "stage_report.md",
+    "run_seal.json"
+  ],
+  "source_output_policy": "only scalar aggregate risks, exact identities/digests/counters/qualification controls; no source truth, predictions, errors or numeric qI arrays written. New independent output roots under audit/results fr30 execution v0_1/run_001 to be bound at execution stage, not created now.",
+  "final_seal": "self excluded, explicit file descriptors only; cover all successful or stopped artifacts and report; verify final physical budgets and honest exit status; UNKNOWN if unavailable, no fabricated exit0",
+  "incomplete": "null/absent with reason, never zeros or renormalized subsets",
+  "stage_exit": "registered finite descriptive primary and secondary outputs complete only after a future explicitly authorized run and final integrity acceptance; practical gate NOT_ADJUDICATED, FR40 unreleased, prior H1/H2/H3/route1/NP01 outcomes unchanged",
+  "claim_scope_fields": {
+    "evidence": "EXPOSED_DEVELOPMENT_ONLY",
+    "estimand": "fixed common2242 source-record panel and two reference policies",
+    "practical_margin": null,
+    "practical_PASS": false,
+    "original_practical_gate": "NOT_ADJUDICATED",
+    "FR40_release": false,
+    "old_H1_H2_H3_route1_NP01": "UNCHANGED",
+    "XAI_incremental_value": "NOT_TESTED"
+  },
+  "function_ids": [
+    "h0",
+    "h_aff",
+    "h_1d",
+    "h1_minus_bar_qI",
+    "h1"
+  ],
+  "function_aliases": {
+    "h1_minusI": "h1_minus_bar_qI"
+  },
+  "contrast_formulas": {
+    "C_I": "L(h1_minus_bar_qI)-L(h1)",
+    "J30_aff": "L(h_aff)-L(h1)",
+    "J30_1d": "L(h_1d)-L(h1)",
+    "J30_minusI_aff": "L(h_aff)-L(h1_minus_bar_qI)",
+    "J30_minusI_1d": "L(h_1d)-L(h1_minus_bar_qI)"
+  },
+  "endpoint_source_denominators": {
+    "Kd": 206,
+    "Ki": 2036,
+    "KD_KI_EQUAL": {
+      "Kd": 206,
+      "Ki": 2036
+    }
+  },
+  "current_preparation_outputs_are_not_risk_artifacts": true,
+  "secondary_schema": {
+    "target_id": {
+      "constant": "q",
+      "formula": "h1-h_aff"
+    },
+    "scope": "fixed secondary descriptive summaries; no extra primary test, effect thresholds or selected sample outputs",
+    "key_enums": {
+      "arm": [
+        "G",
+        "S"
+      ],
+      "seed_layer": [
+        17,
+        29,
+        43,
+        71,
+        101,
+        "MEAN5"
+      ],
+      "endpoint_layer": [
+        "Kd",
+        "Ki",
+        "KD_KI_EQUAL"
+      ],
+      "reference_scheme": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "target_id": [
+        "q"
+      ]
+    },
+    "composition": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "reference_scheme",
+        "target_id"
+      ],
+      "records": 72,
+      "fields": {
+        "A_plus": {
+          "type": "finite_float64",
+          "round_before_comparison": false,
+          "min": 0,
+          "formula": "mean(max(delta,0)) over full endpoint N_e"
+        },
+        "A_minus": {
+          "type": "finite_float64",
+          "round_before_comparison": false,
+          "min": 0,
+          "formula": "mean(max(-delta,0)) over full endpoint N_e"
+        },
+        "p_plus": {
+          "type": "finite_float64",
+          "round_before_comparison": false,
+          "min": 0,
+          "max": 1
+        },
+        "p_minus": {
+          "type": "finite_float64",
+          "round_before_comparison": false,
+          "min": 0,
+          "max": 1
+        },
+        "p_zero": {
+          "type": "finite_float64",
+          "round_before_comparison": false,
+          "min": 0,
+          "max": 1
+        }
+      },
+      "descriptive_numeric_fields_per_record": 5,
+      "descriptive_float_fields_total": 360,
+      "integer_fields": {
+        "n_plus": "nonnegative_int_not_bool",
+        "n_minus": "nonnegative_int_not_bool",
+        "n_zero": "nonnegative_int_not_bool",
+        "N_e": "exact_int_206_for_Kd_or2036_for_Ki"
+      },
+      "integer_validity": "all four are exact integers only when seed_layer is one of five integers AND endpoint_layer in Kd/Ki; otherwise all four must be null",
+      "raw_records": 40,
+      "nonnull_integer_fields": 160,
+      "aggregate_records": 32,
+      "null_integer_fields": 128,
+      "source_denominator_map": "all records carry source counts by endpoint, never multiply by number of seeds; metadata not an integer beneficiary count",
+      "aggregate_p_name": "endpoint-weighted seed-average positive/negative/exact-zero difference proportions",
+      "aggregate_p_prohibited_interpretation": "not fraction of distinct sources consistently benefiting across five seeds or independent biological/entity beneficiaries",
+      "float_residual_fields": {
+        "r_composition": "C_I-(A_plus-A_minus)",
+        "r_proportion": "p_plus+p_minus+p_zero-1"
+      },
+      "float_checks": {
+        "records_each": 72,
+        "criterion": "abs(raw_residual)<=1e-8; keep signed unrounded residual; no clipping"
+      },
+      "integer_check": {
+        "records": 40,
+        "criterion": "n_plus+n_minus+n_zero==N_e exactly; no float casting/tolerance",
+        "residual": "exact integer (n_plus+n_minus+n_zero)-N_e must equal0"
+      }
+    },
+    "M_I": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "reference_scheme",
+        "target_id"
+      ],
+      "records": 72,
+      "value": {
+        "type": "finite_float64",
+        "round_before_comparison": false,
+        "min": 0
+      },
+      "formula": "mean abs(bar_qI) same source/endpoint/seed weights",
+      "source": "primary target column8 only",
+      "phase": "computed and hash-bound before y_true numeric decode"
+    },
+    "D_ref": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "target_id"
+      ],
+      "records": 36,
+      "value": {
+        "type": "finite_float64",
+        "round_before_comparison": false,
+        "min": 0
+      },
+      "policy_pair": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "formula": "mean abs(bar_qI_main-bar_qI_sensitivity), not abs(M_I_main-M_I_sensitivity)",
+      "phase": "computed and hash-bound before y_true numeric decode"
+    },
+    "B_abs_delta": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "reference_scheme",
+        "target_id"
+      ],
+      "records": 72,
+      "value": {
+        "type": "finite_float64",
+        "round_before_comparison": false,
+        "min": 0
+      },
+      "formula": "A_plus+A_minus; this is mean abs(delta); no second source-level abs(delta) pass",
+      "use": "derived field in bound receipt, not a new primary/ratio"
+    },
+    "policy_bound_receipts": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "reference_scheme",
+        "target_id"
+      ],
+      "records": 72,
+      "source_value_views": [
+        "C_I",
+        "A_plus",
+        "A_minus",
+        "B_abs_delta",
+        "M_I"
+      ],
+      "signed_residual_fields": {
+        "r_C_to_B": "abs(C_I)-B_abs_delta",
+        "r_B_to_M": "B_abs_delta-M_I",
+        "r_M": "abs(C_I)-M_I"
+      },
+      "residuals_per_record": 3,
+      "signed_residual_fields_total": 216
+    },
+    "reference_bound_receipts": {
+      "key": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "target_id"
+      ],
+      "records": 36,
+      "policy_pair": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "source_value_views": [
+        "C_I_main",
+        "C_I_sensitivity",
+        "delta_CI",
+        "D_ref"
+      ],
+      "delta_CI_formula": "C_I_sensitivity-C_I_main (reuse original36 differences)",
+      "signed_residual_field": {
+        "r_D": "abs(delta_CI)-D_ref"
+      },
+      "signed_residual_fields_total": 36
+    },
+    "bound_audit": {
+      "inequality_events": 252,
+      "criterion": "each signed residual<=1e-8; theoretical exact relation<=0",
+      "do_not": "abs(residual) test on one-sided inequalities, truncate positive residual, alter effect, interpret as certified float/sign bound or scientific success"
+    },
+    "unlabeled_digest": {
+      "existing_recipe_seal_reused": true,
+      "added_blocks": 1,
+      "values": 108,
+      "bytes": 864,
+      "dtype": "little_endian_float64",
+      "order": "M_I72 values first in canonical arm G,S; policy main,sensitivity; seed17,29,43,71,101,MEAN5; endpoint Kd,Ki,KD_KI_EQUAL; then D_ref36 in arm/seed/endpoint order; target_id always q; all keys bound in recipe",
+      "label_dependent_values_in_this_block": 0
+    },
+    "output_file_mapping": {
+      "composition": "five_risk_differences.json.secondary_composition[72]",
+      "M_I": "reference_sensitivity.json.M_I[72]",
+      "D_ref": "reference_sensitivity.json.D_ref[36]",
+      "bound_receipts": "numerical_identity_receipt.json.policy_bounds[72] and reference_bounds[36]",
+      "composition_residuals": "numerical_identity_receipt.json.composition_identities[72]",
+      "integer_receipts": "numerical_identity_receipt.json.raw_count_equalities[40]",
+      "unlabeled_digest": "prediction_recipe_seal.json.unlabeled_summary_digest",
+      "interpretation": "stage_report.md and claim_scope.json",
+      "calls": "source_and_call_ledger.jsonl.frozen_secondary_work_units"
+    },
+    "incomplete": "missing/null whole required result with reason and STOP, never substitute zero or retain a successful subset",
+    "persistence": "no source delta/sign membership lists or source truth/prediction/error/bar_qI output"
+  }
+}

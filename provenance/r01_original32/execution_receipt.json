@@ -1,0 +1,36 @@
+{
+  "status": "PASS_BOUNDED_FROZEN_CORE_WITH_HISTORICAL_128_REUSE",
+  "elapsed_seconds": 4.128867082996294,
+  "process_peak_RSS_bytes_Darwin": 728776704,
+  "counter_totals": {
+    "authenticated_asset_reads": 34,
+    "authenticated_asset_bytes": 1197041670,
+    "affine_slots_decoded": 10,
+    "affine_coefficients_decoded": 20,
+    "cache_rows": 980,
+    "cache_coordinates": 1003520,
+    "checkpoint_decode": 10,
+    "checkpoint_storages": 315,
+    "checkpoint_storage_bytes": 18528180,
+    "nonfusion_incidental_bytes": 6706020,
+    "head_parameters": 2955540,
+    "source_input_AD": 320,
+    "chain_AD_coordinate_checks": 4096,
+    "native_head_forward": 940,
+    "direction_dot": 640,
+    "native_point_reuses": 340
+  },
+  "new_original_panel_slots": 20,
+  "historical_followup_slots_reused": 20,
+  "new_function_calls_on_followup_panel": 0,
+  "limitations": [
+    "Only GINE D lambda=1 restricted FIT_ROW_UNIFORM is newly evaluated.",
+    "No encoder, training, calibration refit, truth scoring, new FD or inferential statistics.",
+    "Original and followup panel support and baseline functions remain separate.",
+    "Historical followup exact Python binary identity remains UNKNOWN.",
+    "Other retained claims require their own applicable material coverage; this is not whole-paper reproduction.",
+    "Author/licensing/editorial access facts remain pending; R01-11 is not closed."
+  ],
+  "public_release": false,
+  "historical_outputs_changed": false
+}

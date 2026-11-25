@@ -1,0 +1,806 @@
+{
+  "status": "PASS_20_OF_20_TARGET_SLOTS",
+  "target": {
+    "arm": "G",
+    "operation": "D",
+    "lambda": 1,
+    "reference": "FIT_ROW_UNIFORM"
+  },
+  "comparison_fields": [
+    "E",
+    "B",
+    "Skill"
+  ],
+  "scalar_comparisons": 60,
+  "slots": [
+    {
+      "fit": 17,
+      "endpoint": "Kd",
+      "function": "h1",
+      "source_line_one_based": 3498,
+      "original_line_sha256": "d9eb4df2ce2cf84dc55f15cd6b481e15c63a90a3637e2194d507c70f1e711258",
+      "saved": {
+        "E": 0.3219127328811178,
+        "B": 0.7082653430737761,
+        "Skill": 0.38635261019265826
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.32191273288111777,
+          "saved": 0.3219127328811178,
+          "difference": -5.551115123125783e-17,
+          "allowed_error": 1.6438254657622356e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.7082653430737762,
+          "saved": 0.7082653430737761,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 2.4165306861475524e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.38635261019265843,
+          "saved": 0.38635261019265826,
+          "difference": 1.6653345369377348e-16,
+          "allowed_error": 1.7727052203853166e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 17,
+      "endpoint": "Kd",
+      "function": "q",
+      "source_line_one_based": 3462,
+      "original_line_sha256": "72d9fcc9e16bf65d125733b19f3fff925cb0a3945616d78d30a933caba9562cc",
+      "saved": {
+        "E": 0.3739438411505347,
+        "B": 0.15972303106576566,
+        "Skill": -0.21422081008476904
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.3739438411505347,
+          "saved": 0.3739438411505347,
+          "difference": 0.0,
+          "allowed_error": 1.7478876823010693e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.15972303106576566,
+          "saved": 0.15972303106576566,
+          "difference": 0.0,
+          "allowed_error": 1.3194460621315312e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.21422081008476904,
+          "saved": -0.21422081008476904,
+          "difference": 0.0,
+          "allowed_error": 1.4284416201695381e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 17,
+      "endpoint": "Ki",
+      "function": "h1",
+      "source_line_one_based": 3690,
+      "original_line_sha256": "409c8054e4db49fa91e1c6a0b564273a46791500f893f984c7ff1b0044f8460b",
+      "saved": {
+        "E": 0.9441263910739497,
+        "B": 0.933185707620524,
+        "Skill": -0.010940683453425692
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.9441263910739498,
+          "saved": 0.9441263910739497,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 2.888252782147899e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.933185707620524,
+          "saved": 0.933185707620524,
+          "difference": 0.0,
+          "allowed_error": 2.866371415241048e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.010940683453425804,
+          "saved": -0.010940683453425692,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 1.0218813669068514e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 17,
+      "endpoint": "Ki",
+      "function": "q",
+      "source_line_one_based": 3654,
+      "original_line_sha256": "ec694aa484f0e65d3207d56c8590f832ebf1933f6d06d600ad8feb62bbdec625",
+      "saved": {
+        "E": 0.819197288391107,
+        "B": 0.3001085603249196,
+        "Skill": -0.5190887280661873
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.819197288391107,
+          "saved": 0.819197288391107,
+          "difference": 0.0,
+          "allowed_error": 2.6383945767822138e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.3001085603249196,
+          "saved": 0.3001085603249196,
+          "difference": 0.0,
+          "allowed_error": 1.6002171206498392e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.5190887280661873,
+          "saved": -0.5190887280661873,
+          "difference": 0.0,
+          "allowed_error": 2.0381774561323744e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 29,
+      "endpoint": "Kd",
+      "function": "h1",
+      "source_line_one_based": 4074,
+      "original_line_sha256": "172d21b7d26f53fb18229710b53ae71c45fe62da4b3de2abc8b5f7799558ed05",
+      "saved": {
+        "E": 0.33613081445904575,
+        "B": 0.696520563861509,
+        "Skill": 0.3603897494024632
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.3361308144590458,
+          "saved": 0.33613081445904575,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.6722616289180915e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.6965205638615088,
+          "saved": 0.696520563861509,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 2.3930411277230175e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.36038974940246304,
+          "saved": 0.3603897494024632,
+          "difference": -1.6653345369377348e-16,
+          "allowed_error": 1.7207794988049263e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 29,
+      "endpoint": "Kd",
+      "function": "q",
+      "source_line_one_based": 4038,
+      "original_line_sha256": "a46714589866b0c76115a5ac4a606a2224c29417021aba9399127ffe0e01a0c0",
+      "saved": {
+        "E": 0.25009189418153677,
+        "B": 0.33591020433946306,
+        "Skill": 0.08581831015792629
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.25009189418153677,
+          "saved": 0.25009189418153677,
+          "difference": 0.0,
+          "allowed_error": 1.5001837883630736e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.33591020433946306,
+          "saved": 0.33591020433946306,
+          "difference": 0.0,
+          "allowed_error": 1.671820408678926e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.08581831015792629,
+          "saved": 0.08581831015792629,
+          "difference": 0.0,
+          "allowed_error": 1.1716366203158526e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 29,
+      "endpoint": "Ki",
+      "function": "h1",
+      "source_line_one_based": 4266,
+      "original_line_sha256": "ecfab57326e08eb570dc907f89b13c3b5a494bb52160b43b33f7fa984ef5f52c",
+      "saved": {
+        "E": 0.5647139794787892,
+        "B": 0.8528892219954932,
+        "Skill": 0.288175242516704
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.564713979478789,
+          "saved": 0.5647139794787892,
+          "difference": -2.220446049250313e-16,
+          "allowed_error": 2.1294279589575782e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.8528892219954931,
+          "saved": 0.8528892219954932,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 2.705778443990986e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.2881752425167041,
+          "saved": 0.288175242516704,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 1.5763504850334081e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 29,
+      "endpoint": "Ki",
+      "function": "q",
+      "source_line_one_based": 4230,
+      "original_line_sha256": "4d00d14a26329867f50ab3b3b3a61c2c2882dc87f4565482f69c2eeb9c1a2e79",
+      "saved": {
+        "E": 0.5837484988088417,
+        "B": 0.35889186101389037,
+        "Skill": -0.22485663779495135
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.5837484988088417,
+          "saved": 0.5837484988088417,
+          "difference": 0.0,
+          "allowed_error": 2.1674969976176836e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.3588918610138905,
+          "saved": 0.35889186101389037,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 1.7177837220277808e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.22485663779495124,
+          "saved": -0.22485663779495135,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 1.4497132755899025e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 43,
+      "endpoint": "Kd",
+      "function": "h1",
+      "source_line_one_based": 4650,
+      "original_line_sha256": "f2d8063bdb46478a00e3a73873e7be7808209d71ec13c911ebecec8a132f47c1",
+      "saved": {
+        "E": 0.32138996510271306,
+        "B": 0.6314861636406481,
+        "Skill": 0.3100961985379351
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.32138996510271306,
+          "saved": 0.32138996510271306,
+          "difference": 0.0,
+          "allowed_error": 1.6427799302054261e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.6314861636406481,
+          "saved": 0.6314861636406481,
+          "difference": 0.0,
+          "allowed_error": 2.262972327281296e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.3100961985379351,
+          "saved": 0.3100961985379351,
+          "difference": 0.0,
+          "allowed_error": 1.62019239707587e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 43,
+      "endpoint": "Kd",
+      "function": "q",
+      "source_line_one_based": 4614,
+      "original_line_sha256": "b4f2cf07e4a2129a669288d62479c965bff74528f1826bb5977ab14c820a4207",
+      "saved": {
+        "E": 0.3649510013603486,
+        "B": 0.2948582523476705,
+        "Skill": -0.07009274901267809
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.36495100136034864,
+          "saved": 0.3649510013603486,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.7299020027206973e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.2948582523476706,
+          "saved": 0.2948582523476705,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 1.5897165046953411e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.07009274901267804,
+          "saved": -0.07009274901267809,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.1401854980253561e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 43,
+      "endpoint": "Ki",
+      "function": "h1",
+      "source_line_one_based": 4842,
+      "original_line_sha256": "079fb60ba3566838f9a3adba51286cc539a2313415e5f27175b3ba8c75d5e219",
+      "saved": {
+        "E": 0.7708935081977643,
+        "B": 1.1445085000557176,
+        "Skill": 0.3736149918579533
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.7708935081977644,
+          "saved": 0.7708935081977643,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 2.5417870163955284e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 1.1445085000557174,
+          "saved": 1.1445085000557176,
+          "difference": -2.220446049250313e-16,
+          "allowed_error": 3.2890170001114347e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.373614991857953,
+          "saved": 0.3736149918579533,
+          "difference": -3.3306690738754696e-16,
+          "allowed_error": 1.7472299837159064e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 43,
+      "endpoint": "Ki",
+      "function": "q",
+      "source_line_one_based": 4806,
+      "original_line_sha256": "10aad817672ab484f4e72891615a3c7decb2072eaa85b3870a73dd17bcdb19ab",
+      "saved": {
+        "E": 0.775243290177365,
+        "B": 0.45163302231190283,
+        "Skill": -0.3236102678654622
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.775243290177365,
+          "saved": 0.775243290177365,
+          "difference": 0.0,
+          "allowed_error": 2.5504865803547303e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.4516330223119028,
+          "saved": 0.45163302231190283,
+          "difference": -5.551115123125783e-17,
+          "allowed_error": 1.9032660446238054e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.32361026786546226,
+          "saved": -0.3236102678654622,
+          "difference": -5.551115123125783e-17,
+          "allowed_error": 1.6472205357309242e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 71,
+      "endpoint": "Kd",
+      "function": "h1",
+      "source_line_one_based": 5226,
+      "original_line_sha256": "eb9e53a3a03acea77dbc7ace5aa5a6d47d6b6fa0551941981293a3d1bce1735a",
+      "saved": {
+        "E": 0.41979538472644,
+        "B": 0.7213504929877721,
+        "Skill": 0.3015551082613321
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.41979538472643996,
+          "saved": 0.41979538472644,
+          "difference": -5.551115123125783e-17,
+          "allowed_error": 1.83959076945288e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.7213504929877722,
+          "saved": 0.7213504929877721,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 2.442700985975544e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.30155510826133225,
+          "saved": 0.3015551082613321,
+          "difference": 1.6653345369377348e-16,
+          "allowed_error": 1.6031102165226643e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 71,
+      "endpoint": "Kd",
+      "function": "q",
+      "source_line_one_based": 5190,
+      "original_line_sha256": "b1cb43c1768add39a3d6e9335d2d6ce6007f1b3a22630149ec705639363c823a",
+      "saved": {
+        "E": 0.4232660756077027,
+        "B": 0.32518864438489403,
+        "Skill": -0.09807743122280865
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.4232660756077027,
+          "saved": 0.4232660756077027,
+          "difference": 0.0,
+          "allowed_error": 1.8465321512154052e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.32518864438489403,
+          "saved": 0.32518864438489403,
+          "difference": 0.0,
+          "allowed_error": 1.650377288769788e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.09807743122280865,
+          "saved": -0.09807743122280865,
+          "difference": 0.0,
+          "allowed_error": 1.1961548624456172e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 71,
+      "endpoint": "Ki",
+      "function": "h1",
+      "source_line_one_based": 5418,
+      "original_line_sha256": "829213d02b6b12f7d336892a098f52a6c2a52d3491a40d82688a69eadfce50e4",
+      "saved": {
+        "E": 0.639684526304484,
+        "B": 0.9203791380690158,
+        "Skill": 0.2806946117645318
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.6396845263044839,
+          "saved": 0.639684526304484,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 2.2793690526089677e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.9203791380690161,
+          "saved": 0.9203791380690158,
+          "difference": 2.220446049250313e-16,
+          "allowed_error": 2.8407582761380316e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.28069461176453214,
+          "saved": 0.2806946117645318,
+          "difference": 3.3306690738754696e-16,
+          "allowed_error": 1.5613892235290639e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 71,
+      "endpoint": "Ki",
+      "function": "q",
+      "source_line_one_based": 5382,
+      "original_line_sha256": "2a35595e63187ba56201f0f1743111ecaf534d32b51267b3546415a99490f60f",
+      "saved": {
+        "E": 0.6968110237487721,
+        "B": 0.38587190530737997,
+        "Skill": -0.31093911844139216
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.696811023748772,
+          "saved": 0.6968110237487721,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 2.393622047497544e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.38587190530738,
+          "saved": 0.38587190530737997,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.7717438106147601e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.310939118441392,
+          "saved": -0.31093911844139216,
+          "difference": 1.6653345369377348e-16,
+          "allowed_error": 1.621878236882784e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 101,
+      "endpoint": "Kd",
+      "function": "h1",
+      "source_line_one_based": 5802,
+      "original_line_sha256": "4853df94a6ae7f11d1951538562722d5c189c2f75b81c413c88519fc11f4e4f8",
+      "saved": {
+        "E": 0.37149286693645356,
+        "B": 0.7585091566337299,
+        "Skill": 0.3870162896972763
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.3714928669364535,
+          "saved": 0.37149286693645356,
+          "difference": -5.551115123125783e-17,
+          "allowed_error": 1.7429857338729071e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.7585091566337299,
+          "saved": 0.7585091566337299,
+          "difference": 0.0,
+          "allowed_error": 2.51701831326746e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.38701628969727636,
+          "saved": 0.3870162896972763,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.7740325793945526e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 101,
+      "endpoint": "Kd",
+      "function": "q",
+      "source_line_one_based": 5766,
+      "original_line_sha256": "c6cce890c997fc2e6d76f6da2c8213717422311fe3ade5cd25a9ddbc219f4d71",
+      "saved": {
+        "E": 0.423273462867779,
+        "B": 0.36826977532597843,
+        "Skill": -0.05500368754180057
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.423273462867779,
+          "saved": 0.423273462867779,
+          "difference": 0.0,
+          "allowed_error": 1.846546925735558e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.3682697753259785,
+          "saved": 0.36826977532597843,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.7365395506519568e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.05500368754180052,
+          "saved": -0.05500368754180057,
+          "difference": 5.551115123125783e-17,
+          "allowed_error": 1.1100073750836011e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 101,
+      "endpoint": "Ki",
+      "function": "h1",
+      "source_line_one_based": 5994,
+      "original_line_sha256": "7180407e21fe44b91135f7e5b784db469a3ad025431448c13802fe8054dc9bef",
+      "saved": {
+        "E": 0.7237573749335408,
+        "B": 1.0428304771200154,
+        "Skill": 0.31907310218647467
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.7237573749335409,
+          "saved": 0.7237573749335408,
+          "difference": 1.1102230246251565e-16,
+          "allowed_error": 2.447514749867082e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 1.0428304771200154,
+          "saved": 1.0428304771200154,
+          "difference": 0.0,
+          "allowed_error": 3.085660954240031e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": 0.31907310218647456,
+          "saved": 0.31907310218647467,
+          "difference": -1.1102230246251565e-16,
+          "allowed_error": 1.6381462043729491e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    },
+    {
+      "fit": 101,
+      "endpoint": "Ki",
+      "function": "q",
+      "source_line_one_based": 5958,
+      "original_line_sha256": "39c16f95721a913fc69e37964e64e5fdf43745a7583a3f3901ee577da2156789",
+      "saved": {
+        "E": 0.9470776326500558,
+        "B": 0.3857710469937121,
+        "Skill": -0.5613065856563437
+      },
+      "comparisons": {
+        "E": {
+          "actual": 0.9470776326500558,
+          "saved": 0.9470776326500558,
+          "difference": 0.0,
+          "allowed_error": 2.8941552653001113e-12,
+          "pass": true
+        },
+        "B": {
+          "actual": 0.3857710469937121,
+          "saved": 0.3857710469937121,
+          "difference": 0.0,
+          "allowed_error": 1.7715420939874242e-12,
+          "pass": true
+        },
+        "Skill": {
+          "actual": -0.5613065856563437,
+          "saved": -0.5613065856563437,
+          "difference": 0.0,
+          "allowed_error": 2.1226131713126875e-12,
+          "pass": true
+        }
+      },
+      "source_count": 16,
+      "link_count": 32,
+      "source": "new frozen-head reevaluation; own saved E/B/Skill baseline",
+      "pass": true
+    }
+  ],
+  "current_AF6_identity": {
+    "path": "drafts/bmc_bioinformatics_v0_22/additional_files/Additional_file_06_Data_S5.zip",
+    "bytes": 1080533,
+    "sha256": "876a34adbeb2bb2103808ec817ce2d86c44281e087d0b9b3cc73bf97874ea320",
+    "member": "B1_SPAN.jsonl",
+    "member_sha256": "9f350c2c635e8ce6d41dd40e580322ddfa1b6e99bc9a69347ce57363b42d09aa"
+  },
+  "aggregation": "Original restricted donor weights /16; endpoint-specific fixed fit; Skill=B-E.",
+  "new_inferential_statistics": false
+}

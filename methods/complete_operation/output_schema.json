@@ -1,0 +1,803 @@
+{
+  "schema": "sgc-fr40-output-schema-v0.8",
+  "contract_id": "SGC-FR40-v0.8-EMPIRICAL-AUDIT-COST-IDENTITY-LOG-RECOVERY",
+  "status": "FROZEN_EMPIRICAL_LAYOUT_NOT_PRODUCED",
+  "schemas": {
+    "response_arrays": {
+      "files": 10,
+      "format": "NPY1.0 little-endian float64 C-contiguous",
+      "shape_per_case": [
+        322659,
+        4,
+        12
+      ],
+      "function_order": [
+        "q",
+        "h0",
+        "h_aff",
+        "h1"
+      ],
+      "columns": [
+        "A_D",
+        "A_P",
+        "A_DP",
+        "r_D",
+        "r_P",
+        "r_DP",
+        "epsilon_D",
+        "epsilon_P",
+        "epsilon_DP",
+        "I_src",
+        "signed_DP_identity_residual",
+        "signed_lower_bound_residual"
+      ],
+      "nullable": false,
+      "data_bytes": 1239010560,
+      "header_bytes_per_file_max": 4096
+    },
+    "permutation_arrays": {
+      "files": 10,
+      "format": "NPY1.0 little-endian float64 C-contiguous",
+      "shape_per_case": [
+        322659,
+        4,
+        3
+      ],
+      "columns": [
+        "A_D",
+        "A_P",
+        "A_DP"
+      ],
+      "nullable": false,
+      "data_bytes": 309752640,
+      "header_bytes_per_file_max": 4096,
+      "responses": "reuse main same-function responses; zero-control A is implicit0"
+    },
+    "source_lower_bound_arrays": {
+      "files": 10,
+      "format": "NPY1.0 little-endian float64 C-contiguous",
+      "shape_per_case": [
+        2242,
+        4,
+        2,
+        5
+      ],
+      "columns": [
+        "U_src",
+        "E_D",
+        "E_P",
+        "E_DP",
+        "signed_lower_bound_residual"
+      ],
+      "policy_order": [
+        "FIT_ROW_UNIFORM",
+        "FIT_PROTEIN_INPUT_UNIFORM"
+      ],
+      "data_bytes": 7174400,
+      "nullable": false,
+      "header_bytes_per_file_max": 4096,
+      "source_order": "canonical full triple, with explicit original GATE index mapping"
+    },
+    "operation_index_array": {
+      "files": 1,
+      "format": "NPY1.0 little-endian int64 C-contiguous",
+      "shape": [
+        322659,
+        14
+      ],
+      "columns": [
+        "source_GATE_index0",
+        "donor_FIT_index0",
+        "endpoint_code",
+        "A_key_id",
+        "B_key_id",
+        "C_key_id",
+        "D_key_id",
+        "A_cache_row",
+        "B_cache_row",
+        "C_cache_row",
+        "D_cache_row",
+        "main_weight_denominator",
+        "sensitive_weight_denominator",
+        "support_code"
+      ],
+      "data_bytes": 36137808,
+      "header_bytes_per_file_max": 4096,
+      "metadata_shared_all_cases": true
+    },
+    "identity_tables": {
+      "needed_keys_jsonl_rows": 19748,
+      "needed_keys_bytes_max": 12582912,
+      "panel_jsonl_rows": 2242,
+      "panel_bytes_max": 2097152,
+      "preserve_all_aliases_and_full_triples": true,
+      "copied_identity_not_predictor_input": true
+    },
+    "summary": {
+      "format": "JSONL",
+      "rows": 1152,
+      "keys": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "operation_layer",
+        "function_id",
+        "policy_id"
+      ],
+      "float_fields": [
+        "E",
+        "B",
+        "Skill",
+        "R",
+        "mean_r",
+        "mean_A",
+        "mean_epsilon",
+        "mean_abs_A",
+        "r_min",
+        "r_max",
+        "A_min",
+        "A_max",
+        "epsilon_min",
+        "epsilon_max",
+        "r_positive_fraction",
+        "r_negative_fraction",
+        "r_zero_fraction",
+        "A_positive_fraction",
+        "A_negative_fraction",
+        "A_zero_fraction",
+        "epsilon_positive_fraction",
+        "epsilon_negative_fraction",
+        "epsilon_zero_fraction",
+        "E_perm",
+        "Skill_perm",
+        "R_perm"
+      ],
+      "float_field_views": 29952,
+      "raw_ratio_slots": 480,
+      "raw_ratio_definition": "2arm*5seed*2endpoint*3operations*4functions*2policies; E/B first",
+      "aggregate_rule": "source donor weights then equal-source endpoint; all seed/endpoint/group aggregates weighted means of matching raw metrics; R uses mean of eligible raw-slot R, never aggregate E/aggregate B",
+      "layers": {
+        "seed": [
+          "17",
+          "29",
+          "43",
+          "71",
+          "101",
+          "MEAN5"
+        ],
+        "endpoint": [
+          "Kd",
+          "Ki",
+          "KD_KI_EQUAL"
+        ],
+        "operation": [
+          "D",
+          "P",
+          "DP",
+          "ALL3_EQUAL"
+        ]
+      },
+      "nullable": [
+        "R",
+        "R_perm",
+        "r_min",
+        "r_max",
+        "A_min",
+        "A_max",
+        "epsilon_min",
+        "epsilon_max"
+      ],
+      "extrema": "only actual raw seed/endpoint/D-P-DP slots have extrema; all aggregate extrema null, no averaged minima/maxima",
+      "metadata": [
+        "source_denominator",
+        "link_count",
+        "R_status",
+        "numeric_target_id",
+        "AD_rule_id",
+        "exact_sign_fraction_convention",
+        "R_perm_status",
+        "numerical_realization_id",
+        "R_expected_raw_slots",
+        "R_defined_raw_slots",
+        "R_missing_reasons",
+        "R_perm_expected_raw_slots",
+        "R_perm_defined_raw_slots",
+        "R_perm_missing_reasons",
+        "evidence_tier"
+      ],
+      "zero_control": "E_zero=B,Skill_zero=0; R_zero=1 if B>tau_B andrequired absolute values valid; independent frommain ratio overflow; pair comparison still requires both ratios defined; no duplicate calls",
+      "R_perm_qualification": "independent optional empirical E_perm/B; no inherited main ratio qualification"
+    },
+    "lower_bound_summary": {
+      "format": "JSONL",
+      "rows": 288,
+      "keys": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "function_id",
+        "policy_id"
+      ],
+      "float_fields": [
+        "U_src",
+        "E_D",
+        "E_P",
+        "E_DP",
+        "signed_lower_bound_residual",
+        "allowed_excess"
+      ],
+      "float_field_views": 1728,
+      "nullable": false,
+      "signed_residual_definition": "U_src-(E_D+E_P+E_DP); require <=allowed_excess, no clipping"
+    },
+    "paired_comparisons": {
+      "format": "JSONL",
+      "rows": 576,
+      "keys": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "operation_layer",
+        "policy_id",
+        "comparator_id"
+      ],
+      "comparators": [
+        "h0",
+        "h_aff"
+      ],
+      "float_fields": [
+        "DeltaE",
+        "DeltaR"
+      ],
+      "float_field_views": 1152,
+      "nullable": [
+        "DeltaR"
+      ],
+      "metadata": [
+        "E_observed_direction",
+        "R_observed_direction",
+        "pair_R_status",
+        "missing_ratio_reasons",
+        "empirical_check_state"
+      ],
+      "no_practical_PASS": true
+    },
+    "reference_sensitivity": {
+      "format": "JSONL",
+      "rows": 576,
+      "keys": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "operation_layer",
+        "function_id"
+      ],
+      "float_fields": [
+        "sensitive_minus_main_E",
+        "sensitive_minus_main_B",
+        "sensitive_minus_main_Skill",
+        "sensitive_minus_main_R"
+      ],
+      "float_field_views": 2304,
+      "nullable": [
+        "sensitive_minus_main_R"
+      ],
+      "complete_same_sources_no_policy_selection": true
+    },
+    "span_summary": {
+      "format": "JSONL",
+      "rows": 288,
+      "keys": [
+        "arm",
+        "seed_layer",
+        "endpoint_layer",
+        "operation_layer",
+        "policy_id"
+      ],
+      "float_fields": [
+        "mean_drug_norm",
+        "mean_protein_norm",
+        "mean_joint_norm",
+        "zero_displacement_fraction",
+        "min_drug_norm",
+        "max_drug_norm",
+        "min_protein_norm",
+        "max_protein_norm",
+        "min_joint_norm",
+        "max_joint_norm"
+      ],
+      "float_field_views": 2880,
+      "extrema_nullable_outside_raw_slots": true,
+      "no_cross_arm_coordinate_scale_ranking": true
+    },
+    "affine_identity_receipts": {
+      "format": "JSONL",
+      "rows": 120,
+      "keys": [
+        "case_id",
+        "endpoint",
+        "operation",
+        "policy_id"
+      ],
+      "float_fields": [
+        "residual_E",
+        "residual_B",
+        "residual_Skill",
+        "residual_R",
+        "residual_DeltaR",
+        "allowance_E",
+        "allowance_B",
+        "allowance_Skill",
+        "allowance_R",
+        "allowance_DeltaR"
+      ],
+      "float_field_views": 1200,
+      "nullable": [
+        "residual_R",
+        "residual_DeltaR",
+        "allowance_R",
+        "allowance_DeltaR"
+      ],
+      "R_missing_reason_required": true,
+      "no_single_slope_aggregate_identity": true
+    },
+    "FD_checks": {
+      "format": "JSONL",
+      "rows": 120,
+      "keys": [
+        "case_id",
+        "head_id",
+        "endpoint",
+        "direction",
+        "source_id",
+        "donor_FIT_index0"
+      ],
+      "float_fields": [
+        "delta_norm",
+        "eta",
+        "f_source",
+        "f_plus",
+        "f_minus",
+        "FD",
+        "AD",
+        "signed_residual",
+        "allowed_error"
+      ],
+      "float_field_views": 1080,
+      "nullable_when_skipped_or_unresolved": true,
+      "metadata": [
+        "classification",
+        "reason",
+        "region_point_ids",
+        "AD_rule_id",
+        "tolerance_recipe_id",
+        "eta_exact",
+        "plus_differs_whole_vector",
+        "minus_differs_whole_vector",
+        "plus_minus_differ_whole_vector",
+        "perturbation_calls_executed",
+        "execution_state"
+      ],
+      "raw_masks": false,
+      "null_rule": "zero or whole-vector nonrepresentability => no perturbation calls and unavailable fields null with reason; stopped prefix execution_state=NOT_EXECUTED_AFTER_STOP,classification=null,not fake numeric state"
+    },
+    "qualification_points": {
+      "format": "JSONL",
+      "rows_max": 280,
+      "keys": [
+        "case_id",
+        "head_id",
+        "endpoint",
+        "source_id",
+        "point_kind",
+        "direction_if_perturbed"
+      ],
+      "float_fields": [
+        "output",
+        "minimum_abs_preactivation"
+      ],
+      "integer_fields": [
+        "zero_unit_count"
+      ],
+      "region_sha256": "packed ternary ReLU code96 bytes per point",
+      "raw_activation_output": false,
+      "observation": "computed ternary region and exact-zero count only,not certified smoothness",
+      "float_field_views_max": 560,
+      "integer_field_views_max": 280
+    },
+    "all_source_AD_receipts": {
+      "format": "JSONL",
+      "rows": 40,
+      "keys": [
+        "case_id",
+        "head_id",
+        "endpoint"
+      ],
+      "integer_fields": [
+        "expected_source_count",
+        "actual_source_count",
+        "input_backward_calls",
+        "gradient_coordinates_checked"
+      ],
+      "rule_id": "AD_F64_RELU_ZERO0_ALL_SOURCES",
+      "main_kink_scan": false,
+      "nonqualified_classical_differentiability": "NOT_ASSESSED"
+    },
+    "group_qualification_receipts": {
+      "format": "JSONL",
+      "rows": 40,
+      "keys": [
+        "case_id",
+        "head_id",
+        "endpoint"
+      ],
+      "integer_fields": [
+        "planned_directions",
+        "empirical_smooth_match",
+        "empirical_smooth_mismatch",
+        "unresolved_kink_or_cross_region",
+        "unresolved_unrepresentable_step",
+        "trivial_zero_displacement",
+        "invalid_numeric",
+        "executed_perturbed_points",
+        "has_nontrivial_direction"
+      ],
+      "pass_rule": "all40 chain checks mandatory; eligible FD mismatch/invalid STOP; no minimum smooth or nontrivial FD count"
+    },
+    "math_control_records": {
+      "rows": 24,
+      "keys": [
+        "function_id",
+        "operation"
+      ],
+      "float_fields": [
+        "A",
+        "r",
+        "epsilon",
+        "I_src",
+        "signed_DP_identity_residual",
+        "signed_lower_bound_residual"
+      ],
+      "float_field_views": 144,
+      "forward_evaluations": 32,
+      "input_derivatives": 8,
+      "implementation_control_not_empirical_evidence": true,
+      "signed_lower_bound_residual_definition": "abs(I_src)-(abs(epsilon_D)+abs(epsilon_P)+abs(epsilon_DP)); require <=T, no clipping"
+    },
+    "other_control_output": {
+      "categories": [
+        "input_binding_receipt",
+        "operation_seal",
+        "decode_recipe",
+        "head_numeric_receipt",
+        "cache_composability_receipt",
+        "math_receipt",
+        "cost_exposure_ledger",
+        "execution_receipt",
+        "artifact_manifest",
+        "run_seal",
+        "stage_report",
+        "final_acceptance",
+        "resource_and_supervision_logs",
+        "chain_AD_receipts",
+        "FD_coverage",
+        "event_commit_progress_ledgers",
+        "code_revision_receipts",
+        "durability_ack_and_segment_continuation",
+        "space_allocation_transfers",
+        "role_specific_loaded_code_registry"
+      ],
+      "files_max": 40,
+      "bytes_max": 150994944,
+      "no_unregistered_analysis_fields": true,
+      "shared_limit": "shared with all scientific/qualification JSON and every other JSON/control file; not additive to global144MiB"
+    },
+    "global_output_bounds": {
+      "files_max": 96,
+      "bytes_max": 8589934592,
+      "all_json_identity_and_control_bytes_max": 150994944,
+      "full_gradient_files": 0,
+      "raw_activation_files": 0,
+      "new_checkpoints": 0,
+      "fixed_array_data_bytes": 1592075408,
+      "fixed_array_files": 31,
+      "array_plus_headers_plus_json_envelope_bytes": 1743197328,
+      "space_allocation_policy": "space_policy.json;initial64/64/16 transferable,144MiB hard"
+    },
+    "runtime_identity_receipt": {
+      "files_max": 1,
+      "format": "JSON",
+      "entry_count_max": 16,
+      "entry_fields": [
+        "literal_path",
+        "declared_alias_chain",
+        "resolved_path",
+        "size",
+        "sha256",
+        "stable_fingerprint",
+        "runtime_component",
+        "load_dependency_class"
+      ],
+      "summary_fields": [
+        "runtime_versions",
+        "OS_CPU_BLAS_identity",
+        "thread_settings",
+        "reuse_or_targeted_refresh_costs",
+        "ordinary_loader_io_boundary",
+        "realization_id",
+        "metadata_changes"
+      ],
+      "scientific_payload_fields": false,
+      "primitive_proof_required": false
+    },
+    "chain_AD_receipts": {
+      "format": "JSONL",
+      "rows": 40,
+      "keys": [
+        "case_id",
+        "head_id",
+        "endpoint",
+        "source_id"
+      ],
+      "float_fields": [
+        "max_abs_residual",
+        "max_tolerance_normalized_residual",
+        "atol",
+        "rtol"
+      ],
+      "float_field_views": 160,
+      "integer_fields": [
+        "compared_coordinates",
+        "failed_coordinates",
+        "finite_coordinates"
+      ],
+      "integer_field_views": 120,
+      "metadata": [
+        "status",
+        "numeric_target_id",
+        "runtime_realization_id",
+        "AD_rule_id"
+      ],
+      "raw_gradient_output": false
+    },
+    "FD_coverage": {
+      "format": "JSON",
+      "files": 1,
+      "groups": 40,
+      "planned_checks": 120,
+      "group_fields": [
+        "case_id",
+        "head_id",
+        "endpoint",
+        "expected_directions",
+        "attempted",
+        "completed",
+        "classification_counts",
+        "not_executed_after_stop",
+        "eligible_FD_count",
+        "nontrivial_direction_count",
+        "chain_status"
+      ],
+      "summary_layers": [
+        "overall",
+        "head_by_endpoint",
+        "all40groups"
+      ],
+      "zero_eligible_status": "NO_ELIGIBLE_FD_NOT_A_PASS",
+      "no_coverage_threshold_or_panel_selection": true
+    },
+    "recovery_ledgers": {
+      "files": [
+        "recovery/event_ledger.jsonl",
+        "recovery/commit_ledger.jsonl",
+        "recovery/progress.json"
+      ],
+      "event_record_types": [
+        "BLOCK_RESERVED",
+        "BLOCK_TERMINAL"
+      ],
+      "common_event_fields": [
+        "seq",
+        "prev_digest",
+        "episode_id",
+        "plan_sha256",
+        "stream_id",
+        "block_start",
+        "block_count",
+        "record_type",
+        "code_id",
+        "wall",
+        "monotonic",
+        "root_plan_sha256",
+        "numeric_code_id",
+        "writer_control_code_id",
+        "runtime_realization_id",
+        "L0_mapping_ref",
+        "segment_id"
+      ],
+      "reservation_fields": [
+        "reserved_cost_vector"
+      ],
+      "terminal_fields": [
+        "processed_ordinal_prefix",
+        "returned_ordinal_prefix",
+        "FD_skip_bitmap_or_null",
+        "actual_dispatched_count",
+        "actual_returned_count",
+        "unknown_range_or_null",
+        "proven_never_dispatched_tail_or_null",
+        "actual_cost_or_null",
+        "budget_charge",
+        "certainty",
+        "commit_cursor_or_null",
+        "reason_code"
+      ],
+      "commit_fields": [
+        "seq",
+        "prev_digest",
+        "episode_id",
+        "plan_sha256",
+        "commit_id",
+        "artifact_id",
+        "byte_range",
+        "shape_dtype_id",
+        "bytes",
+        "sha256",
+        "input_rule_id",
+        "event_range_ref",
+        "validity",
+        "root_plan_sha256",
+        "numeric_code_id",
+        "writer_control_code_id",
+        "runtime_realization_id",
+        "L0_mapping_ref",
+        "segment_id"
+      ],
+      "progress_fields": [
+        "episode_id",
+        "original_episode_deadlines",
+        "frozen_plan",
+        "plan_sha256",
+        "last_commit",
+        "open_block_cursors",
+        "counter_reserved_spent_unknown",
+        "live_owner_identity",
+        "source_tokens",
+        "state_available",
+        "stop_or_resume_reason",
+        "root_plan_sha256",
+        "numeric_code_id",
+        "L0_mapping_ref",
+        "writer_version_registry_ref",
+        "durability_ack_cursors",
+        "pending_control_intent_ref",
+        "space_allocation_version"
+      ],
+      "representation": "ordinal ranges and fixed dictionary/algorithm; no835000-event expanded JSON table; actual per-event runtime state stays with same owner",
+      "record_encoding": "canonical compact UTF-8 JSON with sorted keys and LF,<=2048 bytes per ledger record; no NaN/Infinity",
+      "bounds": {
+        "reservation_blocks_max": 8192,
+        "terminal_records_max": 8192,
+        "commit_records_max": 8192,
+        "record_bytes_max_including_LF": 2048,
+        "logical_record_bytes_upper": 50331648,
+        "planning_plan_progress_summary_bytes": 4194304,
+        "planning_engineering_control_bytes": 12582912,
+        "planning_recovery_total_bytes": 67108864,
+        "common_all_JSON_control_total_bytes_max": 150994944,
+        "allocation": "64/64/16MiB initial transferable reservations; all physical failed attempts/segments/temporary peak included in144MiB hardpool,40otherfiles/96total/8GiB",
+        "transfer_policy": "space_policy.json",
+        "failure_policy": "log_failure_policy.json",
+        "no_separate_category_stop_if_valid_transfer_fits": true,
+        "record_sizes": "canonicalLF<=2048B;compact IDs/controlcodes;pre-encode future record schemas toensurefit beforedispatch;no science probes",
+        "progress_frequency": "block/control cadence;no per-native-call durable logging"
+      },
+      "commit_rules": "independent fixed artifact ranges; full scientific array data blocks4MiB,only final per array smaller; small qualifications whole/header ranges; one range per record; not per-call commits",
+      "payload_restriction": "identities,costs,cursors and already registered completed summary fields only; no tensors/full gradients/activation or checkpoint sidecars",
+      "planning_bytes": 67108864,
+      "scope": "initial64MiB allocation transferable within144MiB;allfailedsegments/tempcharged;40other/96total/8GiB",
+      "no_recursive_logging": true,
+      "prefix_semantics": "durability-acknowledged canonical prefix only;all syntacticallyvalid unacknowledged tail preserved/excluded untilsame-ownercarry proof",
+      "code_id_semantics": "legacy code_id isactualwritercontrol version only;numeric_code_id androotplan immutable",
+      "static_capacity_envelope": {
+        "native_model_events_max": 835000,
+        "fixed_math_chain_purpose_events_max": 80,
+        "source_qualification_bookkeeping_events": 22420,
+        "FD_classification_bookkeeping_events": 120,
+        "derived_vertex_bookkeeping_events": 197480,
+        "derived_source_bookkeeping_events": 22420,
+        "derived_finalization_bookkeeping_events": 1,
+        "total_non_IO_events_max": 1077521,
+        "nonempty_non_IO_streams_max": 357,
+        "non_IO_block_upper": 4566,
+        "source_open_hash_decode_construct_state_apply_singleton_upper": 192,
+        "all_reservation_block_upper": 4758,
+        "allocation_blocks": 8192,
+        "derivation": "ceil(1077521/256)+357-1=4566; +56open/hash+56decode+40construct+40state=4758<8192; accounting partitions only,no extra scientific work",
+        "stream_bound_basis": "80main/replay+40FD+80L1/L2AD+8mathforward+8mathAD+40chain+20sourcequal+40FDclassify+20vertex+20source+1final=357",
+        "no_capacity_test_as_new_scientific_gate": true
+      },
+      "log_failure_policy": "log_failure_policy.json",
+      "identity_policy": "identity_policy.json",
+      "space_policy": "space_policy.json",
+      "continuation_header_fields": [
+        "segment_id",
+        "previous_segment_id",
+        "previous_segment_full_bytes",
+        "previous_segment_full_sha256",
+        "acknowledged_prefix_end",
+        "acknowledged_prefix_sha256",
+        "last_ack_seq",
+        "last_ack_digest",
+        "failed_suffix_offset",
+        "failed_suffix_bytes",
+        "failed_suffix_sha256",
+        "pending_logical_record_id_or_null",
+        "pending_intended_record_sha256_or_null",
+        "owner_identity_ref",
+        "owner_cursor_digest",
+        "root_plan_sha256",
+        "numeric_code_id",
+        "writer_control_code_id",
+        "runtime_realization_id",
+        "L0_mapping_ref",
+        "new_segment_first_seq",
+        "reason_code",
+        "control_space_allocation_version"
+      ],
+      "transfer_fields": [
+        "allocation_version",
+        "category_allocations",
+        "used_bytes",
+        "inflight_reserved_bytes",
+        "retained_failed_bytes",
+        "temporary_peak_bytes",
+        "remaining_file_slots",
+        "required_remaining_output_reservation",
+        "transfer_id",
+        "writer_control_code_id",
+        "root_plan_sha256"
+      ]
+    }
+  },
+  "serialization": {
+    "JSON_float_fields": "required scientific values finite; optional undefined ratios or unavailable observations null with explicit status; no NaN/Infinity",
+    "integer_fields": "exact integers within signed64 range; no float identity keys",
+    "record_order": "canonical case/identity order and fixed function/policy/layer grids",
+    "unknown_fields": "STOP before scientific use; pure-control schema append records purpose/version,not scientific field expansion"
+  },
+  "file_layout": {
+    "per_case_patterns": [
+      "cases/{case_id}/operation_values.npy",
+      "cases/{case_id}/permutation_approximations.npy",
+      "cases/{case_id}/source_lower_bounds.npy"
+    ],
+    "fixed_data_files": [
+      "operations/operation_indices.npy",
+      "operations/needed_keys.jsonl",
+      "operations/panel_manifest.jsonl",
+      "analysis/summary.jsonl",
+      "analysis/lower_bound_summary.jsonl",
+      "analysis/paired_comparisons.jsonl",
+      "analysis/reference_sensitivity.jsonl",
+      "analysis/span_summary.jsonl",
+      "qualification/affine_identities.jsonl",
+      "qualification/FD_checks.jsonl",
+      "qualification/point_regions.jsonl",
+      "qualification/all_source_AD.jsonl",
+      "qualification/group_acceptance.jsonl",
+      "qualification/math_controls.jsonl",
+      "qualification/chain_AD.jsonl",
+      "qualification/FD_coverage.json"
+    ],
+    "physical_data_files_max": 46,
+    "other_receipt_monitor_files_max": 40,
+    "all_files_max": 96,
+    "all_paths": "future exclusive authorized output roots only; no files created now",
+    "additional_receipts_logs_recovery_files_max": 40,
+    "max_planned_files_before_unused_reserve": 86,
+    "runtime_and_empirical_receipts": "within40 other control files,96 total,no precision-proof receipt",
+    "recovery_segment_policy": "newsegment/header/tail/controlversion/temp files allinside40other controlslots and96total; no new dedicated allowance"
+  }
+}
+

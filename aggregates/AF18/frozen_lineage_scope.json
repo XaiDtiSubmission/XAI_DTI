@@ -1,0 +1,20 @@
+{
+  "groups_checked": 900,
+  "archived_nM_to_frozen_pAffinity_values_checked": 991,
+  "result": "Exact agreement for the audited groups, evidence units, labels and frozen input identities",
+  "coverage": "The registered target groups used for the provenance audit",
+  "actual_historical_producer_identity": "UNKNOWN",
+  "measurements_scientifically_adjudicated_separately": true,
+  "source_receipts": [
+    {
+      "path": "DTI_R01_R03_execution_v0_1/R03/full_900_batched/receipt.json",
+      "bytes": 8121,
+      "sha256": "6019f801e6d820589fe027a7fbd1c10465b6939a1a31b6100cf04d8977ae1821"
+    },
+    {
+      "path": "DTI_R01_R03_execution_v0_1/R03/archive_conversion/receipt.json",
+      "bytes": 3781,
+      "sha256": "8bb0d127257620a91c983996ad270e14d14ad4159aba4c248bd8462c97ea2914"
+    }
+  ]
+}
