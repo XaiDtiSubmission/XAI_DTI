@@ -169,11 +169,15 @@ role assignment, endpoint rules and input encoding must also be preserved.
 are **CC BY-SA 3.0**. Its versioned
 [release catalogue](https://chembl.gitbook.io/chembl-interface-documentation/downloads)
 provides [release 34](https://doi.org/10.6019/CHEMBL.database.34), matching the
-Papyrus component. That fact alone does not establish which native ChEMBL
-database snapshot was used for the additional activity linkage. A complete
-native-linkage replay still requires that snapshot's version/checksum and
-the saved activity identifiers; a live API or current release 37 is not an
-exact substitute. ChEMBL-derived redistributed data must retain its source
+Papyrus component, and [release 37](https://doi.org/10.6019/CHEMBL.database.37).
+The registered version 1.62 source handoff explicitly identifies **ChEMBL37
+cross-version native linkage**, rather than a byte replay of ChEMBL34.
+Its unchanged Pack01 archive and sample-member hashes were checked against
+the actual historical V0 source; the exact binding is documented in
+[the partial-input notice](saved_rows/pack01/PARTIAL_INPUTS.md).
+This establishes the recorded source version and frozen input bytes; official
+release links do not reproduce every historical native request or certify
+a raw native-database rebuild. ChEMBL-derived redistributed data retain source
 attribution and applicable share-alike terms rather than being labelled
 project-only CC BY 4.0.
 
@@ -185,6 +189,21 @@ identity/version and the saved sequence-to-panel mapping. No complete claim is
 made here that all external-panel original inputs and labels have been exposed
 merely by providing the official source links.
 
+The release now includes
+[a partial frozen input-access aid](saved_rows/pack01/PARTIAL_INPUTS.md):
+4,884 rows (967 Kd and 3,917 Ki) whose saved contribution layer is solely the
+Papyrus/native-bound batch. It provides actual frozen SMILES, reference
+sequences and binary64 labels under **CC BY-SA 4.0**, retaining Papyrus,
+ChEMBL CC BY-SA 3.0 and UniProt CC BY 4.0 notices. ChEMBL's CC BY-SA 3.0
+[section 4(b)](https://creativecommons.org/licenses/by-sa/3.0/legalcode#s4b)
+permits adaptations under later versions with the same licence elements.
+All 116 groups with any inherited high-evidence contribution are excluded from
+this aid, including the one group with both saved contribution layers. Their
+input/label redistribution terms have not been established here. The aid does
+not alter or replace the original 5,000-row evaluation, and no partial-panel
+metrics have been calculated. Original 5,000-row saved predictions and hashed
+group identities are available separately in the same directory.
+
 ## What can be checked with the released material
 
 | Claim or task | Material needed and source boundary |
@@ -194,7 +213,7 @@ merely by providing the official source links.
 | Source-exclusion prediction-risk comparison | The same frozen quantities plus the released disposition/support identities. Use the specified eligible subset; do not silently replace labels or refit calibration. |
 | Path, candidate-ranking and secant panels | Their own released panel identities, frozen support/response material and method definitions. Do not substitute a different panel or infer missing truth from model outputs. |
 | Rebuilding development molecules, protein inputs and labels from original databases | Exact BindingDB snapshot and the registered preprocessing/filtering/aggregation rules, input mappings and roles. The frozen latent cache permits latent-space replay but does not itself reconstruct the original molecular inputs. |
-| Exact external prediction replay | Exact external frozen inputs/truth, saved panel/source mappings, original encoding and model assets. Papyrus/ChEMBL/UniProt access routes above are available, but the unresolved exact native-linkage and sequence-version bindings remain distinct requirements. |
+| Exact external prediction replay | Original5000 saved prediction streams and ordered identities are released. Exact frozen inputs/truth are exposed for the separately identified 4884-row pure-batch input-access aid; this is not a new evaluation result. Full original5000 input replay still requires lawful access to the 116 excluded inherited-contribution groups, plus original encoding, calibration and model assets. A raw-source rebuild additionally requires the recorded source mappings and historical request/snapshot provenance. |
 
 Historical Davis, Metz, GLASS and other source registries used for screening or
 decontamination do not become freely redistributable through this project's

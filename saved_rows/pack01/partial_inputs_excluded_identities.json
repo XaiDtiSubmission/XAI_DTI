@@ -1,0 +1,1053 @@
+{
+  "scope": "Identity-only exclusion receipt for this partial input-access aid",
+  "selection_rule": "Exclude any group whose saved source_layers contains INHERITED_HIGH_EVIDENCE116",
+  "source_sample_file_sha256": "281d63f538452a18086bb02457045fdedae049e49331b81a8ffced9b30cb3aae",
+  "original_row_digest": "8a66deafb47bf716c355f1eda4ff839182763cae2f8a504a3cff5b0b678fe994",
+  "excluded": [
+    {
+      "original_row_index_zero_based": 55,
+      "sample_id": "S60_0e279cb776bb8db1997893f57f8df45e",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 86,
+      "sample_id": "S60_157d6ee09523e33e39b933f254b41bed",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 92,
+      "sample_id": "S60_16205b859718b9251b3e83dff13a083b",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 156,
+      "sample_id": "S60_2725b3f6efce1113536cb4c9db573323",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 220,
+      "sample_id": "S60_3a28eb3b618e4282397e734f10e38ae4",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 258,
+      "sample_id": "S60_420cdea9d79f382e0c83908f4a9135a3",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 347,
+      "sample_id": "S60_59a7c6cfe918993d6e4d2a0967a7bec8",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 349,
+      "sample_id": "S60_5a9e94de90d4aba0c9c9916c2c4b0d4c",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 371,
+      "sample_id": "S60_605b9bb28c0eff3608b433c36f7b8152",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 413,
+      "sample_id": "S60_697941d7986bb941dce8c37f470fdcfa",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 479,
+      "sample_id": "S60_78b89e7f12ca992d067cf85d18007fb0",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 509,
+      "sample_id": "S60_7f26cc588fe3dc15543ef2101bfe3b5d",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 517,
+      "sample_id": "S60_80be669fd3d0bf87f071f2e5b38ca172",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 554,
+      "sample_id": "S60_8b4f4ffd3170f0f2ccd5cef197f2a1a5",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 570,
+      "sample_id": "S60_8f089dabc89f6454fd4a4ae3b37780f0",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 622,
+      "sample_id": "S60_9dc030c634e08ed410b3d0ba438802b4",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 656,
+      "sample_id": "S60_a8cc39160b0573c30f4ea034cb4cc376",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 672,
+      "sample_id": "S60_ad91a2c0613ca1a82d1587f8d4dcc7db",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 679,
+      "sample_id": "S60_af0960edad5494bf3d6fa2f765a8ffe2",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 683,
+      "sample_id": "S60_af6113a189f42f68e3ef339c3fa32ea5",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 688,
+      "sample_id": "S60_b029675b15aa72712bedb9255a5c2efe",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 696,
+      "sample_id": "S60_b2ceb4f5fb197eca682197439a70a904",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 746,
+      "sample_id": "S60_bf50caf93d0cbfb65db087be219b7546",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 752,
+      "sample_id": "S60_c02ce0196a81ea4356ab3d4ec090d534",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 761,
+      "sample_id": "S60_c24da0ff95cd98fe6ecd51e09e754c7b",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 796,
+      "sample_id": "S60_cce9d2250f343747a28acae6a46165f3",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 855,
+      "sample_id": "S60_ddcad12ff89d3e2b527d1ae1936c8f78",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 878,
+      "sample_id": "S60_e457ee9f78967a3f84cbafab4646265c",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 896,
+      "sample_id": "S60_e90eb7d472c789ecbbce04fdc6750ba4",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 901,
+      "sample_id": "S60_eae326e52255d2e896b0201531293442",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 905,
+      "sample_id": "S60_ebaba9d6a62f0db9fada620f50a90e82",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 924,
+      "sample_id": "S60_eeed95f84e499402e7f77fbac8684408",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 934,
+      "sample_id": "S60_f1596d89ebcb03ff8732a7a917648738",
+      "endpoint": "Kd",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1017,
+      "sample_id": "S60_01ae614b2706a812b060e02b77c403cc",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1096,
+      "sample_id": "S60_0656e1c8f3ed9364344efa7406ae7bfb",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1217,
+      "sample_id": "S60_0e943aea5429105a56b61df24fb83dce",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1228,
+      "sample_id": "S60_0f27c7f4288efac3f2b7f24d34ee6cdd",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1331,
+      "sample_id": "S60_14e9b0da0a42cf4d6cac9dfb2243611b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1383,
+      "sample_id": "S60_1788323c4e252c021a5de38effe5ea9f",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1455,
+      "sample_id": "S60_1b9ac99a26ed4df5eef05b44a90628ab",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1462,
+      "sample_id": "S60_1c62b8a6b86a1f437815fcdbf6f6722b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1547,
+      "sample_id": "S60_22001339928b7fe7bc54c20b1b3c55b9",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1643,
+      "sample_id": "S60_29325dfbbeeee1a53c4423965c2aeda4",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1646,
+      "sample_id": "S60_2984919b6c52d9768ade03f83103dbb7",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1708,
+      "sample_id": "S60_2d18fc4400f58c8f37c1c675c3b98f7f",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1709,
+      "sample_id": "S60_2d3d506727b3471fc592e2a6ce6db212",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1843,
+      "sample_id": "S60_3588323339c6bd8191a404b5b428b70b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1902,
+      "sample_id": "S60_3921ad50ab349a7b180684afe8a138db",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 1986,
+      "sample_id": "S60_3de0411f1aef807d65db4578fe207ae1",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2076,
+      "sample_id": "S60_43ecb641c2132874b145137830984b7d",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2130,
+      "sample_id": "S60_475dcc6cfcfb7c505fd3069d542fa891",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2227,
+      "sample_id": "S60_4d2bcb13ba178ec2affdf082f26fe73a",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2258,
+      "sample_id": "S60_4f338df916a7b03beeff890633aaabab",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2322,
+      "sample_id": "S60_53532450f1bfd49cb4da457e3959913c",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2379,
+      "sample_id": "S60_56ab331cd5a908ae5c1f200138cc8c23",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2431,
+      "sample_id": "S60_5a48398909db1bc76d16c4ba34c6f530",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2498,
+      "sample_id": "S60_5f2d7c2bf5b1f7e1fb741c86b4ede7f5",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2510,
+      "sample_id": "S60_5fbb8ff5d106af0c2b539dfd50db182a",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2539,
+      "sample_id": "S60_62786c3f9b5777b14cf7824a0fa1bec5",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2608,
+      "sample_id": "S60_66dd5f820c934949fd1ef2a3f2dc6c39",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2659,
+      "sample_id": "S60_6a82a088d0449cd7b4a87e48eae21566",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2729,
+      "sample_id": "S60_6f28c146b1b35c7cf2a082b81738b319",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2744,
+      "sample_id": "S60_7082720cd4a1399fd7054bb7a7514dcc",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2745,
+      "sample_id": "S60_708db819d0fbbe1b5182ffe6f82d2159",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2820,
+      "sample_id": "S60_742a6d344bf1f8dead01a37506234734",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2878,
+      "sample_id": "S60_78450157d32c291d289612542b2e2791",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2886,
+      "sample_id": "S60_78e3b1da89802bbc97e911aef9d2f91b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 2976,
+      "sample_id": "S60_7f7c0ad62eaafee1c51c03ae3cba1477",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3022,
+      "sample_id": "S60_828af109ed7c910393f73d8fce7f530b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3065,
+      "sample_id": "S60_84f169acfd49bc56343fc90077583c9a",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3104,
+      "sample_id": "S60_878312793edcbe31881bec29b78aaeb3",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3118,
+      "sample_id": "S60_888cb6608fade254fcf89e9efb369d24",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3132,
+      "sample_id": "S60_89b3dda7230d27a0889ef96bbe730bcd",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3137,
+      "sample_id": "S60_8a0efc5c606acc083649e291073b1abc",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3181,
+      "sample_id": "S60_8c7123cf92ee0bb901237d94954884d4",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3251,
+      "sample_id": "S60_9073c2ebedbd4a43714c4d2721283c98",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3278,
+      "sample_id": "S60_923a4d1582ca69ae20183ffaf79c646c",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3287,
+      "sample_id": "S60_933dbe6a6b13db48b38fb4fc1ad38f71",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3315,
+      "sample_id": "S60_94e82913335585591003b388210d4404",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3424,
+      "sample_id": "S60_9a5efe5fcda2f4fd8bc0d2830e168d54",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3513,
+      "sample_id": "S60_9f474b5ca80ce0599ebb506c4e0929f8",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3544,
+      "sample_id": "S60_a164fd56843e687c5577a1a1bbcb5790",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3572,
+      "sample_id": "S60_a347f994856bc3f708f33617cec0a9cc",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3620,
+      "sample_id": "S60_a63310c0c7e99810ba13bb4ad94cf1fe",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3660,
+      "sample_id": "S60_a86554fb4a3c2e95c4b087c372306406",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3695,
+      "sample_id": "S60_aaae0afe8e30fa310d4148bb62642235",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3803,
+      "sample_id": "S60_b1792e0e7a8d4e0c8f15566b9ca0500e",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3816,
+      "sample_id": "S60_b22dc72be3326bd48bf750ce697f56c1",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3830,
+      "sample_id": "S60_b30e3161b5f9410e4f3a9a58df4e5748",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3869,
+      "sample_id": "S60_b573e61d09033600c42954ef49d97c6b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3903,
+      "sample_id": "S60_b743675c35d0531b6889131659f482f3",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 3994,
+      "sample_id": "S60_bdd437c848ba014f0b9eff023bf1be71",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4136,
+      "sample_id": "S60_c6a8e92706e05553a3b95e4aa921c105",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4220,
+      "sample_id": "S60_ccd0d8aaee24927587f40d74fa8df793",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4253,
+      "sample_id": "S60_cea58d99af1543447e999b9302960a42",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4311,
+      "sample_id": "S60_d2a71ee8dcecfe28f949e754a7aacc8b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4324,
+      "sample_id": "S60_d3356c852e519e27411f807b01a8784d",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4338,
+      "sample_id": "S60_d4108c0392e16a775aba0549a1141ac5",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4349,
+      "sample_id": "S60_d4bb145db73a2758b126579e1a365e27",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4375,
+      "sample_id": "S60_d66405eebee9c92c1890a23a96f1235d",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4380,
+      "sample_id": "S60_d6e929080b2da3ebd2d4dd96c8f66f10",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4468,
+      "sample_id": "S60_dc4a159ca7708ddae1b446476ba774e7",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4528,
+      "sample_id": "S60_e04adb036181f93454bef9565d77a053",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116",
+        "PAPYRUS2024_2_NATIVE_BOUND_BATCH"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4562,
+      "sample_id": "S60_e3951c29cb08f0b81b5279b58eee1255",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4631,
+      "sample_id": "S60_e8cccff494c0fd485b5bbb48226d9e4e",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4633,
+      "sample_id": "S60_e8d81dc4a6d083f48943f263a23fd8d1",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4634,
+      "sample_id": "S60_e8e450ada0967c6fe85a8ab8c22d2e6f",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4705,
+      "sample_id": "S60_ec922d102219abdcf8eeca7ca8dce1a9",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4725,
+      "sample_id": "S60_edcfe77d61ea2e5ec097add6bd6253cd",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4763,
+      "sample_id": "S60_f0c1bb2c7484408d544d7b53f86ac9db",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4829,
+      "sample_id": "S60_f57987dfcfac23e974d2a389e58934f7",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4867,
+      "sample_id": "S60_f78aee72c25cd37837ec415b2d16587c",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4908,
+      "sample_id": "S60_f9f0e8a6265c718cbf3a10ba18919716",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4912,
+      "sample_id": "S60_fa2cd36521d9d6d9705bc7a1e6149b09",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4984,
+      "sample_id": "S60_ff3b41f09d51c92246ec99c91404fe8e",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    },
+    {
+      "original_row_index_zero_based": 4989,
+      "sample_id": "S60_ff60c6d9f72d4419d4991646a6fa371b",
+      "endpoint": "Ki",
+      "source_layers": [
+        "INHERITED_HIGH_EVIDENCE116"
+      ],
+      "reason": "ANY_INHERITED_HIGH_EVIDENCE116_CONTRIBUTION"
+    }
+  ]
+}

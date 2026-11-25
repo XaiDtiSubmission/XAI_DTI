@@ -417,15 +417,116 @@
       "row_digest": "8a66deafb47bf716c355f1eda4ff839182763cae2f8a504a3cff5b0b678fe994",
       "source_logical_path": "V1/cases/formal_101_S/h1.npy",
       "canonical_payload_sha256": "aee1d097bcab96f1923fde8d81ad54e4c9652dfe062700332bc1d0c018ebdce0"
+    },
+    {
+      "path": "pure_papyrus_inputs.csv.gz",
+      "bytes": 1806015,
+      "sha256": "fa57d451bf0ad3c7e684dbaa412269d01693f7cd584dea4f27ec96194ec8aed2",
+      "kind": "partial_licensed_frozen_input_projection",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "partial_inputs_excluded_identities.json",
+      "bytes": 32190,
+      "sha256": "a408cbed573807a740ced35f110b50d8d44d40dfc877b85cc290ff46eec32ab3",
+      "kind": "partial_input_excluded_identities",
+      "license": "CC-BY-4.0 project identity receipt"
     }
   ],
   "no_model_evaluation_or_recalibration": true,
   "arrays_copied_opaque_without_decoding": true,
-  "no_truth_or_molecular_input_or_representation_cache_exported": true,
+  "no_truth_or_molecular_input_or_representation_cache_exported": false,
   "identity_projection_fields_only": [
     "sample_id",
     "endpoint"
   ],
-  "scope": "Saved prediction and identity access. Row-to-MAE verification additionally requires exact frozen truth and the original calibration slots; this archive contains neither truth nor newly computed errors.",
-  "rights": "Project-generated prediction outputs and grouping/identity material: CC BY 4.0 to the extent of project rights. Underlying Papyrus/ChEMBL/UniProt data retain their source terms; see DATA_SOURCES.md. No third-party source-row payload is included."
+  "scope": "Original5000 saved prediction and identity access, plus a separately labelled partial licensed input-access aid. No new evaluation result, no errors or statistics recomputed. Original5000 row-to-MAE verification still requires the excluded inherited-contribution groups and the original calibration slots.",
+  "rights": "Project-generated prediction and identity materials: CC BY 4.0 to the extent of project rights. The separately identified pure_papyrus_inputs.csv.gz is an adapted third-party data projection under CC BY-SA 4.0, preserving Papyrus, ChEMBL and UniProt notices. See PARTIAL_INPUTS.md and DATA_SOURCES.md.",
+  "partial_input_access": {
+    "frozen_byte_binding_verified": {
+      "documentation_interface": "final_v1_62; data version remains packages_v1_61",
+      "nested_archive_member": "packages_v1_61/pack_01.zip",
+      "nested_archive_sha256": "5293d4f8f4e58611fea8947bbffabd6e23cde08d4c1603d4014f6c54b61e92c4",
+      "nested_manifest_sha256": "2fea8514eeb17a1c55e27abd49c9a0d6728c1a36f9dc6e902cf25288b7bc25bd",
+      "nested_samples_sha256": "281d63f538452a18086bb02457045fdedae049e49331b81a8ffced9b30cb3aae",
+      "actual_V0_samples_sha256": "281d63f538452a18086bb02457045fdedae049e49331b81a8ffced9b30cb3aae",
+      "method": "Opaque byte hashes; no recomputation of scientific outputs",
+      "boundary": "Recorded ChEMBL37 source statement and exact frozen inputs; not a replay of every historical native request"
+    },
+    "purpose": "PARTIAL_INPUT_ACCESS_AID_ONLY_NOT_A_NEW_EVALUATION_RESULT_OR_THE_ORIGINAL_5000",
+    "included_rows": 4884,
+    "excluded_rows": 116,
+    "included_endpoints": {
+      "Kd": 967,
+      "Ki": 3917
+    },
+    "excluded_endpoints": {
+      "Kd": 33,
+      "Ki": 83
+    },
+    "saved_source_layer_group_counts": {
+      "PAPYRUS2024_2_NATIVE_BOUND_BATCH": 4884,
+      "INHERITED_HIGH_EVIDENCE116": 115,
+      "INHERITED_HIGH_EVIDENCE116+PAPYRUS2024_2_NATIVE_BOUND_BATCH": 1
+    },
+    "selection_rule": "Retain only source_layers == [PAPYRUS2024_2_NATIVE_BOUND_BATCH]; exclude any INHERITED_HIGH_EVIDENCE116 contribution",
+    "order": "Original V0 frozen row order, filtered without reordering; join full prediction streams by row_keys/sample_id/endpoint",
+    "source_logical_path": "V0/raw/pack_01/samples.jsonl",
+    "source_sha256": "281d63f538452a18086bb02457045fdedae049e49331b81a8ffced9b30cb3aae",
+    "source_fields": [
+      "sample_id",
+      "endpoint",
+      "smiles",
+      "protein_sequence",
+      "modeling_summary_p"
+    ],
+    "exported_fields": [
+      "sample_id",
+      "endpoint",
+      "smiles",
+      "protein_sequence",
+      "y_binary64_hex"
+    ],
+    "truth_encoding": "Exact original binary64, Python float.hex(); decode with float.fromhex(); no F32 rounding or label recomputation",
+    "input_transform": "No input-string changes; already-frozen canonical isomeric SMILES and reference sequence copied as stored",
+    "project_selection_transformation": "Exclusion of inherited-contribution groups; minimal field projection; binary64 text encoding and gzip packaging",
+    "licence": "CC-BY-SA-4.0 for this adapted source-data projection; original ChEMBL CC-BY-SA-3.0 and UniProt CC-BY-4.0 notices retained",
+    "papyrus": {
+      "version": "2024.2",
+      "record": "https://zenodo.org/records/13987985",
+      "license_metadata": "https://zenodo.org/api/records/13987985",
+      "license": "CC-BY-SA-4.0",
+      "file": "05.7++_combined_set_without_stereochemistry.tsv.xz",
+      "source_sha256": "8004e0d1027a760f205b45264386f792e7d49658da39f77f52e660a6f19760dd"
+    },
+    "native_binding": {
+      "version": "ChEMBL37 cross-version linkage, as explicitly recorded in the original handoff; not a byte replay of Papyrus ChEMBL34",
+      "release": "https://doi.org/10.6019/CHEMBL.database.37",
+      "terms": "https://chembl.gitbook.io/chembl-interface-documentation/about",
+      "license": "CC-BY-SA-3.0",
+      "later_version_adaptation_permission": "https://creativecommons.org/licenses/by-sa/3.0/legalcode#s4b"
+    },
+    "protein_reference": {
+      "source": "UniProt",
+      "terms": "https://rest.uniprot.org/help/license",
+      "license": "CC-BY-4.0",
+      "role": "REFERENCE_TARGET_NOT_CERTIFIED_FULL_CONSTRUCT"
+    },
+    "provenance_documents": [
+      {
+        "logical_path": "dataset/final_v1_62/sources/admission_policy_v1_60_3.json",
+        "sha256": "137a07e451397b7285820255d1981e6ebd1bb5bc622da5bcc8912906ee9ed88c"
+      },
+      {
+        "logical_path": "dataset/final_v1_62/最终交接文档.md",
+        "sha256": "8b5e13a52950473b1f7c8e3683816d6ce0c0a50be190db82c20d9b7a60e5d9c4",
+        "anchors": "source_layers field description; sources and attribution paragraph explicitly identifying ChEMBL37 native linkage"
+      }
+    ],
+    "no_free_text_or_observation_payload_exported": true,
+    "no_predictions_calibration_errors_or_statistics_recomputed": true,
+    "previous_local_pack_manifest_sha256": "460b388cca2e0d647387663dde25ed01c881b3281ee9d65949ac4f602f0536a1"
+  },
+  "representation_caches_exported": false,
+  "original_prediction_identity_files_contain_no_truth_or_molecular_inputs": true
 }

@@ -33,8 +33,12 @@ available in the external-prediction aggregate materials (original report
 SHA-256 `00627ee595e31d99320a1e5dd8e88f15b728f1856c7a284ef338bca4dc9b24ce`).
 These allow checking case-to-arm aggregation. Checking row-to-MAE calculations
 additionally requires the exact frozen binary64 truth values and the original
-calibration slots. No truth, per-row residuals, source observations, molecular
-input strings, sequence strings or representation caches are included here.
+calibration slots. A separately licensed **partial input-access aid** now provides
+4,884 frozen pure-Papyrus-batch rows (967 Kd and 3,917 Ki), with actual input
+strings and binary64 labels; see [PARTIAL_INPUTS.md](PARTIAL_INPUTS.md).
+All 116 groups with any inherited high-evidence contribution are excluded from
+that aid. It is not the original 5,000-row cohort or a new evaluation result.
+No per-row residuals, source observations or representation caches are included.
 No new errors or statistics were calculated to create this archive.
 
 Project-generated prediction outputs and grouping/identity material are
@@ -42,8 +46,9 @@ available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) to the
 extent of the project's rights. Credit the XAI_DTI project and retain this
 run/version and the manifest. Underlying Papyrus, ChEMBL and UniProt data retain
 their source licences and attribution requirements; see
-[DATA_SOURCES.md](../../DATA_SOURCES.md). This archive does not redistribute their
-original input or observation rows.
+[DATA_SOURCES.md](../../DATA_SOURCES.md). The pure-Papyrus input projection is
+separately identified as CC BY-SA 4.0 and preserves upstream notices. Original
+source-observation rows and embedded free text are not redistributed.
 
 The original panel has 5,000 members. Recorded later role assignments and
 historical-exposure qualifications are preserved in the study; releasing these
